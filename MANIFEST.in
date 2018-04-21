@@ -1,1 +1,3 @@
 include bar.txt
+recursive-include examples *.txt *.py
+recursive-include bla
