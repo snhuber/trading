@@ -1,0 +1,46 @@
+Created temporary directory: /tmp/pip-ephem-wheel-cache-i4otnqm4
+Created temporary directory: /tmp/pip-install-x_r4rxrq
+Obtaining file:///home/bn/PycharmProjects/trading
+  Running setup.py (path:/home/bn/PycharmProjects/trading/setup.py) egg_info for package from file:///home/bn/PycharmProjects/trading
+    Running command python setup.py egg_info
+    /home/bn/PycharmProjects/trading
+    running egg_info
+    writing trading.egg-info/PKG-INFO
+    writing dependency_links to trading.egg-info/dependency_links.txt
+    writing entry points to trading.egg-info/entry_points.txt
+    writing top-level names to trading.egg-info/top_level.txt
+    reading manifest file 'trading.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no files found matching 'bar.txt'
+    warning: no files found matching '*.txt' under directory 'examples'
+    warning: no files found matching '*.py' under directory 'examples'
+    warning: manifest_maker: MANIFEST.in, line 3: 'recursive-include' expects <dir> <pattern1> <pattern2> ...
+
+    writing manifest file 'trading.egg-info/SOURCES.txt'
+  Source in /home/bn/PycharmProjects/trading has version 0.0.0, which satisfies requirement trading==0.0.0 from file:///home/bn/PycharmProjects/trading
+Installing collected packages: trading
+  Running setup.py develop for trading
+    Running command /home/bn/anaconda3/envs/trading/bin/python -c "import setuptools, tokenize;__file__='/home/bn/PycharmProjects/trading/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" develop --no-deps
+    /home/bn/PycharmProjects/trading
+    running develop
+    running egg_info
+    writing trading.egg-info/PKG-INFO
+    writing dependency_links to trading.egg-info/dependency_links.txt
+    writing entry points to trading.egg-info/entry_points.txt
+    writing top-level names to trading.egg-info/top_level.txt
+    reading manifest file 'trading.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no files found matching 'bar.txt'
+    warning: no files found matching '*.txt' under directory 'examples'
+    warning: no files found matching '*.py' under directory 'examples'
+    warning: manifest_maker: MANIFEST.in, line 3: 'recursive-include' expects <dir> <pattern1> <pattern2> ...
+
+    writing manifest file 'trading.egg-info/SOURCES.txt'
+    running build_ext
+    Creating /home/bn/anaconda3/envs/trading/lib/python3.6/site-packages/trading.egg-link (link to .)
+    Adding trading 0.0.0 to easy-install.pth file
+    Installing trading-getListOfConIds script to /home/bn/anaconda3/envs/trading/bin
+
+    Installed /home/bn/PycharmProjects/trading
+Successfully installed trading
+Cleaning up...

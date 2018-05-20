@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: trading
+Version: 0.0.0
+Summary: Python automated trading package
+Home-page: https://github.com/bjrnfrdnnd/trading
+Author: Björn Nadrowski
+Author-email: bjrnfrdnnd@gmail.com
+License: None
+Description: |PyVersion| |Status|
+        
+        Introduction
+        ============
+        
+        The ``trading`` package is built on top of ib_insync which is built on
+        top of the Python API from Interactive Brokers. The objective is to make
+        money using automated trading.
+        
+        :author: bn <bjrnfrdnnd@gmail.com>
+        
+        .. |PyVersion| image:: https://img.shields.io/badge/python-3.6+-blue.svg
+           :alt:
+        
+        .. |Status| image:: https://img.shields.io/badge/status-planning-lightgrey.svg
+           :alt:
+        
+Keywords: ibapi ib_insync asyncio jupyter interactive brokers async
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: just me
+Classifier: Topic :: Office/Business :: Financial :: Investment :: making money
+Classifier: License :: None
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only

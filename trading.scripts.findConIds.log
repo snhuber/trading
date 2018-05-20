@@ -1,0 +1,77 @@
+2018-04-21 18:59:11,304 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 300...
+2018-04-21 18:59:11,304 ib_insync.client INFO Connected
+2018-04-21 18:59:11,306 ib_insync.client INFO Logged on to server version 140
+2018-04-21 18:59:11,306 ib_insync.client INFO API connection ready
+2018-04-21 18:59:11,306 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-04-21 18:59:11,354 ib_insync.ib INFO Synchronization complete
+2018-04-21 18:59:16,970 ib_insync.ib INFO Disconnecting from 127.0.0.1:4002, 4.08 kB sent in 66 messages, 93.7 kB received in 452 messages, session time 5.67 s.
+2018-04-21 18:59:16,971 root INFO ANSWER connectionClosed {}
+2018-05-07 13:20:58,467 quamash INFO Using Qt Implementation: PyQt5
+2018-05-07 13:20:58,498 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-07 13:20:58,498 ib_insync.client INFO Connected
+2018-05-07 13:20:58,500 ib_insync.client INFO Logged on to server version 140
+2018-05-07 13:20:58,500 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-07 13:20:58,500 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-07 13:20:58,500 ib_insync.client INFO API connection ready
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ilhmds
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2018-05-07 13:20:58,501 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='FUT', conId=289239602, symbol='DAX', lastTradeDateOrContractMonth='20180615', right='0', multiplier='5', primaryExchange='DTB', currency='EUR', localSymbol='FDXM JUN 18', tradingClass='FDXM'), position=0.0, marketPrice=12882.4609375, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-76.6, account='DU946735')
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='FUT', conId=299627959, symbol='DAX', lastTradeDateOrContractMonth='20180921', right='0', multiplier='5', primaryExchange='DTB', currency='EUR', localSymbol='FDXM SEP 18', tradingClass='FDXM'), position=0.0, marketPrice=12867.4609375, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-59.8, account='DU946735')
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.19150995, marketValue=221620.85, averageCost=1.2182257, unrealizedPNL=-4969.13, realizedPNL=0.0, account='DU946735')
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CFD', conId=111987422, symbol='IBDE30', right='0', currency='EUR', localSymbol='IBDE30', tradingClass='IBDE30'), position=0.0, marketPrice=12870.86035155, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=38178.36, account='DU946735')
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-07 13:20:58,509 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='FUT', conId=289239602, symbol='DAX', lastTradeDateOrContractMonth='20180615', multiplier='5', currency='EUR', localSymbol='FDXM JUN 18', tradingClass='FDXM'), position=0.0, avgCost=0.0)
+2018-05-07 13:20:58,510 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='FUT', conId=299627959, symbol='DAX', lastTradeDateOrContractMonth='20180921', multiplier='5', currency='EUR', localSymbol='FDXM SEP 18', tradingClass='FDXM'), position=0.0, avgCost=0.0)
+2018-05-07 13:20:58,510 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CFD', conId=111987422, symbol='IBDE30', currency='EUR', localSymbol='IBDE30', tradingClass='IBDE30'), position=0.0, avgCost=0.0)
+2018-05-07 13:20:58,549 ib_insync.ib INFO Synchronization complete
+2018-05-07 13:21:02,327 ib_insync.wrapper ERROR Error 200, reqId 29: No security definition has been found for the request, contract: Contract(secType='IND', symbol='INDU', exchange='NYSE', currency='USD')
+2018-05-07 13:21:02,327 ib_insync.ib ERROR Unknown contract: Contract(secType='IND', symbol='INDU', exchange='NYSE', currency='USD')
+2018-05-07 13:21:04,411 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-07 13:21:11,554 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-07 13:21:14,967 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-07 13:21:16,703 ib_insync.wrapper ERROR Error 162, reqId 58: Historical Market Data Service error message:No historical market data for IBDE30/CFD@UKBBO Last 0, contract: Contract(secType='CFD', conId=111987422, symbol='IBDE30', exchange='SMART', currency='EUR', localSymbol='IBDE30', tradingClass='IBDE30')
+2018-05-07 13:21:16,711 ib_insync.ib INFO Disconnecting from 127.0.0.1:4002, 3.28 kB sent in 57 messages, 77.2 kB received in 503 messages, session time 18.2 s.
+2018-05-07 13:21:16,711 root INFO ANSWER connectionClosed {}
+2018-05-07 13:26:27,369 quamash INFO Using Qt Implementation: PyQt5
+2018-05-07 13:26:27,399 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-07 13:26:27,400 ib_insync.client INFO Connected
+2018-05-07 13:26:27,401 ib_insync.client INFO Logged on to server version 140
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-07 13:26:27,449 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ilhmds
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2018-05-07 13:26:27,450 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2018-05-07 13:26:27,450 ib_insync.client INFO API connection ready
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='FUT', conId=289239602, symbol='DAX', lastTradeDateOrContractMonth='20180615', right='0', multiplier='5', primaryExchange='DTB', currency='EUR', localSymbol='FDXM JUN 18', tradingClass='FDXM'), position=0.0, marketPrice=12891.38671875, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-76.6, account='DU946735')
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='FUT', conId=299627959, symbol='DAX', lastTradeDateOrContractMonth='20180921', right='0', multiplier='5', primaryExchange='DTB', currency='EUR', localSymbol='FDXM SEP 18', tradingClass='FDXM'), position=0.0, marketPrice=12875.88671875, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-59.8, account='DU946735')
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.19153, marketValue=221624.58, averageCost=1.2182257, unrealizedPNL=-4965.4, realizedPNL=0.0, account='DU946735')
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CFD', conId=111987422, symbol='IBDE30', right='0', currency='EUR', localSymbol='IBDE30', tradingClass='IBDE30'), position=0.0, marketPrice=12879.8496094, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=38178.36, account='DU946735')
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='FUT', conId=289239602, symbol='DAX', lastTradeDateOrContractMonth='20180615', multiplier='5', currency='EUR', localSymbol='FDXM JUN 18', tradingClass='FDXM'), position=0.0, avgCost=0.0)
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='FUT', conId=299627959, symbol='DAX', lastTradeDateOrContractMonth='20180921', multiplier='5', currency='EUR', localSymbol='FDXM SEP 18', tradingClass='FDXM'), position=0.0, avgCost=0.0)
+2018-05-07 13:26:27,456 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CFD', conId=111987422, symbol='IBDE30', currency='EUR', localSymbol='IBDE30', tradingClass='IBDE30'), position=0.0, avgCost=0.0)
+2018-05-07 13:26:27,497 ib_insync.ib INFO Synchronization complete
+2018-05-07 13:26:30,423 ib_insync.wrapper ERROR Error 200, reqId 29: No security definition has been found for the request, contract: Contract(secType='IND', symbol='INDU', exchange='NYSE', currency='USD')
+2018-05-07 13:26:30,423 ib_insync.ib ERROR Unknown contract: Contract(secType='IND', symbol='INDU', exchange='NYSE', currency='USD')
+2018-05-07 13:26:34,626 ib_insync.ib INFO Disconnecting from 127.0.0.1:4002, 3.28 kB sent in 57 messages, 77.1 kB received in 503 messages, session time 7.26 s.
+2018-05-07 13:26:34,626 root INFO ANSWER connectionClosed {}

@@ -12,5 +12,5 @@ money using automated trading.
 .. |PyVersion| image:: https://img.shields.io/badge/python-3.6+-blue.svg
    :alt:
 
-.. |Status| image:: https://img.shields.io/badge/status-beta-green.svg
+.. |Status| image:: https://img.shields.io/badge/status-planning-lightgrey.svg
    :alt:

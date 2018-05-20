@@ -24,6 +24,9 @@ setup(
     long_description=long_description,
     url='https://github.com/bjrnfrdnnd/trading',
     author='Björn Nadrowski',
+    entry_points={
+        'console_scripts': ['trading-getListOfConIds=trading.scripts.findConIds:findConIds'],
+    },
     license='None',
     author_email='bjrnfrdnnd@gmail.com',
     classifiers=[

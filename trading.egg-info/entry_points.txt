@@ -1,0 +1,3 @@
+[console_scripts]
+trading-getListOfConIds = trading.scripts.findConIds:findConIds
+

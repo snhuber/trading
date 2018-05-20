@@ -1,0 +1,196 @@
+2018-05-19 18:59:44,278 ib_insync.Watchdog start INFO Starting
+2018-05-19 18:59:44,279 quamash <module> INFO Using Qt Implementation: PyQt5
+2018-05-19 18:59:44,324 ib_insync.IBC startAsync INFO Starting
+2018-05-19 18:59:59,327 ib_insync.client connectAsync INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-19 18:59:59,328 ib_insync.client _onSocketConnected INFO Connected
+2018-05-19 18:59:59,355 ib_insync.client _onSocketHasData INFO Logged on to server version 141
+2018-05-19 18:59:59,359 ib_insync.client connectAsync INFO API connection ready
+2018-05-19 18:59:59,407 ib_insync.wrapper updatePortfolio INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17709995, marketValue=218940.59, averageCost=1.2182257, unrealizedPNL=-7649.39, realizedPNL=0.0, account='DU946735')
+2018-05-19 18:59:59,407 ib_insync.wrapper position INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-19 18:59:59,412 ib_insync.ib connectAsync INFO Synchronization complete
+2018-05-19 18:59:59,459 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,459 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,460 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,461 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,462 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,463 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() started
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop datetime
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop close
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() complete
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() started
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop datetime
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,464 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop close
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() complete
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() started
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop datetime
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop close
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() complete
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() started
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop datetime
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop close
+2018-05-19 18:59:59,465 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() complete
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() started
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop datetime
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop close
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() complete
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() started
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop datetime
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop close
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() complete
+2018-05-19 18:59:59,466 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() started
+2018-05-19 18:59:59,467 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop datetime
+2018-05-19 18:59:59,467 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop diffToNextRowInMinutes
+2018-05-19 18:59:59,467 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop close
+2018-05-19 18:59:59,467 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() complete
+2018-05-19 18:59:59,467 sqlalchemy.engine.base.Engine _begin_impl INFO BEGIN (implicit)
+2018-05-19 18:59:59,468 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-19 18:59:59,468 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-19 19:00:02,715 sqlalchemy.engine.base.Engine _rollback_impl INFO ROLLBACK
+2018-05-19 19:00:02,715 sqlalchemy.engine.base.Engine _execute_context INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-19 19:00:02,715 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-19 19:00:02,717 sqlalchemy.engine.base.Engine _begin_impl INFO BEGIN (implicit)
+2018-05-19 19:00:02,717 sqlalchemy.engine.base.Engine _execute_context INFO SELECT count(*) AS count_1 
+FROM (SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable") AS anon_1
+2018-05-19 19:00:02,717 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-19 19:00:02,718 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName", "MarketDataInfoTable".description, "MarketDataInfoTable"."conId", "MarketDataInfoTable".symbol, "MarketDataInfoTable".currency, "MarketDataInfoTable".exchange, "MarketDataInfoTable".category, "MarketDataInfoTable"."secType", "MarketDataInfoTable"."earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-19 19:00:02,718 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-19 19:00:02,720 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-19 19:00:02,720 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-19 19:00:03,340 sqlalchemy.engine.base.Engine _rollback_impl INFO ROLLBACK
+2018-05-19 19:00:03,350 apscheduler.scheduler start INFO Scheduler started
+2018-05-19 19:00:03,350 root runProg INFO Now updating the settings for the request of recent historical bars
+2018-05-19 19:00:03,350 root runProg INFO Now requesting initial recent historical bars
+2018-05-19 19:00:03,350 trading.containerClass requestRecentHistoricalOrderedDictOfBars INFO requesting recent historical data for all qcs. settings: {'durationPandasTimeDelta': Timedelta('0 days 01:00:00'), 'barSizePandasTimeDelta': Timedelta('0 days 00:01:00'), 'timeOutTime': 10, 'maximumBarsLengthFactor': 2}
+2018-05-19 19:00:03,351 trading.containerClass requestRecentHistoricalOrderedDictOfBars INFO requesting recent historical data for contract: EUR.AUD
+2018-05-19 19:00:03,351 trading.containerClass requestRecentHistoricalBars INFO requesting recent historical data for EUR.AUD. settings: {'durationPandasTimeDelta': Timedelta('0 days 01:00:00'), 'barSizePandasTimeDelta': Timedelta('0 days 00:01:00'), 'timeOutTime': 10, 'maximumBarsLengthFactor': 2}
+2018-05-19 19:00:04,907 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-19 19:00:04,907 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:cashhmds, localSymbol: None
+2018-05-19 19:00:05,042 trading.containerClass requestRecentHistoricalOrderedDictOfBars INFO requesting recent historical data for contract: SPX
+2018-05-19 19:00:05,043 trading.containerClass requestRecentHistoricalBars INFO requesting recent historical data for SPX. settings: {'durationPandasTimeDelta': Timedelta('0 days 01:00:00'), 'barSizePandasTimeDelta': Timedelta('0 days 00:01:00'), 'timeOutTime': 10, 'maximumBarsLengthFactor': 2}
+2018-05-19 19:00:05,157 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:usfarm.us
+2018-05-19 19:00:05,157 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:usfarm.us, localSymbol: None
+2018-05-19 19:00:06,513 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-19 19:00:06,514 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:usfarm.us, localSymbol: None
+2018-05-19 19:00:15,052 trading.marketDataIB getHistoricalDataBars WARNING Timeout while requesting historical bars for contract Contract(secType='IND', conId=416904, symbol='SPX', exchange='CBOE', currency='USD', localSymbol='SPX')
+2018-05-19 19:00:15,076 apscheduler.scheduler _real_add_job INFO Added job "id_getHistoricalData_000001" to job store "default"
+2018-05-19 19:00:26,515 trading.containerClass myTimeoutCallback INFO timeout callback 20.001252
+2018-05-19 19:00:26,515 trading.containerClass mySoftTimeoutCallback INFO soft time out watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB connected to 127.0.0.1:4002 clientId=24>, port=4002, clientId='24', appStartupTime=15)
+2018-05-19 19:00:46,726 trading.containerClass myTimeoutCallback INFO timeout callback 20.012443
+2018-05-19 19:00:46,726 trading.containerClass mySoftTimeoutCallback INFO soft time out watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB connected to 127.0.0.1:4002 clientId=24>, port=4002, clientId='24', appStartupTime=15)
+2018-05-19 19:01:00,009 apscheduler.executors.default run_coroutine_job INFO Running job "id_getHistoricalData_000001 (trigger: cron[minute='*', second='0'], next run at: 2018-05-19 19:02:00 CEST)" (scheduled at 2018-05-19 19:01:00+02:00)
+2018-05-19 19:01:00,014 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data: EUR, AUD; is going to be performed because earliestDateTime is given by IB: 2005-09-28 03:30:00
+2018-05-19 19:01:00,015 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-04 13:48:00
+2018-05-19 19:01:00,015 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-05 13:48:00
+2018-05-19 19:01:00,015 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-04 13:48:00; endDT: 2008-02-05 13:41:00; durationString: 85980 S
+2018-05-19 19:01:00,801 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1433; elapsed time: 0:00:00.108640
+2018-05-19 19:01:00,801 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1433; elapsed time: 0:00:00.243371
+2018-05-19 19:01:00,912 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-04 13:48:00; endDT: 2008-02-05 13:41:00; durationString: 85980 S; elapsedTime: 0:00:00.897322; rows: 1433; rowsTotal: 4595337
+2018-05-19 19:01:00,923 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-05 13:41:00
+2018-05-19 19:01:00,923 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-06 13:34:00
+2018-05-19 19:01:00,924 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-05 13:41:00; endDT: 2008-02-06 13:29:00; durationString: 85680 S
+2018-05-19 19:01:01,661 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1428; elapsed time: 0:00:00.133436
+2018-05-19 19:01:01,662 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1428; elapsed time: 0:00:00.226057
+2018-05-19 19:01:01,795 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-05 13:41:00; endDT: 2008-02-06 13:29:00; durationString: 85680 S; elapsedTime: 0:00:00.871192; rows: 1428; rowsTotal: 4595337
+2018-05-19 19:01:01,807 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-06 13:29:00
+2018-05-19 19:01:01,807 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-07 13:17:00
+2018-05-19 19:01:01,808 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-06 13:29:00; endDT: 2008-02-07 13:25:00; durationString: 86160 S
+2018-05-19 19:01:02,518 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1436; elapsed time: 0:00:00.105683
+2018-05-19 19:01:02,518 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1436; elapsed time: 0:00:00.197002
+2018-05-19 19:01:02,619 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-06 13:29:00; endDT: 2008-02-07 13:25:00; durationString: 86160 S; elapsedTime: 0:00:00.810780; rows: 1436; rowsTotal: 4595337
+2018-05-19 19:01:02,629 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-07 13:25:00
+2018-05-19 19:01:02,629 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-08 13:21:00
+2018-05-19 19:01:02,630 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-07 13:25:00; endDT: 2008-02-08 13:01:00; durationString: 84960 S
+2018-05-19 19:01:03,425 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1416; elapsed time: 0:00:00.140526
+2018-05-19 19:01:03,425 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1416; elapsed time: 0:00:00.293161
+2018-05-19 19:01:03,774 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-07 13:25:00; endDT: 2008-02-08 13:01:00; durationString: 84960 S; elapsedTime: 0:00:01.144310; rows: 1416; rowsTotal: 4595337
+2018-05-19 19:01:03,786 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-08 13:01:00
+2018-05-19 19:01:03,786 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-09 12:37:00
+2018-05-19 19:01:03,786 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-08 13:01:00; endDT: 2008-02-09 13:01:00; durationString: 86400 S
+2018-05-19 19:01:04,726 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1440; elapsed time: 0:00:00.189997
+2018-05-19 19:01:04,726 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1440; elapsed time: 0:00:00.424012
+2018-05-19 19:01:05,100 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-08 13:01:00; endDT: 2008-02-09 13:01:00; durationString: 86400 S; elapsedTime: 0:00:01.313907; rows: 1440; rowsTotal: 4595337
+2018-05-19 19:01:05,112 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-09 13:01:00
+2018-05-19 19:01:05,112 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-10 13:01:00
+2018-05-19 19:01:05,112 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-09 13:01:00; endDT: 2008-02-10 12:59:00; durationString: 86280 S
+2018-05-19 19:01:05,786 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.106087
+2018-05-19 19:01:05,786 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.200696
+2018-05-19 19:01:05,916 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-09 13:01:00; endDT: 2008-02-10 12:59:00; durationString: 86280 S; elapsedTime: 0:00:00.804037; rows: 1438; rowsTotal: 4595337
+2018-05-19 19:01:05,928 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-10 12:59:00
+2018-05-19 19:01:05,929 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-11 12:57:00
+2018-05-19 19:01:05,929 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-10 12:59:00; endDT: 2008-02-11 12:37:00; durationString: 85080 S
+2018-05-19 19:01:06,674 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1418; elapsed time: 0:00:00.131094
+2018-05-19 19:01:06,675 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1418; elapsed time: 0:00:00.230749
+2018-05-19 19:01:06,770 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, AUD; startDT: 2008-02-10 12:59:00; endDT: 2008-02-11 12:37:00; durationString: 85080 S; elapsedTime: 0:00:00.840545; rows: 1418; rowsTotal: 4595337
+2018-05-19 19:01:06,780 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2008-02-11 12:37:00
+2018-05-19 19:01:06,780 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2008-02-12 12:15:00
+2018-05-19 19:01:06,781 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, AUD; startDT: 2008-02-11 12:37:00; endDT: 2008-02-12 12:34:00; durationString: 86220 S
+2018-05-19 19:01:10,194 apscheduler.executors.default run_coroutine_job ERROR Job "id_getHistoricalData_000001 (trigger: cron[minute='*', second='0'], next run at: 2018-05-19 19:02:00 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/site-packages/apscheduler/executors/base_py3.py", line 29, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 600, in asyncioJobGetHistoricalData
+    timeOutTime=timeOutTimeHistoricalBars)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 67, in getHistoricalDataBars
+    bars = ib.run(asyncio.wait_for(req, timeOutTime))
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/ib.py", line 251, in run
+    result = util.syncAwait(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 245, in syncAwait
+    result = _syncAwaitAsyncio(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 259, in _syncAwaitAsyncio
+    loop._run_once()
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/base_events.py", line 1396, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/selectors.py", line 445, in select
+    fd_event_list = self._epoll.poll(timeout, max_ev)
+KeyboardInterrupt
+2018-05-19 19:01:10,195 asyncio default_exception_handler ERROR Exception in callback Task._step()
+handle: <Handle Task._step()>
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/tasks.py", line 245, in _step
+    self.__class__._current_tasks.pop(self._loop)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+2018-05-19 19:01:10,406 ib_insync.ib disconnect INFO BN added disconnect in ib
+2018-05-19 19:01:10,407 ib_insync.ib disconnect INFO Disconnecting from 127.0.0.1:4002, 2.39 kB sent in 46 messages, 667 kB received in 423 messages, session time 86.1 s.
+2018-05-19 19:01:10,407 root logAnswer INFO ANSWER connectionClosed {}

@@ -1,0 +1,553 @@
+2018-05-17 21:30:35,186 ib_insync.Watchdog start INFO Starting
+2018-05-17 21:30:35,187 quamash <module> INFO Using Qt Implementation: PyQt5
+2018-05-17 21:30:35,242 ib_insync.IBC startAsync INFO Starting
+2018-05-17 21:30:50,255 ib_insync.client connectAsync INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 21:30:50,256 ib_insync.client _onSocketConnected INFO Connected
+2018-05-17 21:30:50,287 ib_insync.client _onSocketHasData INFO Logged on to server version 141
+2018-05-17 21:30:50,331 ib_insync.client connectAsync INFO API connection ready
+2018-05-17 21:30:50,377 ib_insync.wrapper updatePortfolio INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17973005, marketValue=219429.79, averageCost=1.2182257, unrealizedPNL=-7160.19, realizedPNL=0.0, account='DU946735')
+2018-05-17 21:30:50,377 ib_insync.wrapper position INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 21:30:50,380 ib_insync.ib connectAsync INFO Synchronization complete
+2018-05-17 21:30:50,418 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_AUD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,419 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,420 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() started
+2018-05-17 21:30:50,421 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop datetime
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop close
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() started
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop datetime
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop close
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() complete
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() started
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop datetime
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,422 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop close
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() complete
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() started
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop datetime
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop close
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() complete
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() started
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop datetime
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop close
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() complete
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() started
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop datetime
+2018-05-17 21:30:50,423 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop close
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() complete
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() started
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop datetime
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop diffToNextRowInMinutes
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop close
+2018-05-17 21:30:50,424 sqlalchemy.orm.mapper.Mapper _log INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() complete
+2018-05-17 21:30:50,424 sqlalchemy.engine.base.Engine _begin_impl INFO BEGIN (implicit)
+2018-05-17 21:30:50,425 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 21:30:50,425 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-17 21:30:53,695 sqlalchemy.engine.base.Engine _rollback_impl INFO ROLLBACK
+2018-05-17 21:30:53,695 sqlalchemy.engine.base.Engine _execute_context INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-17 21:30:53,695 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-17 21:30:53,697 sqlalchemy.engine.base.Engine _begin_impl INFO BEGIN (implicit)
+2018-05-17 21:30:53,698 sqlalchemy.engine.base.Engine _execute_context INFO SELECT count(*) AS count_1 
+FROM (SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable") AS anon_1
+2018-05-17 21:30:53,698 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-17 21:30:53,699 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName", "MarketDataInfoTable".description, "MarketDataInfoTable"."conId", "MarketDataInfoTable".symbol, "MarketDataInfoTable".currency, "MarketDataInfoTable".exchange, "MarketDataInfoTable".category, "MarketDataInfoTable"."secType", "MarketDataInfoTable"."earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 21:30:53,699 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-17 21:30:53,702 sqlalchemy.engine.base.Engine _execute_context INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 21:30:53,702 sqlalchemy.engine.base.Engine _execute_context INFO ()
+2018-05-17 21:30:54,328 sqlalchemy.engine.base.Engine _rollback_impl INFO ROLLBACK
+2018-05-17 21:30:55,912 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 21:30:56,186 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:cashfarm
+2018-05-17 21:30:56,704 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:cashfarm
+2018-05-17 21:30:57,051 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 21:30:58,923 ib_insync.wrapper position INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 21:30:59,374 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 21:30:59,691 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:eufarm
+2018-05-17 21:31:00,435 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 21:31:01,220 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:hfarm
+2018-05-17 21:31:04,338 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-17 21:31:07,352 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-17 21:31:09,172 ib_insync.wrapper error ERROR Error 162, reqId 41: Historical Market Data Service error message:HMDS query returned no data: HSC50@HKFE Trades, contract: Contract(secType='IND', conId=74084607, symbol='HSC50', exchange='HKFE', currency='HKD', localSymbol='HSC50')
+2018-05-17 21:31:09,676 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:usfuture.us
+2018-05-17 21:31:10,141 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 21:31:11,149 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 21:31:11,748 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:jfarm
+2018-05-17 21:31:14,062 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 21:31:14,734 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 21:31:14,734 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 21:31:15,839 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:usfarm.us
+2018-05-17 21:31:17,255 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 21:31:18,071 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.081702
+2018-05-17 21:31:18,071 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.194161
+2018-05-17 21:31:18,071 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.AUD, nBars: 1337, diffDateTime: 17.794633, close: 1.57113, last: 2018-05-17 19:25:00
+2018-05-17 21:31:18,299 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.053729
+2018-05-17 21:31:18,299 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.145592
+2018-05-17 21:31:18,299 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CAD, nBars: 1337, diffDateTime: 18.072632, close: 1.51031, last: 2018-05-17 19:25:00
+2018-05-17 21:31:18,562 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.087753
+2018-05-17 21:31:18,562 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.180580
+2018-05-17 21:31:18,562 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CHF, nBars: 1337, diffDateTime: 18.300529, close: 1.181415, last: 2018-05-17 19:25:00
+2018-05-17 21:31:18,799 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.053869
+2018-05-17 21:31:18,799 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.147239
+2018-05-17 21:31:18,799 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CNH, nBars: 1337, diffDateTime: 18.564013, close: 7.4998, last: 2018-05-17 19:25:00
+2018-05-17 21:31:19,063 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.087632
+2018-05-17 21:31:19,063 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.179146
+2018-05-17 21:31:19,063 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.GBP, nBars: 1337, diffDateTime: 18.80076, close: 0.87317, last: 2018-05-17 19:25:00
+2018-05-17 21:31:19,349 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.075660
+2018-05-17 21:31:19,349 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.196736
+2018-05-17 21:31:19,349 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.JPY, nBars: 1337, diffDateTime: 19.065064, close: 130.689, last: 2018-05-17 19:25:00
+2018-05-17 21:31:19,556 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_RUB_IDEALPRO; nRows: 1125; elapsed time: 0:00:00.047401
+2018-05-17 21:31:19,556 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_RUB_IDEALPRO; nRows: 1125; elapsed time: 0:00:00.130162
+2018-05-17 21:31:19,556 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.RUB, nBars: 1125, diffDateTime: 12739.351246, close: 73.08313, last: 2018-05-17 15:59:00
+2018-05-17 21:31:19,817 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.081238
+2018-05-17 21:31:19,817 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1336; elapsed time: 0:00:00.169575
+2018-05-17 21:31:19,817 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.USD, nBars: 1337, diffDateTime: 19.557561, close: 1.179635, last: 2018-05-17 19:25:00
+2018-05-17 21:31:19,968 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CFD_IBDE30_EUR_SMART; nRows: 751; elapsed time: 0:00:00.033146
+2018-05-17 21:31:19,968 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CFD_IBDE30_EUR_SMART; nRows: 751; elapsed time: 0:00:00.102582
+2018-05-17 21:31:19,968 trading.containerClass myBarUpdateCallback INFO localSymbol: IBDE30, nBars: 752, diffDateTime: 19.818612, close: 13084.93, last: 2018-05-17 19:25:00
+2018-05-17 21:31:20,113 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_DAX_EUR_DTB; nRows: 518; elapsed time: 0:00:00.058014
+2018-05-17 21:31:20,113 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_DAX_EUR_DTB; nRows: 518; elapsed time: 0:00:00.112559
+2018-05-17 21:31:20,113 trading.containerClass myBarUpdateCallback INFO localSymbol: DAX, nBars: 518, diffDateTime: 13939.969727, close: 13114.49, last: 2018-05-17 15:39:00
+2018-05-17 21:31:20,219 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_INDU_USD_CME; nRows: 431; elapsed time: 0:00:00.024869
+2018-05-17 21:31:20,219 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_INDU_USD_CME; nRows: 431; elapsed time: 0:00:00.076060
+2018-05-17 21:31:20,220 trading.containerClass myBarUpdateCallback INFO localSymbol: DJI, nBars: 432, diffDateTime: 20.114919, close: 24679.4, last: 2018-05-17 19:25:00
+2018-05-17 21:31:20,322 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_N225_JPY_OSE.JPN; nRows: 360; elapsed time: 0:00:00.025809
+2018-05-17 21:31:20,322 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_N225_JPY_OSE.JPN; nRows: 360; elapsed time: 0:00:00.075987
+2018-05-17 21:31:20,322 trading.containerClass myBarUpdateCallback INFO localSymbol: N225, nBars: 360, diffDateTime: 48740.221251, close: 22848.57, last: 2018-05-17 05:59:00
+2018-05-17 21:31:20,423 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_SPX_USD_CBOE; nRows: 361; elapsed time: 0:00:00.028252
+2018-05-17 21:31:20,423 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_SPX_USD_CBOE; nRows: 361; elapsed time: 0:00:00.077125
+2018-05-17 21:31:20,423 trading.containerClass myBarUpdateCallback INFO localSymbol: SPX, nBars: 362, diffDateTime: 20.323424, close: 2717.22, last: 2018-05-17 19:25:00
+2018-05-17 21:31:21,008 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data: EUR, GBP; is going to be performed because earliestDateTime is given by IB; time: 2018-05-17 21:31:21.007324
+2018-05-17 21:31:21,009 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-21 05:42:00+00:00
+2018-05-17 21:31:21,009 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-22 05:42:00+00:00
+2018-05-17 21:31:21,009 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-21 05:42:00+00:00; endDT: 2006-09-22 05:37:00+00:00; durationString: 86100 S; time: 2018-05-17 21:31:21.009246
+2018-05-17 21:31:21,772 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1435; elapsed time: 0:00:00.109269
+2018-05-17 21:31:21,772 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1435; elapsed time: 0:00:00.215648
+2018-05-17 21:31:21,876 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-21 05:42:00+00:00; endDT: 2006-09-22 05:37:00+00:00; durationString: 86100 S; time: 2018-05-17 21:31:21.876702; elapsedTime: 0:00:00.867456; rows: 1435; rowsTotal: 4745799
+2018-05-17 21:31:21,887 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-22 05:37:00+00:00
+2018-05-17 21:31:21,888 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-23 05:32:00+00:00
+2018-05-17 21:31:21,888 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-22 05:37:00+00:00; endDT: 2006-09-23 05:24:00+00:00; durationString: 85620 S; time: 2018-05-17 21:31:21.888160
+2018-05-17 21:31:22,602 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1427; elapsed time: 0:00:00.130608
+2018-05-17 21:31:22,603 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1427; elapsed time: 0:00:00.230406
+2018-05-17 21:31:22,701 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-22 05:37:00+00:00; endDT: 2006-09-23 05:24:00+00:00; durationString: 85620 S; time: 2018-05-17 21:31:22.701917; elapsedTime: 0:00:00.813757; rows: 1427; rowsTotal: 4745799
+2018-05-17 21:31:22,712 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-23 05:24:00+00:00
+2018-05-17 21:31:22,712 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-24 05:11:00+00:00
+2018-05-17 21:31:22,712 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-23 05:24:00+00:00; endDT: 2006-09-24 05:20:00+00:00; durationString: 86160 S; time: 2018-05-17 21:31:22.712932
+2018-05-17 21:31:23,430 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1436; elapsed time: 0:00:00.108577
+2018-05-17 21:31:23,430 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1436; elapsed time: 0:00:00.213863
+2018-05-17 21:31:23,524 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-23 05:24:00+00:00; endDT: 2006-09-24 05:20:00+00:00; durationString: 86160 S; time: 2018-05-17 21:31:23.524202; elapsedTime: 0:00:00.811270; rows: 1436; rowsTotal: 4745799
+2018-05-17 21:31:23,535 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-24 05:20:00+00:00
+2018-05-17 21:31:23,535 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-25 05:16:00+00:00
+2018-05-17 21:31:23,535 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-24 05:20:00+00:00; endDT: 2006-09-25 05:07:00+00:00; durationString: 85620 S; time: 2018-05-17 21:31:23.535910
+2018-05-17 21:31:24,271 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1427; elapsed time: 0:00:00.116080
+2018-05-17 21:31:24,272 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1427; elapsed time: 0:00:00.222096
+2018-05-17 21:31:24,363 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-24 05:20:00+00:00; endDT: 2006-09-25 05:07:00+00:00; durationString: 85620 S; time: 2018-05-17 21:31:24.362955; elapsedTime: 0:00:00.827045; rows: 1427; rowsTotal: 4745799
+2018-05-17 21:31:24,373 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-25 05:07:00+00:00
+2018-05-17 21:31:24,374 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-26 04:54:00+00:00
+2018-05-17 21:31:24,374 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-25 05:07:00+00:00; endDT: 2006-09-26 04:48:00+00:00; durationString: 85260 S; time: 2018-05-17 21:31:24.374123
+2018-05-17 21:31:25,131 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.139233
+2018-05-17 21:31:25,131 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.243216
+2018-05-17 21:31:25,244 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-25 05:07:00+00:00; endDT: 2006-09-26 04:48:00+00:00; durationString: 85260 S; time: 2018-05-17 21:31:25.244630; elapsedTime: 0:00:00.870507; rows: 1421; rowsTotal: 4745799
+2018-05-17 21:31:25,260 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-26 04:48:00+00:00
+2018-05-17 21:31:25,261 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-27 04:29:00+00:00
+2018-05-17 21:31:25,261 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-26 04:48:00+00:00; endDT: 2006-09-27 04:25:00+00:00; durationString: 85020 S; time: 2018-05-17 21:31:25.261127
+2018-05-17 21:31:25,986 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1417; elapsed time: 0:00:00.102223
+2018-05-17 21:31:25,987 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1417; elapsed time: 0:00:00.215183
+2018-05-17 21:31:26,093 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-26 04:48:00+00:00; endDT: 2006-09-27 04:25:00+00:00; durationString: 85020 S; time: 2018-05-17 21:31:26.093624; elapsedTime: 0:00:00.832497; rows: 1417; rowsTotal: 4745799
+2018-05-17 21:31:26,104 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-27 04:25:00+00:00
+2018-05-17 21:31:26,104 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-28 04:02:00+00:00
+2018-05-17 21:31:26,104 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-27 04:25:00+00:00; endDT: 2006-09-28 04:19:00+00:00; durationString: 86040 S; time: 2018-05-17 21:31:26.104822
+2018-05-17 21:31:26,449 ib_insync.wrapper updatePortfolio INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17962005, marketValue=219409.33, averageCost=1.2182257, unrealizedPNL=-7180.65, realizedPNL=0.0, account='DU946735')
+2018-05-17 21:31:26,830 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1434; elapsed time: 0:00:00.116196
+2018-05-17 21:31:26,830 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1434; elapsed time: 0:00:00.217890
+2018-05-17 21:31:26,928 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-27 04:25:00+00:00; endDT: 2006-09-28 04:19:00+00:00; durationString: 86040 S; time: 2018-05-17 21:31:26.928370; elapsedTime: 0:00:00.823548; rows: 1434; rowsTotal: 4745799
+2018-05-17 21:31:26,939 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-28 04:19:00+00:00
+2018-05-17 21:31:26,939 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-29 04:13:00+00:00
+2018-05-17 21:31:26,939 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-28 04:19:00+00:00; endDT: 2006-09-29 04:04:00+00:00; durationString: 85500 S; time: 2018-05-17 21:31:26.939721
+2018-05-17 21:31:27,669 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.106673
+2018-05-17 21:31:27,669 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.230872
+2018-05-17 21:31:27,768 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-28 04:19:00+00:00; endDT: 2006-09-29 04:04:00+00:00; durationString: 85500 S; time: 2018-05-17 21:31:27.768443; elapsedTime: 0:00:00.828722; rows: 1425; rowsTotal: 4745799
+2018-05-17 21:31:27,779 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-29 04:04:00+00:00
+2018-05-17 21:31:27,779 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-09-30 03:49:00+00:00
+2018-05-17 21:31:27,779 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-29 04:04:00+00:00; endDT: 2006-09-30 03:56:00+00:00; durationString: 85920 S; time: 2018-05-17 21:31:27.779916
+2018-05-17 21:31:28,485 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1432; elapsed time: 0:00:00.113810
+2018-05-17 21:31:28,485 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1432; elapsed time: 0:00:00.213906
+2018-05-17 21:31:28,588 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-29 04:04:00+00:00; endDT: 2006-09-30 03:56:00+00:00; durationString: 85920 S; time: 2018-05-17 21:31:28.588456; elapsedTime: 0:00:00.808540; rows: 1432; rowsTotal: 4745799
+2018-05-17 21:31:28,599 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-09-30 03:56:00+00:00
+2018-05-17 21:31:28,599 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-01 03:48:00+00:00
+2018-05-17 21:31:28,599 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-09-30 03:56:00+00:00; endDT: 2006-10-01 03:34:00+00:00; durationString: 85080 S; time: 2018-05-17 21:31:28.599563
+2018-05-17 21:31:29,325 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1418; elapsed time: 0:00:00.115678
+2018-05-17 21:31:29,325 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1418; elapsed time: 0:00:00.210396
+2018-05-17 21:31:29,416 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-09-30 03:56:00+00:00; endDT: 2006-10-01 03:34:00+00:00; durationString: 85080 S; time: 2018-05-17 21:31:29.416025; elapsedTime: 0:00:00.816462; rows: 1418; rowsTotal: 4745799
+2018-05-17 21:31:29,427 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-01 03:34:00+00:00
+2018-05-17 21:31:29,427 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-02 03:12:00+00:00
+2018-05-17 21:31:29,427 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-01 03:34:00+00:00; endDT: 2006-10-02 03:11:00+00:00; durationString: 85020 S; time: 2018-05-17 21:31:29.427466
+2018-05-17 21:31:30,159 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1417; elapsed time: 0:00:00.107357
+2018-05-17 21:31:30,159 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1417; elapsed time: 0:00:00.236047
+2018-05-17 21:31:30,266 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-01 03:34:00+00:00; endDT: 2006-10-02 03:11:00+00:00; durationString: 85020 S; time: 2018-05-17 21:31:30.266493; elapsedTime: 0:00:00.839027; rows: 1417; rowsTotal: 4745799
+2018-05-17 21:31:30,277 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-02 03:11:00+00:00
+2018-05-17 21:31:30,277 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-03 02:48:00+00:00
+2018-05-17 21:31:30,278 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-02 03:11:00+00:00; endDT: 2006-10-03 02:57:00+00:00; durationString: 85560 S; time: 2018-05-17 21:31:30.278037
+2018-05-17 21:31:34,522 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1426; elapsed time: 0:00:00.105004
+2018-05-17 21:31:34,522 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1426; elapsed time: 0:00:00.212508
+2018-05-17 21:31:34,613 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-02 03:11:00+00:00; endDT: 2006-10-03 02:57:00+00:00; durationString: 85560 S; time: 2018-05-17 21:31:34.613796; elapsedTime: 0:00:04.335759; rows: 1426; rowsTotal: 4745799
+2018-05-17 21:31:34,624 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-03 02:57:00+00:00
+2018-05-17 21:31:34,624 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-04 02:43:00+00:00
+2018-05-17 21:31:34,624 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-03 02:57:00+00:00; endDT: 2006-10-04 02:33:00+00:00; durationString: 84960 S; time: 2018-05-17 21:31:34.624926
+2018-05-17 21:31:56,163 trading.containerClass myTimeoutCallback INFO timeout callback 20.001721
+2018-05-17 21:31:56,163 trading.containerClass mySoftTimeoutCallback INFO soft time out watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB connected to 127.0.0.1:4002 clientId=24>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:32:00,164 ib_insync.Watchdog watchAsync ERROR Hard timeout
+2018-05-17 21:32:00,164 trading.containerClass myHardTimeoutCallback INFO hard time out watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB connected to 127.0.0.1:4002 clientId=24>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:32:00,165 ib_insync.Watchdog watchAsync ERROR BN added Hard timeout emitted, now disconnecting
+2018-05-17 21:32:05,914 ib_insync.wrapper error INFO Warning 2105, reqId -1: HMDS data farm connection is broken:cashhmds
+2018-05-17 21:32:05,914 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2105, errorString: HMDS data farm connection is broken:cashhmds, localSymbol: None
+2018-05-17 21:32:05,914 ib_insync.wrapper error ERROR Error 10182, reqId 33: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,914 trading.containerClass myErrorCallback INFO reqId: 33, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,916 ib_insync.wrapper error ERROR Error 10182, reqId 36: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,916 trading.containerClass myErrorCallback INFO reqId: 36, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,917 ib_insync.wrapper error ERROR Error 10182, reqId 34: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,917 trading.containerClass myErrorCallback INFO reqId: 34, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,918 ib_insync.wrapper error ERROR Error 10182, reqId 37: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,918 trading.containerClass myErrorCallback INFO reqId: 37, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,918 ib_insync.wrapper error ERROR Error 10182, reqId 38: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,918 trading.containerClass myErrorCallback INFO reqId: 38, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,919 ib_insync.wrapper error INFO Warning 165, reqId 57: Historical Market Data Service query message:HMDS server disconnect occurred.  Attempting reconnection..., contract: Contract(secType='CASH', conId=12087807, symbol='EUR', exchange='IDEALPRO', currency='GBP', localSymbol='EUR.GBP', tradingClass='EUR.GBP')
+2018-05-17 21:32:05,919 trading.containerClass myErrorCallback INFO reqId: 57, errorCode: 165, errorString: Historical Market Data Service query message:HMDS server disconnect occurred.  Attempting reconnection..., localSymbol: EUR.GBP
+2018-05-17 21:32:05,919 ib_insync.wrapper error ERROR Error 10182, reqId 32: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,919 trading.containerClass myErrorCallback INFO reqId: 32, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,919 ib_insync.wrapper error ERROR Error 10182, reqId 35: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,919 trading.containerClass myErrorCallback INFO reqId: 35, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,920 ib_insync.wrapper error ERROR Error 10182, reqId 31: Failed to request live updates (disconnected)
+2018-05-17 21:32:05,920 trading.containerClass myErrorCallback INFO reqId: 31, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:05,921 ib_insync.wrapper error INFO Warning 165, reqId 57: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., contract: Contract(secType='CASH', conId=12087807, symbol='EUR', exchange='IDEALPRO', currency='GBP', localSymbol='EUR.GBP', tradingClass='EUR.GBP')
+2018-05-17 21:32:05,921 trading.containerClass myErrorCallback INFO reqId: 57, errorCode: 165, errorString: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., localSymbol: EUR.GBP
+2018-05-17 21:32:07,040 ib_insync.wrapper error INFO Warning 2103, reqId -1: Market data farm connection is broken:cashfarm
+2018-05-17 21:32:07,040 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2103, errorString: Market data farm connection is broken:cashfarm, localSymbol: None
+2018-05-17 21:32:09,377 ib_insync.wrapper error INFO Warning 2105, reqId -1: HMDS data farm connection is broken:euhmds
+2018-05-17 21:32:09,378 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2105, errorString: HMDS data farm connection is broken:euhmds, localSymbol: None
+2018-05-17 21:32:09,378 ib_insync.wrapper error ERROR Error 10182, reqId 39: Failed to request live updates (disconnected)
+2018-05-17 21:32:09,378 trading.containerClass myErrorCallback INFO reqId: 39, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:09,378 ib_insync.wrapper error ERROR Error 10182, reqId 40: Failed to request live updates (disconnected)
+2018-05-17 21:32:09,379 trading.containerClass myErrorCallback INFO reqId: 40, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:10,438 ib_insync.wrapper error INFO Warning 2103, reqId -1: Market data farm connection is broken:eufarm
+2018-05-17 21:32:10,438 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2103, errorString: Market data farm connection is broken:eufarm, localSymbol: None
+2018-05-17 21:32:12,061 ib_insync.wrapper error INFO Warning 165, reqId 57: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., contract: Contract(secType='CASH', conId=12087807, symbol='EUR', exchange='IDEALPRO', currency='GBP', localSymbol='EUR.GBP', tradingClass='EUR.GBP')
+2018-05-17 21:32:12,061 trading.containerClass myErrorCallback INFO reqId: 57, errorCode: 165, errorString: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., localSymbol: EUR.GBP
+2018-05-17 21:32:17,354 ib_insync.wrapper error INFO Warning 2105, reqId -1: HMDS data farm connection is broken:hkhmds
+2018-05-17 21:32:17,354 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2105, errorString: HMDS data farm connection is broken:hkhmds, localSymbol: None
+2018-05-17 21:32:17,354 ib_insync.wrapper error ERROR Error 10182, reqId 43: Failed to request live updates (disconnected)
+2018-05-17 21:32:17,354 trading.containerClass myErrorCallback INFO reqId: 43, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:17,356 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarm
+2018-05-17 21:32:17,356 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2108, errorString: Market data farm connection is inactive but should be available upon demand.eufarm, localSymbol: None
+2018-05-17 21:32:17,356 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.cashfarm
+2018-05-17 21:32:17,356 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2108, errorString: Market data farm connection is inactive but should be available upon demand.cashfarm, localSymbol: None
+2018-05-17 21:32:20,146 ib_insync.wrapper error INFO Warning 165, reqId 57: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., contract: Contract(secType='CASH', conId=12087807, symbol='EUR', exchange='IDEALPRO', currency='GBP', localSymbol='EUR.GBP', tradingClass='EUR.GBP')
+2018-05-17 21:32:20,146 trading.containerClass myErrorCallback INFO reqId: 57, errorCode: 165, errorString: Historical Market Data Service query message:HMDS connection attempt failed.  Connection will be re-attempted..., localSymbol: EUR.GBP
+2018-05-17 21:32:20,148 ib_insync.wrapper error INFO Warning 2103, reqId -1: Market data farm connection is broken:usfuture.us
+2018-05-17 21:32:20,148 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2103, errorString: Market data farm connection is broken:usfuture.us, localSymbol: None
+2018-05-17 21:32:21,151 ib_insync.wrapper error INFO Warning 2105, reqId -1: HMDS data farm connection is broken:ushmds.us
+2018-05-17 21:32:21,151 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2105, errorString: HMDS data farm connection is broken:ushmds.us, localSymbol: None
+2018-05-17 21:32:21,151 ib_insync.wrapper error ERROR Error 10182, reqId 44: Failed to request live updates (disconnected)
+2018-05-17 21:32:21,151 trading.containerClass myErrorCallback INFO reqId: 44, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:21,152 ib_insync.wrapper error ERROR Error 10182, reqId 42: Failed to request live updates (disconnected)
+2018-05-17 21:32:21,152 trading.containerClass myErrorCallback INFO reqId: 42, errorCode: 10182, errorString: Failed to request live updates (disconnected), localSymbol: None
+2018-05-17 21:32:21,152 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usfuture.us
+2018-05-17 21:32:21,152 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2108, errorString: Market data farm connection is inactive but should be available upon demand.usfuture.us, localSymbol: None
+2018-05-17 21:32:24,065 ib_insync.wrapper error INFO Warning 2103, reqId -1: Market data farm connection is broken:jfarm
+2018-05-17 21:32:24,065 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2103, errorString: Market data farm connection is broken:jfarm, localSymbol: None
+2018-05-17 21:32:27,257 ib_insync.wrapper error INFO Warning 2103, reqId -1: Market data farm connection is broken:usfarm.us
+2018-05-17 21:32:27,257 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2103, errorString: Market data farm connection is broken:usfarm.us, localSymbol: None
+2018-05-17 21:32:33,310 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 21:32:33,310 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:usfarm.us, localSymbol: None
+2018-05-17 21:32:33,846 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-17 21:32:33,846 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:hkhmds, localSymbol: None
+2018-05-17 21:32:33,846 trading.containerClass myErrorCallback INFO restarting watchdog
+2018-05-17 21:32:33,846 ib_insync.ib disconnect INFO BN added disconnect in ib
+2018-05-17 21:32:33,846 ib_insync.ib disconnect INFO Disconnecting from 127.0.0.1:4002, 3.95 kB sent in 62 messages, 1.88 MB received in 1229 messages, session time 119 s.
+2018-05-17 21:32:33,846 root logAnswer INFO ANSWER connectionClosed {}
+2018-05-17 21:32:35,847 ib_insync.wrapper handleEvent ERROR Event errorEvent((-1, 2106, 'HMDS data farm connection is OK:hkhmds', None))
+Traceback (most recent call last):
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/wrapper.py", line 143, in handleEvent
+    event.emit(*args)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/event.py", line 76, in emit
+    func(obj, *args, **kwargs)
+  File "/home/bn/PycharmProjects/trading/trading/containerClass.py", line 269, in myErrorCallback
+    ibIsConnected = self.watchdogApp.ib.isConnectedd()
+AttributeError: 'IB' object has no attribute 'isConnectedd'
+2018-05-17 21:32:35,847 ib_insync.client _onSocketDisconnected INFO Disconnected
+2018-05-17 21:32:35,848 ib_insync.Watchdog flush ERROR BN added flush
+2018-05-17 21:32:35,848 trading.containerClass myStoppingCallback INFO stopping watchdog callback: Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB not connected>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:32:35,848 root myStoppingCallback INFO scheduler: removing job id_getHistoricalData_000001 (trigger: cron[minute='*', second='*/3'], next run at: 2018-05-17 21:32:36 CEST)
+2018-05-17 21:32:35,848 ib_insync.Watchdog stop INFO Stopping
+2018-05-17 21:32:35,848 ib_insync.ib disconnect INFO BN added disconnect in ib
+2018-05-17 21:32:35,848 ib_insync.IBC terminateAsync INFO Terminating
+2018-05-17 21:32:36,226 trading.containerClass myStoppedCallback INFO stopped watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB not connected>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:32:36,226 ib_insync.Watchdog scheduleRestart ERROR BN added schedule restart
+2018-05-17 21:32:36,226 ib_insync.Watchdog scheduleRestart INFO Schedule restart in 2s
+2018-05-17 21:32:38,227 trading.containerClass myStartingCallback INFO starting watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB not connected>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:32:38,227 ib_insync.Watchdog start INFO Starting
+2018-05-17 21:32:38,227 ib_insync.IBC startAsync INFO Starting
+2018-05-17 21:32:53,239 ib_insync.client connectAsync INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 21:32:53,240 ib_insync.client _onSocketConnected INFO Connected
+2018-05-17 21:32:53,265 ib_insync.client _onSocketHasData INFO Logged on to server version 141
+2018-05-17 21:32:53,311 ib_insync.client connectAsync INFO API connection ready
+2018-05-17 21:32:53,361 ib_insync.wrapper updatePortfolio INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17962005, marketValue=219409.33, averageCost=1.2182257, unrealizedPNL=-7180.65, realizedPNL=0.0, account='DU946735')
+2018-05-17 21:32:53,361 ib_insync.wrapper position INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 21:32:53,364 ib_insync.ib connectAsync INFO Synchronization complete
+2018-05-17 21:32:53,364 trading.containerClass myConnectedCallback INFO connected callback
+2018-05-17 21:32:55,538 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 21:32:55,538 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:cashhmds, localSymbol: None
+2018-05-17 21:32:55,739 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:cashfarm
+2018-05-17 21:32:55,739 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:cashfarm, localSymbol: None
+2018-05-17 21:32:56,264 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:cashfarm
+2018-05-17 21:32:56,265 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:cashfarm, localSymbol: None
+2018-05-17 21:32:56,693 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.051232
+2018-05-17 21:32:56,693 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.155845
+2018-05-17 21:32:56,694 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 21:32:56,694 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:cashfarm, localSymbol: None
+2018-05-17 21:32:57,236 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.104268
+2018-05-17 21:32:57,236 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.274999
+2018-05-17 21:32:57,535 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.067437
+2018-05-17 21:32:57,535 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.171993
+2018-05-17 21:32:58,708 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.095592
+2018-05-17 21:32:58,708 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.284716
+2018-05-17 21:32:59,115 ib_insync.wrapper position INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 21:32:59,655 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.090796
+2018-05-17 21:32:59,655 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1337; elapsed time: 0:00:00.299035
+2018-05-17 21:32:59,823 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 21:32:59,823 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:euhmds, localSymbol: None
+2018-05-17 21:32:59,849 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:eufarm
+2018-05-17 21:32:59,850 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:eufarm, localSymbol: None
+2018-05-17 21:33:00,349 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:eufarm
+2018-05-17 21:33:00,349 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:eufarm, localSymbol: None
+2018-05-17 21:33:00,908 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.082445
+2018-05-17 21:33:00,908 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_JPY_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.179887
+2018-05-17 21:33:00,908 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.JPY, nBars: 1339, diffDateTime: 0.64521, close: 130.683, last: 2018-05-17 19:31:00
+2018-05-17 21:33:01,175 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.078380
+2018-05-17 21:33:01,175 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_USD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.178930
+2018-05-17 21:33:01,175 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.USD, nBars: 1339, diffDateTime: 0.909949, close: 1.179605, last: 2018-05-17 19:31:00
+2018-05-17 21:33:01,662 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.084370
+2018-05-17 21:33:01,662 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_AUD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.387852
+2018-05-17 21:33:01,663 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.AUD, nBars: 1339, diffDateTime: 1.176969, close: 1.571025, last: 2018-05-17 19:30:00
+2018-05-17 21:33:01,663 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 21:33:01,663 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:eufarm, localSymbol: None
+2018-05-17 21:33:01,967 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.032258
+2018-05-17 21:33:01,967 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CAD_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.203652
+2018-05-17 21:33:01,967 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CAD, nBars: 1339, diffDateTime: 1.677885, close: 1.51019, last: 2018-05-17 19:31:00
+2018-05-17 21:33:02,180 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CFD_IBDE30_EUR_SMART; nRows: 753; elapsed time: 0:00:00.039825
+2018-05-17 21:33:02,180 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CFD_IBDE30_EUR_SMART; nRows: 753; elapsed time: 0:00:00.159891
+2018-05-17 21:33:02,180 trading.containerClass myBarUpdateCallback INFO localSymbol: IBDE30, nBars: 754, diffDateTime: 1.972093, close: 13086.68, last: 2018-05-17 19:30:00
+2018-05-17 21:33:02,227 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:hfarm
+2018-05-17 21:33:02,227 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:hfarm, localSymbol: None
+2018-05-17 21:33:02,877 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.097530
+2018-05-17 21:33:02,877 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CHF_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.274785
+2018-05-17 21:33:02,877 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CHF, nBars: 1339, diffDateTime: 2.517297, close: 1.18136, last: 2018-05-17 19:31:00
+2018-05-17 21:33:03,424 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.109777
+2018-05-17 21:33:03,424 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.457693
+2018-05-17 21:33:03,424 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.GBP, nBars: 1339, diffDateTime: 2.882409, close: 0.87315, last: 2018-05-17 19:30:00
+2018-05-17 21:33:03,687 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.060010
+2018-05-17 21:33:03,687 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_CNH_IDEALPRO; nRows: 1338; elapsed time: 0:00:00.156955
+2018-05-17 21:33:03,687 trading.containerClass myBarUpdateCallback INFO localSymbol: EUR.CNH, nBars: 1339, diffDateTime: 3.429443, close: 7.499795, last: 2018-05-17 19:31:00
+2018-05-17 21:33:05,022 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-17 21:33:05,022 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:hfarm, localSymbol: None
+2018-05-17 21:33:08,059 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-17 21:33:08,059 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:hkhmds, localSymbol: None
+2018-05-17 21:33:09,881 ib_insync.wrapper error ERROR Error 162, reqId 13: Historical Market Data Service error message:HMDS query returned no data: HSC50@HKFE Trades, contract: Contract(secType='IND', conId=74084607, symbol='HSC50', exchange='HKFE', currency='HKD', localSymbol='HSC50')
+2018-05-17 21:33:09,881 trading.containerClass myErrorCallback INFO reqId: 13, errorCode: 162, errorString: Historical Market Data Service error message:HMDS query returned no data: HSC50@HKFE Trades, localSymbol: HSC50
+2018-05-17 21:33:10,383 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:usfuture.us
+2018-05-17 21:33:10,383 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:usfuture.us, localSymbol: None
+2018-05-17 21:33:10,814 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 21:33:10,814 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:usfuture.us, localSymbol: None
+2018-05-17 21:33:11,817 ib_insync.wrapper error INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 21:33:11,817 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2106, errorString: HMDS data farm connection is OK:ushmds.us, localSymbol: None
+2018-05-17 21:33:12,280 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_INDU_USD_CME; nRows: 433; elapsed time: 0:00:00.026764
+2018-05-17 21:33:12,280 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_INDU_USD_CME; nRows: 433; elapsed time: 0:00:00.083323
+2018-05-17 21:33:12,417 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:jfarm
+2018-05-17 21:33:12,417 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:jfarm, localSymbol: None
+2018-05-17 21:33:14,779 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 21:33:14,779 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:jfarm, localSymbol: None
+2018-05-17 21:33:15,453 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 21:33:15,454 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2108, errorString: Market data farm connection is inactive but should be available upon demand.hfarm, localSymbol: None
+2018-05-17 21:33:15,454 ib_insync.wrapper error INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 21:33:15,454 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2108, errorString: Market data farm connection is inactive but should be available upon demand.hfarm, localSymbol: None
+2018-05-17 21:33:16,586 ib_insync.wrapper error INFO Warning 2119, reqId -1: Market data farm is connecting:usfarm.us
+2018-05-17 21:33:16,586 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2119, errorString: Market data farm is connecting:usfarm.us, localSymbol: None
+2018-05-17 21:33:18,078 ib_insync.wrapper error INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 21:33:18,078 trading.containerClass myErrorCallback INFO reqId: -1, errorCode: 2104, errorString: Market data farm connection is OK:usfarm.us, localSymbol: None
+2018-05-17 21:33:18,626 root myConnectedCallback INFO scheduler instance: <class 'apscheduler.schedulers.asyncio.AsyncIOScheduler'>
+2018-05-17 21:33:18,626 root myConnectedCallback INFO scheduler running: True
+2018-05-17 21:33:18,627 root myConnectedCallback INFO watchdog scheduler: add job requesting historical data <apscheduler.schedulers.asyncio.AsyncIOScheduler object at 0x7f9338adf7f0>
+2018-05-17 21:33:18,627 trading.containerClass myStartedCallback INFO started watchdog callback Watchdog(controller=IBC(twsVersion=970, gateway=True, tradingMode='paper', ibcPath='/opt/IBController', ibcIni='/home/bn/IBController/configPaper.ini'), ib=<IB connected to 127.0.0.1:4002 clientId=24>, port=4002, clientId='24', appStartupTime=15)
+2018-05-17 21:33:18,894 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_IND_SPX_USD_CBOE; nRows: 363; elapsed time: 0:00:00.030340
+2018-05-17 21:33:18,894 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_IND_SPX_USD_CBOE; nRows: 363; elapsed time: 0:00:00.083318
+2018-05-17 21:33:21,007 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data: EUR, GBP; is going to be performed because earliestDateTime is given by IB; time: 2018-05-17 21:33:21.007165
+2018-05-17 21:33:21,008 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-03 02:57:00+00:00
+2018-05-17 21:33:21,008 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-04 02:57:00+00:00
+2018-05-17 21:33:21,008 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-03 02:57:00+00:00; endDT: 2006-10-04 02:42:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:21.008554
+2018-05-17 21:33:21,748 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.110801
+2018-05-17 21:33:21,748 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.245949
+2018-05-17 21:33:21,851 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-03 02:57:00+00:00; endDT: 2006-10-04 02:42:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:21.851096; elapsedTime: 0:00:00.842542; rows: 1425; rowsTotal: 4745801
+2018-05-17 21:33:21,861 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-04 02:42:00+00:00
+2018-05-17 21:33:21,861 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-05 02:27:00+00:00
+2018-05-17 21:33:21,861 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-04 02:42:00+00:00; endDT: 2006-10-05 02:31:00+00:00; durationString: 85740 S; time: 2018-05-17 21:33:21.861977
+2018-05-17 21:33:22,582 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1429; elapsed time: 0:00:00.113864
+2018-05-17 21:33:22,582 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1429; elapsed time: 0:00:00.209755
+2018-05-17 21:33:22,676 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-04 02:42:00+00:00; endDT: 2006-10-05 02:31:00+00:00; durationString: 85740 S; time: 2018-05-17 21:33:22.676934; elapsedTime: 0:00:00.814957; rows: 1429; rowsTotal: 4745801
+2018-05-17 21:33:22,701 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-05 02:31:00+00:00
+2018-05-17 21:33:22,701 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-06 02:20:00+00:00
+2018-05-17 21:33:22,701 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-05 02:31:00+00:00; endDT: 2006-10-06 02:12:00+00:00; durationString: 85260 S; time: 2018-05-17 21:33:22.701613
+2018-05-17 21:33:23,389 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.106555
+2018-05-17 21:33:23,389 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.203573
+2018-05-17 21:33:23,489 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-05 02:31:00+00:00; endDT: 2006-10-06 02:12:00+00:00; durationString: 85260 S; time: 2018-05-17 21:33:23.489437; elapsedTime: 0:00:00.787824; rows: 1421; rowsTotal: 4745801
+2018-05-17 21:33:23,500 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-06 02:12:00+00:00
+2018-05-17 21:33:23,500 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-07 01:53:00+00:00
+2018-05-17 21:33:23,501 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-06 02:12:00+00:00; endDT: 2006-10-07 01:57:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:23.501092
+2018-05-17 21:33:24,278 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.114953
+2018-05-17 21:33:24,278 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.244373
+2018-05-17 21:33:24,389 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-06 02:12:00+00:00; endDT: 2006-10-07 01:57:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:24.388951; elapsedTime: 0:00:00.887859; rows: 1425; rowsTotal: 4745801
+2018-05-17 21:33:24,399 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-07 01:57:00+00:00
+2018-05-17 21:33:24,399 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-08 01:42:00+00:00
+2018-05-17 21:33:24,399 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-07 01:57:00+00:00; endDT: 2006-10-08 01:40:00+00:00; durationString: 85380 S; time: 2018-05-17 21:33:24.399935
+2018-05-17 21:33:25,097 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1423; elapsed time: 0:00:00.104845
+2018-05-17 21:33:25,097 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1423; elapsed time: 0:00:00.207397
+2018-05-17 21:33:25,192 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-07 01:57:00+00:00; endDT: 2006-10-08 01:40:00+00:00; durationString: 85380 S; time: 2018-05-17 21:33:25.192139; elapsedTime: 0:00:00.792204; rows: 1423; rowsTotal: 4745801
+2018-05-17 21:33:25,202 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-08 01:40:00+00:00
+2018-05-17 21:33:25,203 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-09 01:23:00+00:00
+2018-05-17 21:33:25,203 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-08 01:40:00+00:00; endDT: 2006-10-09 01:21:00+00:00; durationString: 85260 S; time: 2018-05-17 21:33:25.203163
+2018-05-17 21:33:26,111 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.104671
+2018-05-17 21:33:26,111 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1421; elapsed time: 0:00:00.213200
+2018-05-17 21:33:26,213 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-08 01:40:00+00:00; endDT: 2006-10-09 01:21:00+00:00; durationString: 85260 S; time: 2018-05-17 21:33:26.213882; elapsedTime: 0:00:01.010719; rows: 1421; rowsTotal: 4745801
+2018-05-17 21:33:26,224 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-09 01:21:00+00:00
+2018-05-17 21:33:26,224 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-10 01:02:00+00:00
+2018-05-17 21:33:26,224 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-09 01:21:00+00:00; endDT: 2006-10-10 00:56:00+00:00; durationString: 84900 S; time: 2018-05-17 21:33:26.224851
+2018-05-17 21:33:26,936 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1415; elapsed time: 0:00:00.107170
+2018-05-17 21:33:26,936 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1415; elapsed time: 0:00:00.228477
+2018-05-17 21:33:27,039 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-09 01:21:00+00:00; endDT: 2006-10-10 00:56:00+00:00; durationString: 84900 S; time: 2018-05-17 21:33:27.039023; elapsedTime: 0:00:00.814172; rows: 1415; rowsTotal: 4745801
+2018-05-17 21:33:27,049 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-10 00:56:00+00:00
+2018-05-17 21:33:27,050 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-11 00:31:00+00:00
+2018-05-17 21:33:27,050 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-10 00:56:00+00:00; endDT: 2006-10-11 00:54:00+00:00; durationString: 86280 S; time: 2018-05-17 21:33:27.050204
+2018-05-17 21:33:27,763 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.105340
+2018-05-17 21:33:27,763 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.209907
+2018-05-17 21:33:27,864 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-10 00:56:00+00:00; endDT: 2006-10-11 00:54:00+00:00; durationString: 86280 S; time: 2018-05-17 21:33:27.864499; elapsedTime: 0:00:00.814295; rows: 1438; rowsTotal: 4745801
+2018-05-17 21:33:27,875 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-11 00:54:00+00:00
+2018-05-17 21:33:27,875 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-12 00:52:00+00:00
+2018-05-17 21:33:27,875 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-11 00:54:00+00:00; endDT: 2006-10-12 00:44:00+00:00; durationString: 85800 S; time: 2018-05-17 21:33:27.875835
+2018-05-17 21:33:28,581 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1430; elapsed time: 0:00:00.105843
+2018-05-17 21:33:28,581 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1430; elapsed time: 0:00:00.205805
+2018-05-17 21:33:28,685 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-11 00:54:00+00:00; endDT: 2006-10-12 00:44:00+00:00; durationString: 85800 S; time: 2018-05-17 21:33:28.685522; elapsedTime: 0:00:00.809687; rows: 1430; rowsTotal: 4745801
+2018-05-17 21:33:28,696 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-12 00:44:00+00:00
+2018-05-17 21:33:28,696 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-13 00:34:00+00:00
+2018-05-17 21:33:28,696 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-12 00:44:00+00:00; endDT: 2006-10-13 00:29:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:28.696596
+2018-05-17 21:33:29,980 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.350492
+2018-05-17 21:33:29,980 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1425; elapsed time: 0:00:00.646447
+2018-05-17 21:33:30,105 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-12 00:44:00+00:00; endDT: 2006-10-13 00:29:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:30.105734; elapsedTime: 0:00:01.409138; rows: 1425; rowsTotal: 4745801
+2018-05-17 21:33:30,124 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-13 00:29:00+00:00
+2018-05-17 21:33:30,124 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-14 00:14:00+00:00
+2018-05-17 21:33:30,124 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-13 00:29:00+00:00; endDT: 2006-10-14 00:27:00+00:00; durationString: 86280 S; time: 2018-05-17 21:33:30.124323
+2018-05-17 21:33:31,021 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished correcting data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.192052
+2018-05-17 21:33:31,022 trading.marketDataIB persistMarketDataBarsOnDisk INFO finished treating data. Table: MarketData_CASH_EUR_GBP_IDEALPRO; nRows: 1438; elapsed time: 0:00:00.373464
+2018-05-17 21:33:31,460 trading.marketDataIB asyncioJobGetHistoricalData INFO finished to get historical data chunk: EUR, GBP; startDT: 2006-10-13 00:29:00+00:00; endDT: 2006-10-14 00:27:00+00:00; durationString: 86280 S; time: 2018-05-17 21:33:31.460142; elapsedTime: 0:00:01.335819; rows: 1438; rowsTotal: 4745801
+2018-05-17 21:33:31,476 trading.marketDataIB asyncioJobGetHistoricalData INFO startDateTime Original 2006-10-14 00:27:00+00:00
+2018-05-17 21:33:31,476 trading.marketDataIB asyncioJobGetHistoricalData INFO calculated endDateTime 2006-10-15 00:25:00+00:00
+2018-05-17 21:33:31,476 trading.marketDataIB asyncioJobGetHistoricalData INFO attempting to get historical data chunk: EUR, GBP; startDT: 2006-10-14 00:27:00+00:00; endDT: 2006-10-15 00:12:00+00:00; durationString: 85500 S; time: 2018-05-17 21:33:31.476219
+2018-05-17 21:33:34,068 apscheduler.executors.default run_coroutine_job ERROR Job "id_getHistoricalData_000002 (trigger: cron[minute='*', second='*/3'], next run at: 2018-05-17 21:33:36 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/site-packages/apscheduler/executors/base_py3.py", line 29, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 529, in asyncioJobGetHistoricalData
+    timeOutTime=timeOutTimeHistoricalBars)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 28, in getHistoricalDataBars
+    bars = ib.run(asyncio.wait_for(req, timeOutTime))
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/ib.py", line 251, in run
+    result = util.syncAwait(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 245, in syncAwait
+    result = _syncAwaitAsyncio(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 259, in _syncAwaitAsyncio
+    loop._run_once()
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/base_events.py", line 1396, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/selectors.py", line 445, in select
+    fd_event_list = self._epoll.poll(timeout, max_ev)
+KeyboardInterrupt
+2018-05-17 21:33:34,069 asyncio default_exception_handler ERROR Exception in callback Task._wakeup(<Future finished result=None>)
+handle: <Handle Task._wakeup(<Future finished result=None>)>
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/tasks.py", line 261, in _wakeup
+    self._step()
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/tasks.py", line 245, in _step
+    self.__class__._current_tasks.pop(self._loop)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+2018-05-17 21:33:34,259 apscheduler.executors.default run_coroutine_job ERROR Job "id_getHistoricalData_000001 (trigger: cron[minute='*', second='*/3'], next run at: 2018-05-17 21:32:36 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/site-packages/apscheduler/executors/base_py3.py", line 29, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 529, in asyncioJobGetHistoricalData
+    timeOutTime=timeOutTimeHistoricalBars)
+  File "/home/bn/PycharmProjects/trading/trading/marketDataIB.py", line 28, in getHistoricalDataBars
+    bars = ib.run(asyncio.wait_for(req, timeOutTime))
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/ib.py", line 251, in run
+    result = util.syncAwait(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 245, in syncAwait
+    result = _syncAwaitAsyncio(future)
+  File "/home/bn/programme/Trading/ib_insync/ib_insync/ib_insync/util.py", line 259, in _syncAwaitAsyncio
+    loop._run_once()
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/base_events.py", line 1396, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/selectors.py", line 445, in select
+    fd_event_list = self._epoll.poll(timeout, max_ev)
+KeyboardInterrupt
+2018-05-17 21:33:34,259 asyncio default_exception_handler ERROR Exception in callback Task._wakeup(<Future finished result=None>)
+handle: <Handle Task._wakeup(<Future finished result=None>)>
+Traceback (most recent call last):
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/tasks.py", line 261, in _wakeup
+    self._step()
+  File "/home/bn/anaconda3/envs/trading/lib/python3.6/asyncio/tasks.py", line 245, in _step
+    self.__class__._current_tasks.pop(self._loop)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+2018-05-17 21:33:34,427 ib_insync.ib disconnect INFO BN added disconnect in ib
+2018-05-17 21:33:34,427 ib_insync.ib disconnect INFO Disconnecting from 127.0.0.1:4002, 2.70 kB sent in 32 messages, 1.72 MB received in 841 messages, session time 58.6 s.
+2018-05-17 21:33:34,427 root logAnswer INFO ANSWER connectionClosed {}

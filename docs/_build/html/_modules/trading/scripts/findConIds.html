@@ -1,0 +1,181 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>trading.scripts.findConIds &#8212; trading 0.0.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">trading</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=bjrnfrdnnd&repo=trading&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../readme.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../trading.html">trading package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../trading.scripts.html">trading.scripts package</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for trading.scripts.findConIds</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">defines a command-line utility for finding conIds</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">ib_insync</span> <span class="k">import</span> <span class="n">IB</span><span class="p">,</span> <span class="n">Forex</span><span class="p">,</span> <span class="n">Contract</span><span class="p">,</span> <span class="n">Index</span><span class="p">,</span> <span class="n">util</span>
+<span class="kn">import</span> <span class="nn">ibapi</span>
+<span class="kn">import</span> <span class="nn">click</span>
+<span class="n">CONTEXT_SETTINGS</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">help_option_names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;-h&#39;</span><span class="p">,</span> <span class="s1">&#39;--help&#39;</span><span class="p">],</span>
+                        <span class="n">token_normalize_func</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">CONTEXT_SETTINGS</span><span class="p">)</span>
+
+<span class="n">util</span><span class="o">.</span><span class="n">patchAsyncio</span><span class="p">()</span>
+<span class="n">util</span><span class="o">.</span><span class="n">logToFile</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{__name__}</span><span class="s1">.log&#39;</span><span class="p">)</span>
+
+<span class="c1"># the following does not work: it is never entered upon any error</span>
+<div class="viewcode-block" id="error"><a class="viewcode-back" href="../../../trading.scripts.html#trading.scripts.findConIds.error">[docs]</a><span class="nd">@ibapi</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">iswrapper</span>
+<span class="k">def</span> <span class="nf">error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reqId</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">errorCode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">errorString</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">contract</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;ibapi error callback. Does not work. Don&#39;t know why&quot;&quot;&quot;</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">reqId</span><span class="p">,</span> <span class="n">errorCode</span><span class="p">,</span> <span class="n">errorString</span><span class="p">,</span> <span class="n">contract</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error. Id: &quot;</span><span class="p">,</span> <span class="n">reqId</span><span class="p">,</span> <span class="s2">&quot; Code: &quot;</span><span class="p">,</span> <span class="n">errorCode</span><span class="p">,</span> <span class="s2">&quot; Msg: &quot;</span><span class="p">,</span> <span class="n">errorString</span><span class="p">,</span> <span class="n">contract</span><span class="p">)</span></div>
+
+<span class="c1"># the following is entered sometimes; but not, for example, when ib.connect() fails due to the clientID already taken</span>
+<div class="viewcode-block" id="myErrorCallback"><a class="viewcode-back" href="../../../trading.scripts.html#trading.scripts.findConIds.myErrorCallback">[docs]</a><span class="k">def</span> <span class="nf">myErrorCallback</span><span class="p">(</span><span class="n">reqId</span><span class="p">,</span> <span class="n">errorCode</span><span class="p">,</span> <span class="n">errorString</span> <span class="p">,</span> <span class="n">contract</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;ib_insycn error callback. Is not called when ib.connect() is called with clientID already in use&quot;&quot;&quot;</span>
+    <span class="c1"># print(&quot;myErrorCallback&quot;, reqId,errorCode,errorString,contract)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;myErrorCallback&quot;</span><span class="p">,</span> <span class="n">reqId</span><span class="p">,</span> <span class="n">errorCode</span><span class="p">,</span> <span class="n">errorString</span><span class="p">,</span> <span class="n">contract</span><span class="p">)</span></div>
+
+
+<span class="nd">@click</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">context_settings</span><span class="o">=</span><span class="n">CONTEXT_SETTINGS</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--clientid&#39;</span><span class="p">,</span><span class="s1">&#39;-c&#39;</span><span class="p">,</span><span class="n">default</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;clientId to connect to running gateway/TWS app&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">findConIds</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;prints a list of conIds for a hard-coded list of currencies&quot;&quot;&quot;</span>
+    <span class="n">ib</span> <span class="o">=</span> <span class="n">IB</span><span class="p">()</span>
+    <span class="n">ib</span><span class="o">.</span><span class="n">setCallback</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span><span class="n">myErrorCallback</span><span class="p">)</span>
+    <span class="n">clientId</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;clientId&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">ib</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">4002</span><span class="p">,</span> <span class="n">clientId</span><span class="o">=</span><span class="n">clientId</span><span class="p">)</span>
+    <span class="c1"># build a list of valid contracts</span>
+    <span class="c1"># define contracts</span>
+    <span class="n">strs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EURUSD&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURGBP&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURCHF&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURJPY&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURCNH&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURCAD&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURAUD&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURRUB&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURCZK&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURDKK&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURHUF&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURILS&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURMXN&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURNOK&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURNZD&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURPLN&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURSEK&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURSGD&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURTRY&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;EURZAR&#39;</span><span class="p">]</span>
+    <span class="n">contractsQualified</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">strs</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">contractsQualified</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ib</span><span class="o">.</span><span class="n">qualifyContracts</span><span class="p">(</span><span class="n">Forex</span><span class="p">(</span><span class="n">s</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="k">pass</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;could not qualify the contract for </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+            <span class="k">pass</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># get contract information</span>
+    <span class="n">conIds</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">contractsQualified</span><span class="p">:</span>
+        <span class="n">eDT</span> <span class="o">=</span> <span class="n">ib</span><span class="o">.</span><span class="n">reqHeadTimeStamp</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">whatToShow</span><span class="o">=</span><span class="s1">&#39;MIDPOINT&#39;</span><span class="p">,</span> <span class="n">useRTH</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">formatDate</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">cD</span> <span class="o">=</span> <span class="n">ib</span><span class="o">.</span><span class="n">reqContractDetails</span><span class="p">(</span><span class="n">c</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">secType</span><span class="o">=</span><span class="n">cD</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">secType</span>
+        <span class="c1"># print (c.currency, c.symbol, c.localSymbol, c.exchange, c.conId, eDT, secType)</span>
+        <span class="n">conIds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">conId</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">conIds</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">findConIds</span><span class="p">())</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2018, Björn Nadrowski.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

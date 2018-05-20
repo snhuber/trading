@@ -11,7 +11,7 @@ Contents
 
    readme
    trading
-   modules
+   trading.scripts
 
 
 

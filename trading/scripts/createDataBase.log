@@ -1,0 +1,689 @@
+2018-05-17 01:33:11,967 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:33:11,993 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:33:11,994 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:33:11,995 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:34:07,709 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:34:07,737 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:34:07,739 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:34:07,739 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:34:19,004 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:34:19,030 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:34:19,031 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:34:19,031 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:34:27,101 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:34:27,130 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:34:27,131 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:34:27,131 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:36:34,762 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:36:34,798 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:36:34,800 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:36:34,800 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:37:21,806 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:37:21,831 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:37:21,832 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:37:21,832 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:38:24,926 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:38:24,967 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:38:24,969 ib_insync.client ERROR API connection failed: ConnectionRefusedError(111, "Connect call failed ('127.0.0.1', 4002)")
+2018-05-17 01:38:24,969 ib_insync.client ERROR Make sure API port on TWS/IBG is open
+2018-05-17 01:39:40,190 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:39:40,217 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:39:40,220 ib_insync.client INFO Connected
+2018-05-17 01:39:40,236 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:39:40,751 ib_insync.client ERROR Peer closed connection
+2018-05-17 01:39:40,752 ib_insync.client ERROR clientId 24 already in use?
+2018-05-17 01:39:42,219 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-17 01:40:10,794 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:40:10,822 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:40:10,824 ib_insync.client INFO Connected
+2018-05-17 01:40:10,835 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:40:11,336 ib_insync.client ERROR Peer closed connection
+2018-05-17 01:40:11,336 ib_insync.client ERROR clientId 24 already in use?
+2018-05-17 01:40:12,826 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-17 01:43:33,778 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:43:33,806 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:43:33,808 ib_insync.client INFO Connected
+2018-05-17 01:43:33,818 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:43:34,320 ib_insync.client ERROR Peer closed connection
+2018-05-17 01:43:34,320 ib_insync.client ERROR clientId 24 already in use?
+2018-05-17 01:43:35,807 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-17 01:43:40,051 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 28872...
+2018-05-17 01:43:40,053 ib_insync.client INFO Connected
+2018-05-17 01:43:40,064 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:43:40,108 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 01:43:40,108 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 01:43:40,108 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 01:43:40,109 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 01:43:40,109 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:43:40,109 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 01:43:40,110 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 01:43:40,110 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-17 01:43:40,110 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 01:43:40,111 ib_insync.client INFO API connection ready
+2018-05-17 01:43:40,190 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.181365, marketValue=219733.89, averageCost=1.2182257, unrealizedPNL=-6856.09, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:43:40,191 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:43:40,237 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:43:43,107 asyncio ERROR _GatheringFuture exception was never retrieved
+future: <_GatheringFuture finished exception=CancelledError()>
+concurrent.futures._base.CancelledError
+2018-05-17 01:44:25,916 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:44:25,943 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:44:25,945 ib_insync.client INFO Connected
+2018-05-17 01:44:25,954 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:44:26,455 ib_insync.client ERROR Peer closed connection
+2018-05-17 01:44:26,458 ib_insync.client ERROR clientId 24 already in use?
+2018-05-17 01:44:27,946 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-17 01:44:34,915 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24394...
+2018-05-17 01:44:34,917 ib_insync.client INFO Connected
+2018-05-17 01:44:34,927 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:44:34,971 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 01:44:34,972 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 01:44:34,972 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 01:44:34,972 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 01:44:34,973 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:44:34,973 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 01:44:34,973 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 01:44:34,974 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2018-05-17 01:44:34,974 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 01:44:34,975 ib_insync.client INFO API connection ready
+2018-05-17 01:44:35,040 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.181365, marketValue=219733.89, averageCost=1.2182257, unrealizedPNL=-6856.09, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:44:35,041 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:44:35,087 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:44:50,917 asyncio ERROR _GatheringFuture exception was never retrieved
+future: <_GatheringFuture finished exception=CancelledError()>
+concurrent.futures._base.CancelledError
+2018-05-17 01:44:57,368 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:44:57,407 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 94404...
+2018-05-17 01:44:57,408 ib_insync.client INFO Connected
+2018-05-17 01:44:57,486 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:44:57,531 ib_insync.client INFO API connection ready
+2018-05-17 01:44:57,578 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.18131995, marketValue=219725.51, averageCost=1.2182257, unrealizedPNL=-6864.47, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:44:57,578 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:44:57,583 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:44:58,898 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016068, symbol='EUR', exchange='IDEALPRO', currency='CAD', localSymbol='EUR.CAD', tradingClass='EUR.CAD')
+2018-05-17 01:44:58,899 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(datetime, Column)
+2018-05-17 01:44:58,899 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(diffToNextRowInMinutes, Column)
+2018-05-17 01:44:58,900 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(close, Column)
+2018-05-17 01:44:58,900 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) Identified primary key columns: ColumnSet([Column('datetime', DateTime(), table=<MarketData_CASH_EUR_CAD_IDEALPRO>, primary_key=True, nullable=False)])
+2018-05-17 01:44:58,900 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) constructed
+2018-05-17 01:44:58,943 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 01:45:02,219 ib_insync.wrapper INFO Warning 2119, reqId -1: Market data farm is connecting:eufarm
+2018-05-17 01:45:03,120 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=825711, symbol='DAX', exchange='DTB', currency='EUR', localSymbol='DAX')
+2018-05-17 01:45:03,301 ib_insync.client ERROR Connection reset by peer
+2018-05-17 01:45:04,123 trading.utils WARNING Timeout while requesting the qualification of contract: Contract(conId=1935181)
+2018-05-17 01:46:01,978 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:46:02,006 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:46:02,008 ib_insync.client INFO Connected
+2018-05-17 01:46:02,031 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:46:02,075 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:46:02,076 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-17 01:46:02,076 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 01:46:02,077 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-17 01:46:02,077 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 01:46:02,077 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-17 01:46:02,078 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 01:46:02,078 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 01:46:02,078 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-17 01:46:02,079 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 01:46:02,079 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ilhmds
+2018-05-17 01:46:02,079 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 01:46:02,080 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2018-05-17 01:46:02,080 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2018-05-17 01:46:02,081 ib_insync.client INFO API connection ready
+2018-05-17 01:46:02,181 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.18131995, marketValue=219725.51, averageCost=1.2182257, unrealizedPNL=-6864.47, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:46:02,182 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:46:02,235 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:46:14,026 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 01:46:14,101 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016068, symbol='EUR', exchange='IDEALPRO', currency='CAD', localSymbol='EUR.CAD', tradingClass='EUR.CAD')
+2018-05-17 01:46:19,286 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(datetime, Column)
+2018-05-17 01:46:19,287 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(diffToNextRowInMinutes, Column)
+2018-05-17 01:46:19,288 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _configure_property(close, Column)
+2018-05-17 01:46:19,289 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) Identified primary key columns: ColumnSet([Column('datetime', DateTime(), table=<MarketData_CASH_EUR_CAD_IDEALPRO>, primary_key=True, nullable=False)])
+2018-05-17 01:46:19,289 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) constructed
+2018-05-17 01:46:28,487 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=74084607, symbol='HSC50', exchange='HKFE', currency='HKD', localSymbol='HSC50')
+2018-05-17 01:46:29,698 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=14087999, symbol='N225', exchange='OSE.JPN', currency='JPY', localSymbol='N225')
+2018-05-17 01:46:29,987 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-17 01:46:29,987 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,989 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataHistoricalRequestsPositionTable")
+2018-05-17 01:46:29,989 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,989 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CHF_IDEALPRO")
+2018-05-17 01:46:29,990 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,990 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CNH_IDEALPRO")
+2018-05-17 01:46:29,990 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,991 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_GBP_IDEALPRO")
+2018-05-17 01:46:29,991 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,991 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_JPY_IDEALPRO")
+2018-05-17 01:46:29,991 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,991 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_RUB_IDEALPRO")
+2018-05-17 01:46:29,992 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,992 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_USD_IDEALPRO")
+2018-05-17 01:46:29,992 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,992 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CFD_IBDE30_EUR_SMART")
+2018-05-17 01:46:29,992 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,993 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_DAX_EUR_DTB")
+2018-05-17 01:46:29,993 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,993 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_HSC50_HKD_HKFE")
+2018-05-17 01:46:29,993 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,994 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_INDU_USD_CME")
+2018-05-17 01:46:29,994 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,994 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_N225_JPY_OSE.JPN")
+2018-05-17 01:46:29,994 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,995 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_SPX_USD_CBOE")
+2018-05-17 01:46:29,995 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,995 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CAD_IDEALPRO")
+2018-05-17 01:46:29,995 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:29,996 sqlalchemy.engine.base.Engine INFO 
+CREATE TABLE "MarketData_CASH_EUR_CAD_IDEALPRO" (
+	datetime DATETIME NOT NULL, 
+	"diffToNextRowInMinutes" INTEGER, 
+	close FLOAT, 
+	PRIMARY KEY (datetime)
+)
+
+
+2018-05-17 01:46:29,997 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,029 sqlalchemy.engine.base.Engine INFO COMMIT
+2018-05-17 01:46:30,031 sqlalchemy.engine.base.Engine INFO CREATE INDEX "ix_MarketData_CASH_EUR_CAD_IDEALPRO_datetime" ON "MarketData_CASH_EUR_CAD_IDEALPRO" (datetime)
+2018-05-17 01:46:30,031 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,066 sqlalchemy.engine.base.Engine INFO COMMIT
+2018-05-17 01:46:30,072 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,073 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,074 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,075 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,076 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,076 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,077 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,078 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,079 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,080 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,080 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,081 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,082 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,083 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,084 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,084 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,085 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,086 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,087 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,088 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,088 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,089 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,090 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,091 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,092 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,092 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,093 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,093 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,094 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,095 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,095 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() started
+2018-05-17 01:46:30,095 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop datetime
+2018-05-17 01:46:30,096 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,097 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop close
+2018-05-17 01:46:30,097 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() complete
+2018-05-17 01:46:30,098 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() started
+2018-05-17 01:46:30,098 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop datetime
+2018-05-17 01:46:30,099 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,099 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop close
+2018-05-17 01:46:30,100 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() complete
+2018-05-17 01:46:30,100 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() started
+2018-05-17 01:46:30,100 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop datetime
+2018-05-17 01:46:30,101 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,101 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop close
+2018-05-17 01:46:30,102 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() complete
+2018-05-17 01:46:30,102 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() started
+2018-05-17 01:46:30,102 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop datetime
+2018-05-17 01:46:30,103 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,103 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop close
+2018-05-17 01:46:30,104 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() complete
+2018-05-17 01:46:30,104 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() started
+2018-05-17 01:46:30,104 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop datetime
+2018-05-17 01:46:30,105 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,105 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop close
+2018-05-17 01:46:30,105 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() complete
+2018-05-17 01:46:30,106 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() started
+2018-05-17 01:46:30,106 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop datetime
+2018-05-17 01:46:30,106 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,107 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop close
+2018-05-17 01:46:30,107 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() complete
+2018-05-17 01:46:30,107 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:46:30,107 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop datetime
+2018-05-17 01:46:30,108 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:46:30,108 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop close
+2018-05-17 01:46:30,109 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:46:30,111 sqlalchemy.engine.base.Engine INFO BEGIN (implicit)
+2018-05-17 01:46:30,112 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,113 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CAD_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,115 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,115 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CAD_IDEALPRO', 15016068, 'EUR', 'CAD', 'IDEALPRO', 'MarketData', 'CASH', None)
+2018-05-17 01:46:30,118 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,118 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_USD_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,119 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,120 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_USD_IDEALPRO', 12087792, 'EUR', 'USD', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:46:30,122 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,122 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_GBP_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,123 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,123 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_GBP_IDEALPRO', 12087807, 'EUR', 'GBP', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:46:30,125 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,125 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CHF_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,126 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,126 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CHF_IDEALPRO', 12087817, 'EUR', 'CHF', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:46:30,128 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,129 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_JPY_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,129 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,129 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_JPY_IDEALPRO', 14321016, 'EUR', 'JPY', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:46:30,131 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,131 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CNH_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,132 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,132 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CNH_IDEALPRO', 114900041, 'EUR', 'CNH', 'IDEALPRO', 'MarketData', 'CASH', '2012-10-02 21:15:00.000000')
+2018-05-17 01:46:30,134 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,134 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_RUB_IDEALPRO', 1, 0)
+2018-05-17 01:46:30,135 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,135 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_RUB_IDEALPRO', 92620186, 'EUR', 'RUB', 'IDEALPRO', 'MarketData', 'CASH', '2012-06-10 21:15:00.000000')
+2018-05-17 01:46:30,137 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,137 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_DAX_EUR_DTB', 1, 0)
+2018-05-17 01:46:30,137 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,137 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_DAX_EUR_DTB', 825711, 'DAX', 'EUR', 'DTB', 'MarketData', 'IND', '2005-06-28 07:00:00.000000')
+2018-05-17 01:46:30,139 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,139 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_INDU_USD_CME', 1, 0)
+2018-05-17 01:46:30,140 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,140 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_INDU_USD_CME', 1935181, 'INDU', 'USD', 'CME', 'MarketData', 'IND', '2004-04-06 13:30:00.000000')
+2018-05-17 01:46:30,142 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,142 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_SPX_USD_CBOE', 1, 0)
+2018-05-17 01:46:30,143 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,143 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_SPX_USD_CBOE', 416904, 'SPX', 'USD', 'CBOE', 'MarketData', 'IND', '2004-03-04 14:30:00.000000')
+2018-05-17 01:46:30,144 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,145 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_HSC50_HKD_HKFE', 1, 0)
+2018-05-17 01:46:30,145 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,145 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_HSC50_HKD_HKFE', 74084607, 'HSC50', 'HKD', 'HKFE', 'MarketData', 'IND', None)
+2018-05-17 01:46:30,147 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,147 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_N225_JPY_OSE.JPN', 1, 0)
+2018-05-17 01:46:30,148 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,148 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_N225_JPY_OSE.JPN', 14087999, 'N225', 'JPY', 'OSE.JPN', 'MarketData', 'IND', '2005-06-30 00:00:00.000000')
+2018-05-17 01:46:30,150 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:46:30,150 sqlalchemy.engine.base.Engine INFO ('MarketData_CFD_IBDE30_EUR_SMART', 1, 0)
+2018-05-17 01:46:30,151 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:46:30,151 sqlalchemy.engine.base.Engine INFO ('MarketData_CFD_IBDE30_EUR_SMART', 111987422, 'IBDE30', 'EUR', 'SMART', 'MarketData', 'CFD', '2012-08-14 07:00:00.000000')
+2018-05-17 01:46:30,151 sqlalchemy.engine.base.Engine INFO COMMIT
+2018-05-17 01:46:30,186 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-17 01:46:30,186 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,190 sqlalchemy.engine.base.Engine INFO BEGIN (implicit)
+2018-05-17 01:46:30,191 sqlalchemy.engine.base.Engine INFO SELECT count(*) AS count_1 
+FROM (SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable") AS anon_1
+2018-05-17 01:46:30,191 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,193 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName", "MarketDataInfoTable".description, "MarketDataInfoTable"."conId", "MarketDataInfoTable".symbol, "MarketDataInfoTable".currency, "MarketDataInfoTable".exchange, "MarketDataInfoTable".category, "MarketDataInfoTable"."secType", "MarketDataInfoTable"."earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 01:46:30,193 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,197 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 01:46:30,197 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:46:30,484 sqlalchemy.engine.base.Engine INFO ROLLBACK
+2018-05-17 01:46:30,486 ib_insync.ib INFO Disconnecting from 127.0.0.1:4002, 2.03 kB sent in 45 messages, 70.9 kB received in 432 messages, session time 35.9 s.
+2018-05-17 01:48:12,477 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:48:12,502 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:48:12,504 ib_insync.client INFO Connected
+2018-05-17 01:48:12,523 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:48:12,567 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:48:12,567 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 01:48:12,568 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 01:48:12,569 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-17 01:48:12,569 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 01:48:12,569 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2018-05-17 01:48:12,569 ib_insync.client INFO API connection ready
+2018-05-17 01:48:12,633 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.18143, marketValue=219745.98, averageCost=1.2182257, unrealizedPNL=-6844.0, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:48:12,634 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:48:12,653 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:48:39,962 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016068, symbol='EUR', exchange='IDEALPRO', currency='CAD', localSymbol='EUR.CAD', tradingClass='EUR.CAD')
+2018-05-17 01:49:04,622 quamash INFO Using Qt Implementation: PyQt5
+2018-05-17 01:49:04,648 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-17 01:49:04,649 ib_insync.client INFO Connected
+2018-05-17 01:49:04,654 ib_insync.client INFO Logged on to server version 141
+2018-05-17 01:49:04,695 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:49:04,695 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-17 01:49:04,695 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-17 01:49:04,696 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-17 01:49:04,697 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds.us
+2018-05-17 01:49:04,697 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2018-05-17 01:49:04,697 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2018-05-17 01:49:04,697 ib_insync.client INFO API connection ready
+2018-05-17 01:49:04,752 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.18143, marketValue=219745.98, averageCost=1.2182257, unrealizedPNL=-6844.0, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:49:04,753 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-17 01:49:04,771 ib_insync.ib INFO Synchronization complete
+2018-05-17 01:49:58,236 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usfarm.us
+2018-05-17 01:49:58,238 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usfarm.us
+2018-05-17 01:49:58,240 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 01:49:58,241 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.hfarm
+2018-05-17 01:49:58,243 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.cashfarm
+2018-05-17 01:49:58,244 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.cashfarm
+2018-05-17 01:49:58,245 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usfuture.us
+2018-05-17 01:49:58,245 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usfuture.us
+2018-05-17 01:49:58,246 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usbond
+2018-05-17 01:49:58,247 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usbond
+2018-05-17 01:49:58,248 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+2018-05-17 01:49:58,249 ib_insync.wrapper INFO Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+2018-05-17 01:52:46,822 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.18140995, marketValue=219742.25, averageCost=1.2182257, unrealizedPNL=-6847.73, realizedPNL=0.0, account='DU946735')
+2018-05-17 01:53:06,013 ib_insync.wrapper INFO Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2018-05-17 01:53:07,432 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=416904, symbol='SPX', exchange='CBOE', currency='USD', localSymbol='SPX')
+2018-05-17 01:53:07,998 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-17 01:53:08,669 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=74084607, symbol='HSC50', exchange='HKFE', currency='HKD', localSymbol='HSC50')
+2018-05-17 01:53:09,861 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='IND', conId=14087999, symbol='N225', exchange='OSE.JPN', currency='JPY', localSymbol='N225')
+2018-05-17 01:53:10,117 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-17 01:53:10,117 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,119 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataHistoricalRequestsPositionTable")
+2018-05-17 01:53:10,119 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,119 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CAD_IDEALPRO")
+2018-05-17 01:53:10,119 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,120 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CHF_IDEALPRO")
+2018-05-17 01:53:10,120 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,120 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_CNH_IDEALPRO")
+2018-05-17 01:53:10,121 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,121 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_GBP_IDEALPRO")
+2018-05-17 01:53:10,121 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,121 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_JPY_IDEALPRO")
+2018-05-17 01:53:10,122 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,122 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_RUB_IDEALPRO")
+2018-05-17 01:53:10,122 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,122 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CASH_EUR_USD_IDEALPRO")
+2018-05-17 01:53:10,122 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_CFD_IBDE30_EUR_SMART")
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_DAX_EUR_DTB")
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_HSC50_HKD_HKFE")
+2018-05-17 01:53:10,123 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_INDU_USD_CME")
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_N225_JPY_OSE.JPN")
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketData_IND_SPX_USD_CBOE")
+2018-05-17 01:53:10,124 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,126 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,127 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,127 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,127 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CAD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CHF_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,128 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,129 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,129 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,129 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,129 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_CNH_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,130 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,130 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,130 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,130 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,130 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_GBP_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_JPY_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,131 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_RUB_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() started
+2018-05-17 01:53:10,132 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop datetime
+2018-05-17 01:53:10,133 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,133 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) initialize prop close
+2018-05-17 01:53:10,133 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CASH_EUR_USD_IDEALPRO) _post_configure_properties() complete
+2018-05-17 01:53:10,134 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() started
+2018-05-17 01:53:10,134 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop datetime
+2018-05-17 01:53:10,134 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,134 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) initialize prop close
+2018-05-17 01:53:10,135 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_CFD_IBDE30_EUR_SMART) _post_configure_properties() complete
+2018-05-17 01:53:10,135 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() started
+2018-05-17 01:53:10,135 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop datetime
+2018-05-17 01:53:10,135 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,136 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) initialize prop close
+2018-05-17 01:53:10,136 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_DAX_EUR_DTB) _post_configure_properties() complete
+2018-05-17 01:53:10,136 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() started
+2018-05-17 01:53:10,136 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop datetime
+2018-05-17 01:53:10,137 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,137 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) initialize prop close
+2018-05-17 01:53:10,137 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_HSC50_HKD_HKFE) _post_configure_properties() complete
+2018-05-17 01:53:10,138 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() started
+2018-05-17 01:53:10,138 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop datetime
+2018-05-17 01:53:10,138 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,139 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) initialize prop close
+2018-05-17 01:53:10,139 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_INDU_USD_CME) _post_configure_properties() complete
+2018-05-17 01:53:10,139 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() started
+2018-05-17 01:53:10,139 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop datetime
+2018-05-17 01:53:10,139 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,140 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) initialize prop close
+2018-05-17 01:53:10,140 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_N225_JPY_OSE.JPN) _post_configure_properties() complete
+2018-05-17 01:53:10,140 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() started
+2018-05-17 01:53:10,140 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop datetime
+2018-05-17 01:53:10,141 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop diffToNextRowInMinutes
+2018-05-17 01:53:10,141 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) initialize prop close
+2018-05-17 01:53:10,141 sqlalchemy.orm.mapper.Mapper INFO (MarketDataTable|MarketData_IND_SPX_USD_CBOE) _post_configure_properties() complete
+2018-05-17 01:53:10,144 sqlalchemy.engine.base.Engine INFO BEGIN (implicit)
+2018-05-17 01:53:10,146 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,146 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CAD_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,149 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,149 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CAD_IDEALPRO', 15016068, 'EUR', 'CAD', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:53:10,152 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,152 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_USD_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,154 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,154 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_USD_IDEALPRO', 12087792, 'EUR', 'USD', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:53:10,157 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,157 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_GBP_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,159 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,159 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_GBP_IDEALPRO', 12087807, 'EUR', 'GBP', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:53:10,162 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,163 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CHF_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,164 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,164 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CHF_IDEALPRO', 12087817, 'EUR', 'CHF', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:53:10,165 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,166 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_JPY_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,166 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,167 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_JPY_IDEALPRO', 14321016, 'EUR', 'JPY', 'IDEALPRO', 'MarketData', 'CASH', '2005-03-09 04:30:00.000000')
+2018-05-17 01:53:10,168 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,169 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CNH_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,169 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,170 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_CNH_IDEALPRO', 114900041, 'EUR', 'CNH', 'IDEALPRO', 'MarketData', 'CASH', '2012-10-02 21:15:00.000000')
+2018-05-17 01:53:10,172 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,172 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_RUB_IDEALPRO', 1, 0)
+2018-05-17 01:53:10,173 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,173 sqlalchemy.engine.base.Engine INFO ('MarketData_CASH_EUR_RUB_IDEALPRO', 92620186, 'EUR', 'RUB', 'IDEALPRO', 'MarketData', 'CASH', '2012-06-10 21:15:00.000000')
+2018-05-17 01:53:10,174 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,175 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_DAX_EUR_DTB', 1, 0)
+2018-05-17 01:53:10,175 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,176 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_DAX_EUR_DTB', 825711, 'DAX', 'EUR', 'DTB', 'MarketData', 'IND', '2005-06-28 07:00:00.000000')
+2018-05-17 01:53:10,177 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,177 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_INDU_USD_CME', 1, 0)
+2018-05-17 01:53:10,178 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,178 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_INDU_USD_CME', 1935181, 'INDU', 'USD', 'CME', 'MarketData', 'IND', '2004-04-06 13:30:00.000000')
+2018-05-17 01:53:10,180 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,180 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_SPX_USD_CBOE', 1, 0)
+2018-05-17 01:53:10,181 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,181 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_SPX_USD_CBOE', 416904, 'SPX', 'USD', 'CBOE', 'MarketData', 'IND', '2004-03-04 14:30:00.000000')
+2018-05-17 01:53:10,183 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,183 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_HSC50_HKD_HKFE', 1, 0)
+2018-05-17 01:53:10,184 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,184 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_HSC50_HKD_HKFE', 74084607, 'HSC50', 'HKD', 'HKFE', 'MarketData', 'IND', None)
+2018-05-17 01:53:10,186 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,186 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_N225_JPY_OSE.JPN', 1, 0)
+2018-05-17 01:53:10,187 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,187 sqlalchemy.engine.base.Engine INFO ('MarketData_IND_N225_JPY_OSE.JPN', 14087999, 'N225', 'JPY', 'OSE.JPN', 'MarketData', 'IND', '2005-06-30 00:00:00.000000')
+2018-05-17 01:53:10,189 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable" 
+WHERE "MarketDataInfoTable"."tableName" = ?
+ LIMIT ? OFFSET ?
+2018-05-17 01:53:10,189 sqlalchemy.engine.base.Engine INFO ('MarketData_CFD_IBDE30_EUR_SMART', 1, 0)
+2018-05-17 01:53:10,190 sqlalchemy.engine.base.Engine INFO INSERT OR REPLACE INTO "MarketDataInfoTable" ("tableName", "conId", symbol, currency, exchange, category, "secType", "earliestDateTime") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2018-05-17 01:53:10,190 sqlalchemy.engine.base.Engine INFO ('MarketData_CFD_IBDE30_EUR_SMART', 111987422, 'IBDE30', 'EUR', 'SMART', 'MarketData', 'CFD', '2012-08-14 07:00:00.000000')
+2018-05-17 01:53:10,190 sqlalchemy.engine.base.Engine INFO COMMIT
+2018-05-17 01:53:10,217 sqlalchemy.engine.base.Engine INFO PRAGMA table_info("MarketDataInfoTable")
+2018-05-17 01:53:10,217 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,221 sqlalchemy.engine.base.Engine INFO BEGIN (implicit)
+2018-05-17 01:53:10,222 sqlalchemy.engine.base.Engine INFO SELECT count(*) AS count_1 
+FROM (SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName", "MarketDataInfoTable".description AS "MarketDataInfoTable_description", "MarketDataInfoTable"."conId" AS "MarketDataInfoTable_conId", "MarketDataInfoTable".symbol AS "MarketDataInfoTable_symbol", "MarketDataInfoTable".currency AS "MarketDataInfoTable_currency", "MarketDataInfoTable".exchange AS "MarketDataInfoTable_exchange", "MarketDataInfoTable".category AS "MarketDataInfoTable_category", "MarketDataInfoTable"."secType" AS "MarketDataInfoTable_secType", "MarketDataInfoTable"."earliestDateTime" AS "MarketDataInfoTable_earliestDateTime" 
+FROM "MarketDataInfoTable") AS anon_1
+2018-05-17 01:53:10,222 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,224 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName", "MarketDataInfoTable".description, "MarketDataInfoTable"."conId", "MarketDataInfoTable".symbol, "MarketDataInfoTable".currency, "MarketDataInfoTable".exchange, "MarketDataInfoTable".category, "MarketDataInfoTable"."secType", "MarketDataInfoTable"."earliestDateTime" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 01:53:10,224 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,228 sqlalchemy.engine.base.Engine INFO SELECT "MarketDataInfoTable"."tableName" AS "MarketDataInfoTable_tableName" 
+FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
+2018-05-17 01:53:10,228 sqlalchemy.engine.base.Engine INFO ()
+2018-05-17 01:53:10,342 sqlalchemy.engine.base.Engine INFO ROLLBACK
+2018-05-17 01:53:10,343 ib_insync.ib INFO Disconnecting from 127.0.0.1:4002, 2.03 kB sent in 45 messages, 80.0 kB received in 610 messages, session time 246 s.
+2018-05-19 05:04:21,958 quamash INFO Using Qt Implementation: PyQt5
+2018-05-19 05:04:21,990 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-19 05:04:21,990 ib_insync.client INFO Connected
+2018-05-19 05:04:21,992 ib_insync.client INFO Logged on to server version 141
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-19 05:04:22,035 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-19 05:04:22,036 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-19 05:04:22,036 ib_insync.client INFO API connection ready
+2018-05-19 05:04:22,084 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17709995, marketValue=218940.59, averageCost=1.2182257, unrealizedPNL=-7649.39, realizedPNL=0.0, account='DU946735')
+2018-05-19 05:04:22,084 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-19 05:04:22,091 ib_insync.ib INFO Synchronization complete
+2018-05-19 05:04:23,145 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016065, symbol='EUR', exchange='IDEALPRO', currency='AUD', localSymbol='EUR.AUD', tradingClass='EUR.AUD')
+2018-05-19 05:04:24,149 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016068, symbol='EUR', exchange='IDEALPRO', currency='CAD', localSymbol='EUR.CAD', tradingClass='EUR.CAD')
+2018-05-19 05:04:25,153 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=12087792, symbol='EUR', exchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2018-05-19 05:04:26,200 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=12087807, symbol='EUR', exchange='IDEALPRO', currency='GBP', localSymbol='EUR.GBP', tradingClass='EUR.GBP')
+2018-05-19 05:04:42,066 quamash INFO Using Qt Implementation: PyQt5
+2018-05-19 05:04:42,090 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-19 05:04:42,092 ib_insync.client INFO Connected
+2018-05-19 05:04:42,096 ib_insync.client INFO Logged on to server version 141
+2018-05-19 05:04:42,139 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-19 05:04:42,139 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-19 05:04:42,139 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-19 05:04:42,140 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-19 05:04:42,140 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-19 05:04:42,140 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-19 05:04:42,140 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-19 05:04:42,140 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-19 05:04:42,141 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-19 05:04:42,141 ib_insync.client INFO API connection ready
+2018-05-19 05:04:42,192 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17709995, marketValue=218940.59, averageCost=1.2182257, unrealizedPNL=-7649.39, realizedPNL=0.0, account='DU946735')
+2018-05-19 05:04:42,192 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-19 05:04:42,216 ib_insync.ib INFO Synchronization complete
+2018-05-19 05:05:49,815 ib_insync.wrapper ERROR Error 162, reqId 9: Historical Market Data Service error message:Request Timed Out, contract: Contract(secType='CASH', conId=15016065, symbol='EUR', exchange='IDEALPRO', currency='AUD', localSymbol='EUR.AUD', tradingClass='EUR.AUD')
+2018-05-19 05:05:54,913 ib_insync.wrapper ERROR Error 162, reqId 10: Historical Market Data Service error message:Request Timed Out, contract: Contract(secType='CASH', conId=15016065, symbol='EUR', exchange='IDEALPRO', currency='AUD', localSymbol='EUR.AUD', tradingClass='EUR.AUD')
+2018-05-19 05:13:31,482 quamash INFO Using Qt Implementation: PyQt5
+2018-05-19 05:13:31,506 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-19 05:13:31,507 ib_insync.client INFO Connected
+2018-05-19 05:13:31,512 ib_insync.client INFO Logged on to server version 141
+2018-05-19 05:13:32,015 ib_insync.client ERROR Peer closed connection
+2018-05-19 05:13:32,016 ib_insync.client ERROR clientId 24 already in use?
+2018-05-19 05:13:33,508 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-19 05:13:33,511 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 71994...
+2018-05-19 05:13:33,517 ib_insync.client INFO Connected
+2018-05-19 05:13:33,538 ib_insync.client INFO Logged on to server version 141
+2018-05-19 05:13:33,584 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm.us
+2018-05-19 05:13:33,584 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2018-05-19 05:13:33,584 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2018-05-19 05:13:33,585 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2018-05-19 05:13:33,585 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfuture.us
+2018-05-19 05:13:33,586 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usbond
+2018-05-19 05:13:33,586 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2018-05-19 05:13:33,586 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2018-05-19 05:13:33,587 ib_insync.wrapper INFO Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2018-05-19 05:13:33,588 ib_insync.client INFO API connection ready
+2018-05-19 05:13:33,648 ib_insync.wrapper INFO updatePortfolio: PortfolioItem(contract=Contract(secType='CASH', conId=12087792, symbol='EUR', right='0', primaryExchange='IDEALPRO', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, marketPrice=1.17709995, marketValue=218940.59, averageCost=1.2182257, unrealizedPNL=-7649.39, realizedPNL=0.0, account='DU946735')
+2018-05-19 05:13:33,648 ib_insync.wrapper INFO position: Position(account='DU946735', contract=Contract(secType='CASH', conId=12087792, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=186000.0, avgCost=1.2182257)
+2018-05-19 05:13:33,670 ib_insync.ib INFO Synchronization complete
+2018-05-19 05:13:33,681 asyncio ERROR _GatheringFuture exception was never retrieved
+future: <_GatheringFuture finished exception=CancelledError()>
+concurrent.futures._base.CancelledError
+2018-05-19 05:13:40,420 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016065, symbol='EUR', exchange='IDEALPRO', currency='AUD', localSymbol='EUR.AUD', tradingClass='EUR.AUD')

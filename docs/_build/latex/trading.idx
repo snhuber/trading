@@ -1,0 +1,10 @@
+\indexentry{trading.a1 (module)|hyperpage}{3}
+\indexentry{MyClass (class in trading.a1)|hyperpage}{3}
+\indexentry{a1\_func() (in module trading.a1)|hyperpage}{3}
+\indexentry{complex\_number() (in module trading.a1)|hyperpage}{3}
+\indexentry{trading (module)|hyperpage}{3}
+\indexentry{trading.scripts.findConIds (module)|hyperpage}{5}
+\indexentry{error() (in module trading.scripts.findConIds)|hyperpage}{5}
+\indexentry{myErrorCallback() (in module trading.scripts.findConIds)|hyperpage}{5}
+\indexentry{findConIds command line option!-c, --clientid \textless{}clientid\textgreater{}|hyperpage}{5}
+\indexentry{-c, --clientid \textless{}clientid\textgreater{}!findConIds command line option|hyperpage}{5}
