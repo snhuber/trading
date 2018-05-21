@@ -1,20 +1,21 @@
 import pandas as pd
 import sys
 import argparse
-from trading import database
-from ib_insync import util
 from configparser import ConfigParser, ExtendedInterpolation
 import os
 from trading import utils
-from ib_insync.ibcontroller import IBC, Watchdog
-from ib_insync import IB
 import logging
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import asyncio
-from trading import containerClass, marketDataIB
 import operator
 import dateutil
 from ib_insync import objects, Contract
+from ib_insync import util
+from ib_insync.ibcontroller import IBC, Watchdog
+from ib_insync import IB
+from trading import database
+from trading import containerClass
+from trading import marketDataIB
 
 def runProg(args):
     """run program"""
@@ -22,7 +23,7 @@ def runProg(args):
     util.patchAsyncio()
 
     # log to a file
-    utils.logToFile(f'mainProg04.log',level=logging.INFO)
+    utils.logToFile(f'mainProg05.log',level=logging.INFO)
     # utils.logToConsole()
 
     apschedulerLogger = logging.getLogger('apscheduler')
@@ -91,6 +92,7 @@ def runProg(args):
     # qcs = operator.itemgetter(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12)(__qcs__)
     # qcs = operator.itemgetter(0, 13, 1, 11, 7)(__qcs__)
     # qcs = operator.itemgetter(0, 12, 13, 2, 10, 3)(__qcs__)
+    # qcs = operator.itemgetter(0, 1, 10)(__qcs__)
     qcs = __qcs__
     if isinstance(qcs,Contract):
         qcs = [qcs]
@@ -206,20 +208,25 @@ def runProg(args):
     else:
         earliestDateTimeUTCNaive = pd.to_datetime(pd.datetime.utcnow()).floor('1 min') - earliestPandasTimeDelta
         pass
-    additionalArgs={
+
+    historicalDataGetterSettings={
+        'ib': cc.watchdogApp.ib,
+        'mydb': cc.mydb,
+        'qcs': cc.qcs,
         'durationPandasTimeDelta': durationPandasTimeDelta,
         'barSizePandasTimeDelta': barSizePandasTimeDelta,
-        'earliestDateTimeUTCNaive': earliestDateTimeUTCNaive,
-        'timeOutTimeHistoricalBars': timeOutTime,
+        'earliestDateTime': earliestDateTimeUTCNaive,
+        'timeOutTime': timeOutTime,
+        'jitterSpanFraction': 0.02,
     }
 
     jobSettings = {
         'job': marketDataIB.asyncioJobGetHistoricalData,
-        'args': [cc.watchdogApp.ib, cc.mydb, cc.qcs, additionalArgs],
-        'kwargs': {},
+        'args': [],
+        'kwargs': historicalDataGetterSettings,
         'jobRootName': None,
         'minute': '*',
-        'second': '0',
+        'second': '*/5',
         'coalesce': True,
         'misfire_grace_time': 30,
         'trigger': 'cron',

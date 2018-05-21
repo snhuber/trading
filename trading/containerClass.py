@@ -103,15 +103,20 @@ class ContainerClass(object):
 
         whatToShow = utils.dictSecTypeToWhatToShow.get(qc.secType, None)
 
-        [bars, timeOutOccurred] = marketDataIB.getHistoricalDataBars(ib=self.watchdogApp.ib,
-                                                                     qc=qc,
+        [bars, timeOutOccurred] = marketDataIB.getHistoricalDataBars(qc=qc,
+                                                                     ib=self.watchdogApp.ib,
                                                                      endDateTime='',
                                                                      durationStr=dTD.IB_Duration_String,
                                                                      barSizeSetting=bTD.IB_Bar_Size_String,
                                                                      whatToShow=whatToShow,
-                                                                     useRTH=False,
                                                                      formatDate=2,
+                                                                     keepUpToDate=True,
+                                                                     useRTH=False,
                                                                      timeOutTime=timeOutTime)
+
+
+        
+        
         # bars is None, an empty list, or a filled list.
         # if bars is None, a timeout Ocurred for that contract
         # if bars is empty, no historical data is available

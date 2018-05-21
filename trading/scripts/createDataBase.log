@@ -687,3 +687,12 @@ FROM "MarketDataInfoTable" ORDER BY "MarketDataInfoTable"."tableName"
 future: <_GatheringFuture finished exception=CancelledError()>
 concurrent.futures._base.CancelledError
 2018-05-19 05:13:40,420 trading.utils WARNING Timeout while requesting the earliestDateTime for contract Contract(secType='CASH', conId=15016065, symbol='EUR', exchange='IDEALPRO', currency='AUD', localSymbol='EUR.AUD', tradingClass='EUR.AUD')
+2018-05-20 23:43:42,896 quamash INFO Using Qt Implementation: PyQt5
+2018-05-20 23:43:42,922 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 24...
+2018-05-20 23:43:42,924 ib_insync.client INFO Connected
+2018-05-20 23:43:42,932 ib_insync.client INFO Logged on to server version 141
+2018-05-20 23:43:44,924 ib_insync.client ERROR API connection failed: TimeoutError()
+2018-05-20 23:43:51,041 ib_insync.client INFO Connecting to 127.0.0.1:4002 with clientId 79773...
+2018-05-20 23:43:51,044 ib_insync.client INFO Connected
+2018-05-20 23:43:51,055 ib_insync.client INFO Logged on to server version 141
+2018-05-20 23:43:53,043 ib_insync.client ERROR API connection failed: TimeoutError()

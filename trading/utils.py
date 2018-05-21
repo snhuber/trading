@@ -21,7 +21,7 @@ dictSecTypeToWhatToShow = {
 
 class CTimeDelta(object):
     """creates IB date strings based on pandasTimeDelta"""
-    def __init__(self, pandasTimeDelta: pd._libs.tslib.Timedelta):
+    def __init__(self, pandasTimeDelta: pd.Timedelta=None):
         self.__possibleDeltas = ['years','months','weeks','days','hours','minutes','seconds']
         self._timeDelta = pandasTimeDelta
         self._seconds = self._timeDelta.total_seconds()
@@ -32,6 +32,7 @@ class CTimeDelta(object):
         self._allowedHours = [1,2,3,4,8]
         self._allowedDays = [1]
         self._allowedWeeks = [1]
+
 
         pass
 
@@ -200,6 +201,23 @@ def getQualifiedContractFromConId(ib,conId, timeOutTime=10):
 
     return (qc)
 
+def conformDateTimeToPandasUTCNaive(a):
+    pdDT = None
+    pdDTUTC = None
+    pdDTUTCNaive = None
+
+    if pd.isnull(a):
+        return pdDTUTCNaive
+
+    if hasattr(a,'tzinfo'):
+        if a.tzinfo is not None:
+            pdDTUTCNaive = pd.to_datetime(a).tz_convert('UTC').tz_localize(None)
+            pass
+        else:
+            pdDTUTCNaive = pd.to_datetime(a)
+            pass
+        pass
+    return pdDTUTCNaive
 
 def getValueFromDataFrame(df, whereColumn, whereValue, getColumn):
     results = df.loc[df[whereColumn]==whereValue,getColumn].values
@@ -207,7 +225,7 @@ def getValueFromDataFrame(df, whereColumn, whereValue, getColumn):
         return None
     return (results[0])
 
-def getEarliestDateTimeFromIB(ib, qualifiedContract=None, **kwargs):
+def getEarliestDateTimeFromIBAsDateTime(ib, qualifiedContract=None, **kwargs):
 
     if qualifiedContract is None:
         return (None)
@@ -217,7 +235,7 @@ def getEarliestDateTimeFromIB(ib, qualifiedContract=None, **kwargs):
 
     whatToShow = dictSecTypeToWhatToShow.get(qualifiedContract.secType,None)
     useRTH = kwargs.pop('useRTH',False)
-    formatDate = kwargs.pop('formatDate',2)
+    # formatDate = kwargs.pop('formatDate',2)
     timeOutTime = kwargs.pop('timeOutTime', 1)
 
     # sometimes, this request just hangs.
@@ -227,7 +245,7 @@ def getEarliestDateTimeFromIB(ib, qualifiedContract=None, **kwargs):
 
     eDT = None
     try:
-        req = ib.reqHeadTimeStampAsync(qualifiedContract, whatToShow=whatToShow, useRTH=useRTH, formatDate=formatDate, **kwargs)
+        req = ib.reqHeadTimeStampAsync(qualifiedContract, whatToShow=whatToShow, useRTH=useRTH, formatDate=2, **kwargs)
         eDT = ib.run(asyncio.wait_for(req, timeOutTime))
     except asyncio.TimeoutError:
         a = (f'Timeout while requesting the earliestDateTime for contract {qualifiedContract}')

@@ -205,7 +205,7 @@ class tradingDB(object):
             # get the qualified Contract for this conId from IB
             qc = utils.getQualifiedContractFromConId(ib=ib,conId=conId,timeOutTime=timeOutTime)
             # get the earliest DateTime for this conId from IB
-            eDT = utils.getEarliestDateTimeFromIB(ib, qualifiedContract=qc)
+            eDT = utils.getEarliestDateTimeFromIBAsDateTime(ib, qualifiedContract=qc, timeOutTime=timeOutTime)
 
             row.earliestDateTime = eDT
             pass
@@ -627,11 +627,15 @@ def instantiateMyDB(args):
     for indx in df.index:
         conId = df.at[indx, 'conId']
 
+        a = (f'about to qualify contract: conId: {conId}')
+        logging.info(a)
+        print(a)
+
         qc = utils.getQualifiedContractFromConId(ib=ib,conId=conId,timeOutTime=timeOutTime)
         df.at[indx, 'qualifiedContract'] = qc
 
         # calculate the earliest Date for this contract
-        earliestDateTime = utils.getEarliestDateTimeFromIB(ib=ib, qualifiedContract=qc, timeOutTime=timeOutTime)
+        earliestDateTime = utils.getEarliestDateTimeFromIBAsDateTime(ib=ib, qualifiedContract=qc, timeOutTime=timeOutTime)
         df.at[indx, 'earliestDateTime'] = earliestDateTime
 
         # set the category that should be MarketData for the tables to be generated in this loop
@@ -650,7 +654,9 @@ def instantiateMyDB(args):
         df.at[indx, 'tableName'] = tableName
 
         # create the sqlalchemy ORM class; this will write the class to the mydb.DBDeclarativeBase.metadata object
-        print(f'creating MarketData Table: conId: {conId}; tableName: {tableName}')
+        a = (f'creating MarketData Table: conId: {conId}; tableName: {tableName}')
+        logging.info(a)
+        print(a)
         tableORM = mydb.getTableORMByTablename(tableName=tableName)
         df.at[indx, 'tableORM'] = tableORM
 
