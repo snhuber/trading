@@ -1,6 +1,6 @@
 from trading import utils, database
 import logging
-from ib_insync import util, IB, Object, IBC, Contract
+from ib_insync import util, IB, Object, IBC, Contract, objects
 from sqlalchemy import desc, func, update
 import pandas as pd
 from random import randint
@@ -9,6 +9,7 @@ import dateutil
 import pprint
 import sqlalchemy
 from sqlalchemy.ext.declarative.api import DeclarativeMeta as TableORM
+import datetime
 
 _logger = logging.getLogger(__name__)
 
@@ -481,10 +482,10 @@ class HistoricalDataGetter(Object):
 
         pass
 
-    def getEearliestDateTimeFromIB(self,
-                                   useCurrentQC: bool=True,
-                                   qc: Contract=None,
-                                   timeOutTime: int=10) ->pd.datetime:
+    def getEarliestDateTimeFromIB(self,
+                                  useCurrentQC: bool=True,
+                                  qc: Contract=None,
+                                  timeOutTime: int=30) ->pd.datetime:
         """retrieve the earliestDateTime from IB for a contract using some timeOutTIme"""
 
         if useCurrentQC:
@@ -518,7 +519,18 @@ class HistoricalDataGetter(Object):
 
             # check if the current conId allows the retrieval of historical data
             # to do that, we check if we can retrieve the earliestDateTime directly from IB using reqHeadTimeStamp with a short timeOut
-            earliestDTFromIB = self.getEearliestDateTimeFromIB()
+            # a = (f'about to try to get the earliestDateTime')
+            # _logger.info(a)
+            try:
+                # a = (f'in try part trying to get the earliestDateTime')
+                # _logger.info(a)
+                earliestDTFromIB = self.getEarliestDateTimeFromIB()
+            except:
+                # we might be disconnected. This should be taken care of by watchdog
+                # a = (f'in except part trying to get the earliestDateTime')
+                # _logger.info(a)
+                return
+
             # if there is no earliestDateTime according to IB, it makes no sense to try to retrieve data
             if pd.isnull(earliestDTFromIB):
                 a = (
@@ -600,15 +612,21 @@ class HistoricalDataGetter(Object):
 
             bars = None
             timeOutOccured = None
-            [bars, timeOutOccured] = getHistoricalDataBars(ib=self.ib,
+            try:
+                [bars, timeOutOccured] = getHistoricalDataBars(ib=self.ib,
                                                            qc=self.currentState.qc,
                                                            endDateTime=endDateTimeLocal,
                                                            durationStr=dTD.IB_Duration_String,
                                                            barSizeSetting=bTD.IB_Bar_Size_String,
                                                            timeOutTime=self.timeOutTime)
 
+            except:
+                # there might be other problems that have occurred. ib could be disconnected.
+                # watchdog should take care of that
+                return
+
             if timeOutOccured is not None and timeOutOccured:
-                a = (f'Timeout while requesting historical bars for contract {qc}')
+                a = (f'Timeout while requesting historical bars for contract {qc}; timeOutTime: {self.timeOutTime}')
                 _logger.warn(a)
                 # print(a)
                 pass
@@ -651,8 +669,8 @@ class HistoricalDataGetter(Object):
             a = (
                 f'finished to get historical data chunk: '
                 f'{self.currentState.qc.symbol}, {self.currentState.qc.currency}; '
-                f'startDT: {startDateTime}; '
-                f'endDT: {endDateTime}; '
+                f'startDT: {self.currentState.startDateTime}; '
+                f'endDT: {self.currentState.endDateTime}; '
                 f'durationString: {dTD.IB_Duration_String}; '
                 f'elapsedTime: {tDelta}; '
                 f'rows: {self.currentState.nRowsReadOnLastUpdate}; '
@@ -686,6 +704,90 @@ async def asyncioJobGetHistoricalData(*args, **kwargs):
     # print(a)
 
     pass
+
+class TradingHourParser():
+    def __init__(self, cds: objects.ContractDetails):
+        self.timeZoneId = cds.timeZoneId
+        if self.timeZoneId == 'CST':
+            self.timeZoneId = 'CST6CDT'
+            pass
+        if self.timeZoneId == 'JST':
+            self.timeZoneId = 'Asia/Tokyo'
+            pass
+        if self.timeZoneId == 'GB':
+            self.timeZoneId = 'GMT'
+            pass
+        self.tradingHours = cds.tradingHours
+        self.liquidHours = cds.liquidHours
+        pass
+
+    def parseToDF(self) -> pd.DataFrame:
+        tradingHoursParsed = [item for item in self._parse_trading_hours_iterator(hours=self.tradingHours)]
+        liquidHoursParsed = [item for item in self._parse_trading_hours_iterator(hours=self.liquidHours)]
+        tradingHoursParsedDataFrame = pd.DataFrame.from_records(tradingHoursParsed, columns=['open','close'])
+        tradingHoursParsedDataFrame['typeOfHours'] = 'trading'
+        liquidHoursParsedDataFrame = pd.DataFrame.from_records(liquidHoursParsed,columns=['open','close'])
+        liquidHoursParsedDataFrame['typeOfHours'] = 'liquid'
+
+
+
+        dfTrading = pd.melt(tradingHoursParsedDataFrame, value_vars=['open', 'close'], var_name='typeOfAction',
+                            value_name='datetime', id_vars='typeOfHours')
+        dfLiquid = pd.melt(liquidHoursParsedDataFrame, value_vars=['open', 'close'], var_name='typeOfAction',
+                            value_name='datetime', id_vars='typeOfHours')
+
+        df = pd.concat([dfTrading,dfLiquid])
+        df.sort_values(by=['typeOfHours','datetime'], ascending=[False,True], inplace=True)
+        return df
+
+    def _parse_trading_hours_iterator(self, hours: str=None) -> pd.DataFrame:
+        """:Return: A dataframe with naive (tz-unaware) :class:`pandas.Timestamp` objects giving the time ranges
+        parsed from an IB trading hours string.
+        The information of the timezone given in the contractdetails is used to convert all times
+        to UTC naive.
+
+        Example:
+            '20170621:1700-20170621:1515;20170622:1700-20170622:1515;'
+            '20180625:0500-20180625:0800;'
+            '20180610:CLOSED;'
+        """
+
+        for daystr in hours.split(';'):  # Regex can't handle varying number of repeated capture groups
+            if daystr.find('CLOSED') > 0:
+                dateStr1, closedStr = daystr.split(':')
+                closedStr = closedStr.split(',')[0].strip()
+                date1 = datetime.datetime.strptime(dateStr1, '%Y%m%d').date()
+                time1 = datetime.time(0, 0, 0)
+                datetime1 = datetime.datetime.combine(date1, time1)
+                pdTS1 = pd.to_datetime(datetime1)
+                pdTS2 = pdTS1
+                pass
+            else:
+                datetimeStr1, datetimeStr2 = daystr.split('-')
+                dateStr1, timeStr1 = datetimeStr1.split(':')
+                timeStr1 = timeStr1.split(',')[0].strip()
+                dateStr2, timeStr2 = datetimeStr2.split(':')
+                timeStr2 = timeStr2.split(',')[0].strip()
+                date1 = datetime.datetime.strptime(dateStr1, '%Y%m%d').date()
+                date2 = datetime.datetime.strptime(dateStr2, '%Y%m%d').date()
+                start = datetime.datetime.strptime(timeStr1, '%H%M').time()
+                end = datetime.datetime.strptime(timeStr2, '%H%M').time()
+                datetime1 = datetime.datetime.combine(date1, start)
+                datetime2 = datetime.datetime.combine(date2, end)
+                pdTS1 = pd.to_datetime(datetime1)
+                pdTS2 = pd.to_datetime(datetime2)
+                pass
+            pass
+            if self.timeZoneId=='GMT':
+                a=2
+                pass
+            pdTS1 = pdTS1.tz_localize(self.timeZoneId).tz_convert('UTC').tz_localize(None)
+            pdTS2 = pdTS2.tz_localize(self.timeZoneId).tz_convert('UTC').tz_localize(None)
+            yield pdTS1, pdTS2
+        pass
+
+
+pass
 
 ## old stuff
 

@@ -54,6 +54,8 @@ class tradingDB(object):
         """Constructor for myDB"""
         DBType = kwargs.get('DBType','sqlite')
         DBFileName = kwargs.get('DBFileName',os.path.abspath(os.path.expanduser('~/tradingData/ttest.sqlite')))
+        sqlalchemyLoggingLevel = kwargs.get('sqlalchemyLoggingLevel', logging.INFO)
+        self.__setupLogging(sqlalchemyLoggingLevel=sqlalchemyLoggingLevel)
         self.__DBType = DBType
         self.__DBFileName = DBFileName
         self.__DBEngine = self.__createDBEngine()
@@ -74,7 +76,6 @@ class tradingDB(object):
 
         self.tableCategories = tableCategories
 
-        self.__setupLogging()
 
         pass
 
@@ -246,14 +247,16 @@ class tradingDB(object):
 
 
 
-    def __setupLogging(self):
+    def __setupLogging(self, sqlalchemyLoggingLevel=None):
         self._logger = logging.getLogger('tradingDB')
         self._logger.setLevel(logging.INFO)
         # sqlalchemy logging
         # logger.disabled=True does not work when using 'sqlalchemy'
         # looger.disabled=True does work when using 'sqlalchemy.engine.base.Engine'
         self._loggerSQLAlchemy = logging.getLogger('sqlalchemy')
-        self._loggerSQLAlchemy.setLevel(logging.INFO)
+        if sqlalchemyLoggingLevel is None:
+            sqlalchemyLoggingLevel = logging.INFO
+        self._loggerSQLAlchemy.setLevel(sqlalchemyLoggingLevel)
 
         pass
 

@@ -147,12 +147,17 @@ class ContainerClass(object):
         for i,qc in enumerate(qcs):
             tableName = mydb.getValueFromMarketDataInfoTable(whereColumn='conId', whereValue=qc.conId,
                                                              getColumn='tableName')
-            # a = (f'{i+1}/{n}: requesting recent historical data for contract: {qc.localSymbol}')
+            # a = (f'{i+1}/{n}: about to requesting recent historical data for contract: {qc.localSymbol}')
             # self.__log.info(a)
             # print(a)
 
             bars = self.requestRecentHistoricalBars(qc)
             orderedDictOfBars[tableName] = bars
+
+            # a = (f'{i+1}/{n}: done requesting recent historical data for contract: {qc.localSymbol}')
+            # self.__log.info(a)
+            # print(a)
+
             pass
         # note: the orderedDictOfBars attribute is continually updated
         # therefore, it is growing over time
@@ -286,9 +291,12 @@ class ContainerClass(object):
             pass
 
         # cancel and re-request the recent historical bars if they are longer
-        # than maximumBarsLengthFactor the duration for which they have been requested originally
-        barsSpanTimeDeltaOnline = lastBarDateTimeUTCNaive - firstBarDateTimeUTCNaive
-        if (barsSpanTimeDeltaOnline > maximumBarsLengthFactor * durationPandasTimeDelta) or (nowUTCNaiveFloor - lastBarDateTimeUTCNaiveFloor) > 4*barSizePandasTimeDelta:
+        # than maximumBarsLengthFactor the expected length of the bars
+        # we can NOT work with duration as in some cases, the duration of the bars
+        # can be much longer than the durationPandasTimeDelta (if requests cover an off-trading time period)
+        nBarsExpected = round(durationPandasTimeDelta.total_seconds() / barSizePandasTimeDelta.total_seconds()) + 1
+        nBarsObserved = len(bars)
+        if nBarsObserved / nBarsExpected > maximumBarsLengthFactor:
             self.watchdogApp.ib.cancelHistoricalData(bars)
             bars = self.requestRecentHistoricalBars(qc)
             self.orderedDictOfBars[tableName] = bars
@@ -316,13 +324,30 @@ class ContainerClass(object):
         if errorCode in [10182, 1100, 504]:
             # indicates broken network, but working gateway
             self._errorThatTriggersWatchdogRestart = True
+            a = (f'setting errorThatTriggersWatchdogRestart to {self._errorThatTriggersWatchdogRestart}')
+            self.__log.info(a)
             pass
 
-        if errorCode == 2106:
-            # indicates working internet connection in conjunction with gateway
+        if errorCode in [2106, 1101, 1102]:
+            # 2106 indicates working internet connection in conjunction with gateway
+            # 1101 indicates that connection is restored with datalosss - restart necessary
+            # 1102 indicates that connection is restored without data loss. Strictly speaking no reatart necessary.
+            # When using this if-clause with onlo 2106,
+            # I noticed that 1100 happened followed by 1102 followed by 2106. Gateway was restarted as it should,
+            # but after the "connectAsync INFO API connection ready" and the INFO about positions nothing happened,
+            # no data was coming in.
+            # an hour later a 1100 came in followed by a 1102. Nothing more.
+            # Therefore, I decided to add 1101 and 1102 to the if-clause
+
+
+            a = (f'errorcode is {errorCode}; errorThatTriggersWathcdogRestart is {self._errorThatTriggersWatchdogRestart}')
+            self.__log.info(a)
+
             if self._errorThatTriggersWatchdogRestart:
                 # if we had a network problem prior to this event, restart watchdog
                 self._errorThatTriggersWatchdogRestart = False
+                a = (f'setting errorThatTriggersWatchdogRestart to {self._errorThatTriggersWatchdogRestart}')
+                self.__log.info(a)
                 # self.watchdogApp.flush() # if we use this, we run into error 504 that triggers continuously watchdog restarts
                 a = (f'disconnecting ib and thereby triggering a watchdog.flush()')
                 self.__log.info(a)
@@ -441,6 +466,11 @@ class ContainerClass(object):
         a = (f'starting watchdog callback {watchdogApp}')
         self.__log.info(a)
         # print(f'{funcName}: {a}')
+
+        # clear the error tracking of cc
+        self._errorThatTriggersWatchdogRestart = False
+        a = (f'setting errorThatTriggersWatchdogRestart to {self._errorThatTriggersWatchdogRestart}')
+        self.__log.info(a)
         pass
 
     def myStartedCallback(self, watchdogApp):
@@ -662,7 +692,7 @@ class ContainerClass(object):
 
 
     # register callbacks with ib
-    def registerCallbacks(self):
+    def registerCallbacks(self, useWatchdog: bool=True):
         """a method to register callbacks"""
         ib = self.watchdogApp.ib
 
@@ -684,23 +714,25 @@ class ContainerClass(object):
         # register callbacks with watchdog
         watchdogApp = self.watchdogApp
 
-        watchdogApp.startingEvent.clear()
-        watchdogApp.startingEvent += self.myStartingCallback
+        if useWatchdog:
+            watchdogApp.startingEvent.clear()
+            watchdogApp.startingEvent += self.myStartingCallback
 
-        watchdogApp.startedEvent.clear()
-        watchdogApp.startedEvent += self.myStartedCallback
+            watchdogApp.startedEvent.clear()
+            watchdogApp.startedEvent += self.myStartedCallback
 
-        watchdogApp.stoppingEvent.clear()
-        watchdogApp.stoppingEvent += self.myStoppingCallback
+            watchdogApp.stoppingEvent.clear()
+            watchdogApp.stoppingEvent += self.myStoppingCallback
 
-        watchdogApp.stoppedEvent.clear()
-        watchdogApp.stoppedEvent += self.myStoppedCallback
+            watchdogApp.stoppedEvent.clear()
+            watchdogApp.stoppedEvent += self.myStoppedCallback
 
-        watchdogApp.softTimeoutEvent.clear()
-        watchdogApp.softTimeoutEvent += self.mySoftTimeoutCallback
+            watchdogApp.softTimeoutEvent.clear()
+            watchdogApp.softTimeoutEvent += self.mySoftTimeoutCallback
 
-        watchdogApp.hardTimeoutEvent.clear()
-        watchdogApp.hardTimeoutEvent += self.myHardTimeoutCallback
-
+            watchdogApp.hardTimeoutEvent.clear()
+            watchdogApp.hardTimeoutEvent += self.myHardTimeoutCallback
+            pass
+        pass
     pass
 

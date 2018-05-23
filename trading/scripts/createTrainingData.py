@@ -7,12 +7,12 @@ import os
 import logging
 import numpy as np
 import pandas as pd
-import pandas
 import time
 import multiprocessing as mp
 from multiprocessing import managers
 import sqlalchemy
 from collections import OrderedDict
+import functools
 
 def takeMyTime(N):
     for i in range(N):
@@ -21,16 +21,92 @@ def takeMyTime(N):
     pass
 
 
-def funcMultiProcessingSharedList(i: int,
-                        dateRange: pandas.core.indexes.datetimes.DatetimeIndex,
-                        tbl: sqlalchemy.sql.schema.Table,
-                        mydb: database.tradingDB,
-                        results: managers.DictProxy) -> None:
+def parallelizeDataBaseRequest(tableNames: list,
+                               simpleFunc: callable=None,
+                               ):
+    # tableNames contains a list of string representing the tableNames for which we want to call simpleFunc
+    # simpleFunc has one argument: the name of the table
+    # it returns one item (whatever that is)
 
-    df = getDataFromDateRange(dateRange=dateRange,
-                              tbl=tbl,
-                              mydb=mydb)
+    # Setup a list of processes that we want to run
+    manager = mp.Manager()
+    # setup a container for the results of each call to simpleFunc
+    results = manager.dict()
+    # print(type(results))
 
+    # the list of processes to run
+    processes = []
+
+    # set up a function that is to be called from the processes that fills the results Dict
+    def multiProcessSimpleFunc(tableName,results):
+        resultOfSimpleFunc = simpleFunc(tableName=tableName)
+        results[tableName] = resultOfSimpleFunc
+        pass
+
+    # set up the argss to pass to the callable
+    argss = [(tableName, results) for tableName in tableNames]
+
+    for args in argss:
+        process = mp.Process(target=multiProcessSimpleFunc,
+                             args=args)
+
+        processes.append(process)
+        pass
+
+    # Run processes
+    for p in processes:
+        p.start()
+        pass
+
+    # Exit the completed processes
+    for p in processes:
+        p.join()
+        pass
+
+    resultsDict = dict(results)
+
+    return resultsDict
+
+
+def funcMultiProcessingSharedList(
+        tableName: str,
+        mydb: database.tradingDB,
+        dateRange: pd.DatetimeIndex,
+        results: managers.DictProxy) -> None:
+
+    dfNew = getCompleteDFFromDateRangeAndTableName(tableName=tableName,
+                                                   mydb=mydb,
+                                                   dateRange=dateRange)
+
+    results[tableName] = dfNew
+
+    pass
+
+
+def getCompleteDFFromDateRangeAndTableName(
+        tableName: str=None,
+        mydb: database.tradingDB=None,
+        dateRange: pd.DatetimeIndex=None):
+    """retrieve training data for one one table"""
+
+    tableORM = mydb.getTableORMByTablename(tableName)
+
+    df = getDataFromDateRange(tableSchema=tableORM.__table__,
+                              mydb=mydb,
+                              dateRange=dateRange)
+
+    dfNew = processRawDataFrameAsResultFromGetDataFromRangeToTrainginData(
+        tableName=tableName,
+        df=df,
+        referenceDateTime=dateRange[-1])
+
+    return dfNew
+
+
+def processRawDataFrameAsResultFromGetDataFromRangeToTrainginData(
+        tableName: str,
+        df: pd.DataFrame,
+        referenceDateTime: pd.datetime) -> pd.DataFrame:
     # check if we have data
     dataExists = True
 
@@ -39,38 +115,38 @@ def funcMultiProcessingSharedList(i: int,
         pass
 
     # add year
-    df.loc[:,'year'] = df.achieved.dt.year if dataExists else None
-    df.loc[:,'quarter'] = df.achieved.dt.quarter  if dataExists else None
-    df.loc[:,'month'] = df.achieved.dt.month  if dataExists else None
-    df.loc[:,'yearweek'] = df.achieved.dt.weekofyear  if dataExists else None
-    df.loc[:,'weekday'] = df.achieved.dt.weekday  if dataExists else None
-    df.loc[:,'minutesSinceMidnight'] = (df.achieved.dt.hour*60 + df.achieved.dt.minute) if dataExists else None
+    df.loc[:, 'year'] = df.achieved.dt.year if dataExists else None
+    df.loc[:, 'quarter'] = df.achieved.dt.quarter if dataExists else None
+    df.loc[:, 'month'] = df.achieved.dt.month if dataExists else None
+    df.loc[:, 'yearweek'] = df.achieved.dt.weekofyear if dataExists else None
+    df.loc[:, 'weekday'] = df.achieved.dt.weekday if dataExists else None
+    df.loc[:, 'minutesSinceMidnight'] = (df.achieved.dt.hour * 60 + df.achieved.dt.minute) if dataExists else None
 
     # calculate the difference in time between a row and the next row
-    df.loc[:, 'diffToNextRowInMinutes'] = (df.achieved.diff().shift(-1)/pd.Timedelta(1,'m')) if dataExists else None
+    df.loc[:, 'diffToNextRowInMinutes'] = (df.achieved.diff().shift(-1) / pd.Timedelta(1, 'm')) if dataExists else None
     # the last difference is zero
     df.iloc[-1, df.columns.get_loc('diffToNextRowInMinutes')] = 0 if dataExists else None
 
-
-    df.loc[:,'tableName'] = tbl.name
-    referenceDateTime = dateRange[-1]
+    df.loc[:, 'tableName'] = tableName
+    referenceDateTime = referenceDateTime
     lastDateTimeFound = df.iloc[-1, df.columns.get_loc('achieved')] if dataExists else None
-    df.loc[:,'requestReferenceDateTime'] = referenceDateTime
-    diffToReferenceDateTimeInMinutes = (referenceDateTime - lastDateTimeFound) / pd.Timedelta(1,'m') if dataExists else None
+    df.loc[:, 'requestReferenceDateTime'] = referenceDateTime
+    diffToReferenceDateTimeInMinutes = (referenceDateTime - lastDateTimeFound) / pd.Timedelta(1,
+                                                                                              'm') if dataExists else None
     df.iloc[-1, df.columns.get_loc('diffToNextRowInMinutes')] = diffToReferenceDateTimeInMinutes if dataExists else None
 
     if dataExists:
         df.loc[:, 'diffToNextRowInMinutes'] = df.diffToNextRowInMinutes.astype(int)
 
-    results[tbl.name] = df
+    dfNew = df.copy()
+    return dfNew
 
-    pass
 
+def getDataFromDateRange(
+        tableSchema: sqlalchemy.Table,
+        mydb: database.tradingDB,
+        dateRange: pd.DatetimeIndex)-> pd.DataFrame:
 
-def getDataFromDateRange(dateRange: pandas.core.indexes.datetimes.DatetimeIndex,
-                         tbl: pandas.core.indexes.datetimes.DatetimeIndex,
-                         mydb: database.tradingDB) \
-        -> pandas.DataFrame:
     tt1 = time.time()
 
     eng = mydb.DBEngine
@@ -79,18 +155,17 @@ def getDataFromDateRange(dateRange: pandas.core.indexes.datetimes.DatetimeIndex,
     ssn = mydb.Session()
     results = []
 
-
     for _DT in dateRange:
         __DT = _DT.to_pydatetime()
         close = None
         tm = None
-        qsf = (ssn.query(tbl.c.close, tbl.c.datetime).order_by(tbl.c.datetime.desc()).filter(
-            tbl.c.datetime <= __DT)).first()
+        qsf = (ssn.query(tableSchema.c.close, tableSchema.c.datetime).order_by(tableSchema.c.datetime.desc()).filter(
+            tableSchema.c.datetime <= __DT)).first()
         if qsf is not None:
             close, tm = qsf
         else:
             qsf = (
-                ssn.query(tbl.c.close, tbl.c.datetime).order_by(tbl.c.datetime).filter(tbl.c.datetime > __DT)).first()
+                ssn.query(tableSchema.c.close, tableSchema.c.datetime).order_by(tableSchema.c.datetime).filter(tableSchema.c.datetime > __DT)).first()
             if qsf is not None:
                 close, tm = qsf
                 pass
@@ -104,14 +179,12 @@ def getDataFromDateRange(dateRange: pandas.core.indexes.datetimes.DatetimeIndex,
             (
                 ('target', __DT),
                 ('achieved', tm),
-                ('mismatchInMinutes', tDiff/pd.Timedelta(1,'m')),
+                ('mismatchInMinutes', tDiff / pd.Timedelta(1, 'm')),
                 ('close', close),
             )
         )
         results.append(ordrdDct)
         pass
-
-
 
     df = pd.DataFrame(results)
     df.sort_index(inplace=True)
@@ -119,17 +192,16 @@ def getDataFromDateRange(dateRange: pandas.core.indexes.datetimes.DatetimeIndex,
     tt2 = time.time()
     ttdiff = tt2 - tt1
 
-    nRowsTotal = nRowsTotal = ssn.query(tbl).count()
+    nRowsTotal = nRowsTotal = ssn.query(tableSchema).count()
 
     ssn.close()
 
-    print(f'Getting data from table: {tbl}: rowsTotal: {nRowsTotal}; {ttdiff}')
-
+    print(f'Getting data from table: {tableSchema}: rowsTotal: {nRowsTotal}; {ttdiff}')
 
     return (df)
 
 
-def createDateRange(startDate: pd.datetime) -> pandas.core.indexes.datetimes.DatetimeIndex:
+def createDateRange(startDate: pd.datetime) -> pd.DatetimeIndex:
     tt1 = time.time()
 
     a = pd.date_range(start=startDate - pd.DateOffset(minutes=20), end=startDate, freq='1 min')
@@ -179,6 +251,10 @@ def createDateRange(startDate: pd.datetime) -> pandas.core.indexes.datetimes.Dat
 def runProg(args):
     """run program"""
 
+    ###
+    # conclusion: for fast processes, it is beneficial to use the serial approach
+    ##
+
     pd.set_option('display.width', 300)
 
     # log to a file
@@ -192,6 +268,8 @@ def runProg(args):
     # load data from configFile
     DBType = config.get('DataBase', 'DBType')
     DBFileName = config.get('DataBase', 'DBFileName')
+    configIB = config['InteractiveBrokers']
+    barSizePandasTimeDelta = pd.Timedelta(**eval(configIB.get('densityTimeDelta', '{"minutes":1}')))
 
     # create database class
     mydb = database.tradingDB(DBType=DBType, DBFileName=DBFileName)
@@ -201,25 +279,113 @@ def runProg(args):
     mydb.instantiateExistingTablesAndClasses()
     # set log level
     mydb._loggerSQLAlchemy.setLevel(logging.ERROR)
-    ssn = mydb.Session()
 
-    tbls = mydb.MarketDataInfoTableDataFrame['tableORM']
-    tbl = tbls.iloc[0].__table__
-
-    nowUTC = pd.to_datetime(pd.datetime.utcnow()).floor('1 min') - pd.Timedelta(minutes=1)
-    startDate = nowUTC
-    startDate = pd.to_datetime('2018-05-17 15:00:00').tz_localize('Europe/Berlin').tz_convert('UTC').tz_localize(None).round('1 min')
+    nowUTCFloor = pd.to_datetime(pd.datetime.utcnow()).floor(barSizePandasTimeDelta) - barSizePandasTimeDelta
+    startDate = nowUTCFloor
+    # startDate = pd.to_datetime('2018-05-17 15:00:00').tz_localize('Europe/Berlin').tz_convert('UTC').tz_localize(None).round('1 min')
     print(startDate)
     dateRange = createDateRange(startDate)
 
-    tt1 = time.time()
-    dfs1 = []
-
-    nTables = len(tbls)
-
-    N = 3000000
+    tableNames = mydb.MarketDataInfoTableDataFrame.tableName
 
     if 1:
+        # multiprocessing Shared List using wrapper
+        tt1 = time.time()
+        def simpleFunc (tableName: str=None) -> None:
+            return getCompleteDFFromDateRangeAndTableName(tableName=tableName,
+                                                          mydb=mydb,
+                                                          dateRange=dateRange)
+
+        resultsDict = parallelizeDataBaseRequest(tableNames=tableNames,
+                                                 simpleFunc=simpleFunc)
+
+        df = resultsDict['MarketData_CASH_EUR_JPY_IDEALPRO']
+        # df = resultsDict['MarketData_CFD_IBUS500_USD_SMART']
+        # print(df)
+
+        tt2 = time.time()
+        ttdiff = tt2 - tt1
+        print(f'retrieved data multi processing Shared Variable using wrapper: {ttdiff}')
+        print()
+
+
+        pass
+
+    if 1:
+        # serial processing, long function
+        tt1 = time.time()
+
+        def simpleFunc (tableName: str=None) -> None:
+            return getCompleteDFFromDateRangeAndTableName(tableName=tableName,
+                                                          mydb=mydb,
+                                                          dateRange=dateRange)
+
+        resultsDict = {}
+        for tableName in tableNames:
+            resultsDict[tableName] = simpleFunc(tableName)
+            pass
+
+        df = resultsDict['MarketData_CASH_EUR_JPY_IDEALPRO']
+        # df = resultsDict['MarketData_CFD_IBUS500_USD_SMART']
+        # print(df)
+
+
+        tt2 = time.time()
+        ttdiff = tt2 - tt1
+        print(f'retrieved data serial long function: {ttdiff}')
+        print()
+
+        pass
+
+    if 1:
+        # multiprocessing Shared List using wrapper, fast function
+        tt1 = time.time()
+        def simpleFunc (tableName: str=None) -> None:
+            tableORM = mydb.getTableORMByTablename(tableName)
+            ssn = mydb.Session()
+            myDT = ssn.query(sqlalchemy.func.min(tableORM.datetime)).scalar()
+            ssn.close()
+            return myDT
+
+        resultsDict = parallelizeDataBaseRequest(tableNames=tableNames,
+                                                 simpleFunc=simpleFunc)
+
+        print(resultsDict)
+
+        tt2 = time.time()
+        ttdiff = tt2 - tt1
+        print(f'retrieved data multi processing Shared Variable using wrapper fast function: {ttdiff}')
+        print()
+
+
+        pass
+
+    if 1:
+        # serial processing, fast function
+        tt1 = time.time()
+        def simpleFunc (tableName: str=None) -> None:
+            tableORM = mydb.getTableORMByTablename(tableName)
+            ssn = mydb.Session()
+            myDT = ssn.query(sqlalchemy.func.min(tableORM.datetime)).scalar()
+            ssn.close()
+            return myDT
+
+        resultsDict={}
+        for tableName in tableNames:
+            resultsDict[tableName] = simpleFunc(tableName)
+            pass
+
+        print(resultsDict)
+
+        tt2 = time.time()
+        ttdiff = tt2 - tt1
+        print(f'retrieved data serial fast function: {ttdiff}')
+        print()
+
+
+        pass
+
+    if 0:
         # multiprocessing Shared List
         tt1 = time.time()
 
@@ -229,13 +395,12 @@ def runProg(args):
         # print(type(results))
 
         processes = []
-        for i in range(nTables):
+        argss = [(tableName,mydb,dateRange,results) for tableName in tableNames]
+
+        for args in argss:
+            tableName = args[0]
             process = mp.Process(target=funcMultiProcessingSharedList,
-                                 args=(i,
-                                       dateRange,
-                                       tbls.iloc[i].__table__,
-                                       mydb,
-                                       results))
+                                 args=args)
 
             processes.append(process)
             pass
@@ -254,28 +419,18 @@ def runProg(args):
         # print(resultsDict)
 
         df = resultsDict['MarketData_CASH_EUR_JPY_IDEALPRO']
-        df = resultsDict['MarketData_CASH_EUR_AUD_IDEALPRO']
-        df = resultsDict['MarketData_IND_N225_JPY_OSE.JPN']
-        df = resultsDict['MarketData_IND_INDU_USD_CME']
+        # df = resultsDict['MarketData_CFD_IBUS500_USD_SMART']
 
         print(df)
 
         tt2 = time.time()
         ttdiff = tt2 - tt1
         print(f'retrieved data multi processing Shared Variable: {ttdiff}')
+        print()
 
 
         pass
-
-
-
-    ssn.commit()
-
-
-    a = ssn.query(mydb.MarketDataInfoTable.earliestDateTime).all()
-    print(a)
-
-    ssn.close()
+    pass
 
 
 

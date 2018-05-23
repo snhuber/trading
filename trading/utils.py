@@ -238,6 +238,9 @@ def getEarliestDateTimeFromIBAsDateTime(ib, qualifiedContract=None, **kwargs):
     # formatDate = kwargs.pop('formatDate',2)
     timeOutTime = kwargs.pop('timeOutTime', 1)
 
+    a = (f'getting earliestDateTimeFromIBAsDateTime: timeOutTime = {timeOutTime}')
+    _logger.info(a)
+
     # sometimes, this request just hangs.
     # we implement a safeguard against that by only giving the request
     # a given amount of time
@@ -248,7 +251,7 @@ def getEarliestDateTimeFromIBAsDateTime(ib, qualifiedContract=None, **kwargs):
         req = ib.reqHeadTimeStampAsync(qualifiedContract, whatToShow=whatToShow, useRTH=useRTH, formatDate=2, **kwargs)
         eDT = ib.run(asyncio.wait_for(req, timeOutTime))
     except asyncio.TimeoutError:
-        a = (f'Timeout while requesting the earliestDateTime for contract {qualifiedContract}')
+        a = (f'Timeout while requesting the earliestDateTime for contract {qualifiedContract} with timeout {timeOutTime}')
         _logger.warn(a)
     except Exception as excp:
         pass

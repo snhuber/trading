@@ -33,6 +33,11 @@ def runProg(args):
 
 
     pd.set_option('display.width', 200)
+
+    # flags
+    useWatchdog = True
+    useScheduler = True
+
     # local timezone
     tzlocal = dateutil.tz.tzlocal()
 
@@ -44,14 +49,13 @@ def runProg(args):
     # load data from configFile
     host = config.get('InteractiveBrokers', 'host')
     port = config.getint('InteractiveBrokers', 'port')
-    clientId = config.get('InteractiveBrokers', 'clientId')
+    clientId = config.getint('InteractiveBrokers', 'clientId')
     DBType = config.get('DataBase', 'DBType')
     DBFileName = config.get('DataBase', 'DBFileName')
 
 
     # for production mode: watchdog
-    watchdogApp = None
-    if 1:
+    if useWatchdog:
         # start watchdog
         # ibc = IBC(963, gateway=True, tradingMode='paper',ibcIni='/home/bn/IBController/configPaper.ini')
         ibcIni = config.get('InteractiveBrokers', 'ibcIni')
@@ -60,11 +64,16 @@ def runProg(args):
         ib = IB()
         watchdogApp = Watchdog(ibc, ib=ib, appStartupTime=15, host=host, port=port, clientId=clientId)
         watchdogApp.start()
-
-    if 0:
+    else:
         # faster way for now
         ib = IB()
-        ib.connect(host=host, port=port, clientId=clientId)
+        try:
+            ib.connect(host=host, port=port, clientId=clientId)
+        except:
+            import random
+            clientId = clientId + random.randint(1, 100000)
+            ib.connect(host=host, port=port, clientId=clientId)
+            pass
         class myWatchdog(object):
             def __init__(self):
                 self.ib = ib
@@ -72,7 +81,6 @@ def runProg(args):
             pass
         watchdogApp = myWatchdog()
         pass
-
     pass
 
 
@@ -120,10 +128,9 @@ def runProg(args):
     cc.qcs = qcs
 
     # register callbacks with ib
-    cc.registerCallbacks()
+    cc.registerCallbacks(useWatchdog=useWatchdog)
 
     # define a scheduler
-    useScheduler = True
     if useScheduler:
         scheduler = AsyncIOScheduler()
         cc.scheduler = scheduler
@@ -226,7 +233,7 @@ def runProg(args):
         'kwargs': historicalDataGetterSettings,
         'jobRootName': None,
         'minute': '*',
-        'second': '*/5',
+        'second': '0',
         'coalesce': True,
         'misfire_grace_time': 30,
         'trigger': 'cron',
@@ -250,8 +257,8 @@ def runProg(args):
         'jobRootName': 'schedulerJobSwitchRequestForRecentHistoricalDataFromShortToLong',
         'hour': '22',
         # 'hour': '*',
-        'minute': '02',
-        # 'minute': '*',
+        'minute': '07',
+        # 'minute': '*/2',
         'second': '00',
         # 'second': '5-59/10',
         'coalesce': True,
@@ -271,8 +278,8 @@ def runProg(args):
         'jobRootName': 'schedulerJobSwitchRequestForRecentHistoricalDataFromLongToShort',
         'hour': '04',
         # 'hour': '*',
-        'minute': '02',
-        # 'minute': '*',
+        'minute': '13',
+        # 'minute': '1-59/2',
         'second': '00',
         # 'second': '*/10',
         'coalesce': True,

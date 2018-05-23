@@ -38,13 +38,13 @@ def findConIds(**kwargs):
     # build a list of valid contracts
     # define contracts
     ForexStrs = [
-        'USD',
-        'GBP',
+        # 'AUD',
+        # 'CAD',
         'CHF',
-        'JPY',
         'CNH',
-        'CAD',
-        'AUD',
+        'GBP',
+        'JPY',
+        'USD',
         'RUB',
         # 'CZK',
         # 'DKK',
@@ -62,35 +62,41 @@ def findConIds(**kwargs):
 
     # Indices and CFDs
     others = [
+        # {
+        #     'secType': 'IND',
+        #     'symbol': 'DAX',
+        #     'exchange': 'DTB',
+        #     'currency': 'EUR'
+        # },
+        # {
+        #     'secType': 'IND',
+        #     'symbol': 'INDU',
+        #     'exchange': 'CME',
+        #     'currency': 'USD'
+        # },
+        # {
+        #     'secType': 'IND',
+        #     'symbol': 'HSC50',
+        #     'exchange': 'HKFE',
+        #     'currency': 'HKD'
+        # },
+        # {
+        #     'secType': 'IND',
+        #     'symbol': 'N225',
+        #     'exchange': 'OSE.JPN',
+        #     'currency': 'JPY'
+        # },
+        # {
+        #     'secType': 'IND',
+        #     'symbol': 'SPX',
+        #     'exchange': 'CBOE',
+        #     'currency': 'USD'
+        # },
         {
-            'secType': 'IND',
-            'symbol': 'DAX',
-            'exchange': 'DTB',
-            'currency': 'EUR'
-        },
-        {
-            'secType': 'IND',
-            'symbol': 'INDU',
-            'exchange': 'CME',
-            'currency': 'USD'
-        },
-        {
-            'secType': 'IND',
-            'symbol': 'SPX',
-            'exchange': 'CBOE',
-            'currency': 'USD'
-        },
-        {
-            'secType': 'IND',
-            'symbol': 'HSC50',
-            'exchange': 'HKFE',
-            'currency': 'HKD'
-        },
-        {
-            'secType': 'IND',
-            'symbol': 'N225',
-            'exchange': 'OSE.JPN',
-            'currency': 'JPY'
+            'secType': 'CFD',
+            'symbol': 'IBCH20',
+            'exchange': 'SMART',
+            'currency': 'CHF'
         },
         {
             'secType': 'CFD',
@@ -98,6 +104,37 @@ def findConIds(**kwargs):
             'exchange': 'SMART',
             'currency': 'EUR'
         },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBGB100',
+            'exchange': 'SMART',
+            'currency': 'GBP'
+        },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBJP225',
+            'exchange': 'SMART',
+            'currency': 'JPY'
+        },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBHK50',
+            'exchange': 'SMART',
+            'currency': 'HKD'
+        },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBUS30',
+            'exchange': 'SMART',
+            'currency': 'USD'
+        },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBUS500',
+            'exchange': 'SMART',
+            'currency': 'USD'
+        },
+
     ]
 
     contractsQualified = []
