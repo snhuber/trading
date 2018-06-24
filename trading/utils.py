@@ -254,6 +254,8 @@ def getEarliestDateTimeFromIBAsDateTime(ib, qualifiedContract=None, **kwargs):
         a = (f'Timeout while requesting the earliestDateTime for contract {qualifiedContract} with timeout {timeOutTime}')
         _logger.warn(a)
     except Exception as excp:
+        a = (f'Other error (not timeout) while requesting the earliestDateTime for contract {qualifiedContract} with timeout {timeOutTime}; error: {excp}')
+        _logger.warn(a)
         pass
 
     return(eDT)

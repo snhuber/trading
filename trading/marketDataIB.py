@@ -507,6 +507,8 @@ class HistoricalDataGetter(Object):
 
     def runForever(self):
         """iterate over all qualifiedContracts in qcs and get the data starting from the position saved on disk"""
+        timeOutErrorCounterMax = 10
+        timeOutErrorCounter = 0
         while True:
 
             tStart = pd.datetime.now()
@@ -521,6 +523,7 @@ class HistoricalDataGetter(Object):
             # to do that, we check if we can retrieve the earliestDateTime directly from IB using reqHeadTimeStamp with a short timeOut
             # a = (f'about to try to get the earliestDateTime')
             # _logger.info(a)
+            earliestDTFromIB = None
             try:
                 # a = (f'in try part trying to get the earliestDateTime')
                 # _logger.info(a)
@@ -535,9 +538,11 @@ class HistoricalDataGetter(Object):
             if pd.isnull(earliestDTFromIB):
                 a = (
                     f'attempting to get historical data: {self.currentState.qc.symbol}, {self.currentState.qc.currency}: not performed because earliestDateTime as queried directly from IB is NULL.')
+                timeOutErrorCounter += 1
             else:
                 a = (
                     f'attempting to get historical data: {self.currentState.qc.symbol}, {self.currentState.qc.currency}: is going to be performed because earliestDateTime as queried directly from IB is: {earliestDTFromIB}')
+                timeOutErrorCounter = 0
                 pass
 
             _logger.info(a)
@@ -547,12 +552,17 @@ class HistoricalDataGetter(Object):
             # we are now breaking the loop if no earliestDateTime is found
             if pd.isnull(earliestDTFromIB):
                 # it makes no sense to continue if IB has no earliestDateTime for this conId
-                # we therefore skip all code below and continue the for loop, essentially meaning that the next conId
-                # will be treated
-                self.currentState.advanceCurrentStateToNextQC(mydb=self.mydb,
-                                                         qcs=self.qcs,
-                                                         tableNames=self.tableNames)
+                # we therefore skip all code below and continue the for loop
+                # we will also go to the next conId if a certain number of timeOuts has been reached
+                if timeOutErrorCounter >= timeOutErrorCounterMax:
+                    self.currentState.advanceCurrentStateToNextQC(mydb=self.mydb,
+                                                             qcs=self.qcs,
+                                                             tableNames=self.tableNames)
+                    timeOutErrorCounter = 0
+                    pass
+
                 self.currentState.writeCurrentStateToDisk(mydb=self.mydb)
+                self.ib.sleep(0.1)
                 continue
             else:
                 # all ok, we can retrieve data and will continue
@@ -679,7 +689,7 @@ class HistoricalDataGetter(Object):
             # print(a)
 
 
-            self.ib.sleep(0.01)
+            self.ib.sleep(0.1)
             pass
         pass
     pass

@@ -41,71 +41,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="marketdata_cash_eur_gbp_idealpro" pinned="false" current-in-tab="false">
+      <file leaf-file-name="marketdatahistoricalrequestspositiontable" pinned="false" current-in-tab="false">
+        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatahistoricalrequestspositiontable">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="marketdata_cash_eur_gbp_idealpro" pinned="false" current-in-tab="true">
         <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_gbp_idealpro">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marketdata_cash_eur_jpy_idealpro" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_jpy_idealpro">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marketdata_cash_eur_rub_idealpro" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_rub_idealpro">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marketdata_cash_eur_usd_idealpro" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_usd_idealpro">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="datetime &gt; '2008-01-01'" />
-                <filter text="datetime &gt; '2009-01-01'" />
-                <filter text="datetime &gt; '2007-01-01'" />
-                <filter text="datetime &gt; '2006-01-01'" />
-                <filter text="datetime &gt; '2005-01-01'" />
-                <filter text="close&gt;1.3" />
+              <filtering enabled="true" text="high IS NULL">
+                <filter text="high IS NULL" />
+                <filter text="low IS NULL" />
               </filtering>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marketdata_cfd_ibch20_chf_smart" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibch20_chf_smart">
+      <file leaf-file-name="marketdatainfotable" pinned="false" current-in-tab="false">
+        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true">
-                <filter text="datetime&gt;=&quot;2018-05-18 06:59&quot;" />
-                <filter text="datetime&gt;=&quot;2018-05-20 06:59&quot;" />
-                <filter text="datetime&gt;=&quot;2018-05-21 06:59&quot;" />
-                <filter text="datetime&gt;=&quot;2018-05-22 06:59&quot;" />
-                <filter text="datetime&gt;=&quot;2018-05-22 07:00&quot;" />
-              </filtering>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marketdata_cfd_ibde30_eur_smart" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibde30_eur_smart">
+      <file leaf-file-name="marketdata_cfd_ibjp225_jpy_smart" pinned="false" current-in-tab="false">
+        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibjp225_jpy_smart">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true">
-                <filter text="datetime&gt;=&quot;2018-04-20 19:59:00.000000&quot;" />
-                <filter text="datetime&gt;=&quot;2013-05-06 15:29:00.000000&quot;" />
+              <filtering enabled="true" text="high IS NULL">
+                <filter text="high IS NULL" />
+                <filter text="datetime &gt; '2012-10-01 09:52:00'" />
+                <filter text="datetime &gt; '2012-10-01 00:52:00.000000'" />
+                <filter text="datetime &gt; '2012-10-01 09:52:00.000000'" />
+                <filter text="datetime &gt; '2012-10-01 09:53:00.000000'" />
+                <filter text="datetime &gt; '2012-10-01 09:54:00.000000'" />
+                <filter text="low IS NULL" />
               </filtering>
             </state>
           </provider>
@@ -115,7 +92,9 @@
         <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibhk50_hkd_smart">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true">
+              <filtering enabled="true" text="high IS NULL">
+                <filter text="high IS NULL" />
+                <filter text="low IS NULL" />
                 <filter text="datetime &gt;= '2012-09-13 15:29:00.000000'" />
                 <filter text="datetime &gt; '2012-09-13 15:29:00.000000'" />
               </filtering>
@@ -136,30 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marketdata_cfd_ibjp225_jpy_smart" pinned="false" current-in-tab="false">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibjp225_jpy_smart">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marketdata_cfd_ibus500_usd_smart" pinned="false" current-in-tab="true">
-        <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibus500_usd_smart">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="datetime &gt;= '2012-10-12 19:59:00.000000'" />
-                <filter text="datetime &gt; '2012-10-12 19:59:00.000000'" />
-                <filter text="datetime &gt;= '2014-09-30 19:59:00.000000'" />
-                <filter text="datetime &gt; '2014-09-30 19:59:00.000000'" />
-                <filter text="datetime &gt;= &quot;2014-09-30 19:59&quot;" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
@@ -170,6 +125,7 @@
         <option value="705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_3.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_4.sql" />
       </list>
     </option>
   </component>
@@ -183,8 +139,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="144" />
-    <option name="y" value="262" />
+    <option name="x" value="49" />
+    <option name="y" value="239" />
     <option name="width" value="2428" />
     <option name="height" value="1007" />
   </component>
@@ -195,7 +151,10 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="GoToSymbol.includeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;MySQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="SQLite" />
@@ -203,7 +162,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="database.main2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,60 +190,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="262" width="2428" height="1007" extended-state="0" />
+    <frame x="49" y="239" width="2428" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" anchor="bottom" id="Database Console" order="5" visible="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Database Console" order="7" visible="true" weight="0.32990867" />
       <window_info anchor="right" content_ui="combo" id="Project" order="1" weight="0.25041187" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info x="238" y="443" width="801" height="876" id="Database" order="0" visible="true" weight="0.32990116" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="R Packages" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Database Console" order="5" visible="true" weight="0.32990867" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="1" weight="0.25041187" />
-      <window_info anchor="right" id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="R Graphics" order="5" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info active="true" x="238" y="443" width="801" height="876" id="Database" order="0" visible="true" weight="0.32990116" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="R Packages" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" x="238" y="443" width="801" height="876" id="Database" order="0" visible="true" weight="0.3294893" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-    </layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32990867" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -293,13 +227,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_chf_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -307,27 +234,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_indu_usd_cme">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_indu_usd_cme">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_2.sql" />
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -342,34 +249,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="72" selection-start-column="72" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_1.sql" />
     <entry file="das://41c15cc7-9381-44c8-974e-ffa5b2b140ef/schema/trading/table/MarketDataInfoTable.sql" />
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_chf_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -429,20 +309,8 @@
       </provider>
     </entry>
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatahistoricalequestspositiontable" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="72" selection-start-column="72" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_1.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_2.sql" />
     <entry file="das://41c15cc7-9381-44c8-974e-ffa5b2b140ef/schema/trading/table/MarketDataInfoTable" />
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/alembic_version">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -461,83 +329,175 @@
       </provider>
     </entry>
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/table_name" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_3.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_3.sql" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_spx_usd_cboe" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_n225_jpy_ose.jpn" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/test_table" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_aud_idealpro" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_cad_idealpro" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_dax_eur_dtb" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_indu_usd_cme" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibch20_chf_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="datetime&gt;=&quot;2018-05-18 06:59&quot;" />
+            <filter text="datetime&gt;=&quot;2018-05-20 06:59&quot;" />
+            <filter text="datetime&gt;=&quot;2018-05-21 06:59&quot;" />
+            <filter text="datetime&gt;=&quot;2018-05-22 06:59&quot;" />
+            <filter text="datetime&gt;=&quot;2018-05-22 07:00&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibus500_usd_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="datetime &gt;= '2012-10-12 19:59:00.000000'" />
+            <filter text="datetime &gt; '2012-10-12 19:59:00.000000'" />
+            <filter text="datetime &gt;= '2014-09-30 19:59:00.000000'" />
+            <filter text="datetime &gt; '2014-09-30 19:59:00.000000'" />
+            <filter text="datetime &gt;= &quot;2014-09-30 19:59&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibgb100_gbp_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibde30_eur_smart.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_spx_usd_cboe">
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibeu50_eur_smart">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_n225_jpy_ose.jpn">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime &gt;=&quot;2010-12-30 14:29:00&quot;" />
-            <filter text="datetime &lt; &quot;2008-11-12 11:00:00&quot;" />
+          <filtering enabled="true" text="datetime &gt; '2016-11-26 18:20:00'">
+            <filter text="datetime &gt; '2016-11-26 18:20:00'" />
+            <filter text="datetime &gt; '2016-11-28 19:20:00'" />
+            <filter text="datetime &gt; '2016-11-28 20:20:00'" />
+            <filter text="datetime &gt; '2012-08-27 07:03:00.000000'" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/test_table">
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_rub_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_aud_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_cad_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_dax_eur_dtb">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/705a4057-0268-424d-a36e-44987c45edaa/console_4.sql" />
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_usd_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true">
-            <filter text="datetime &gt; &quot;2005-08-01 18:07:00&quot;" />
-            <filter text="datetime &gt; &quot;2005-07-27 00:00:00&quot;" />
-            <filter text="datetime &gt; &quot;2005-07-16 17:58:00&quot;" />
-            <filter text="datetime&gt;&quot;2015-02-20 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-26 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-22 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-17 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-18 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-19 17:00:00&quot;" />
-            <filter text="datetime&gt;&quot;2014-09-20 17:00:00&quot;" />
+            <filter text="high IS NULL" />
+            <filter text="datetime &gt; '2008-01-01'" />
+            <filter text="datetime &gt; '2009-01-01'" />
+            <filter text="datetime &gt; '2007-01-01'" />
+            <filter text="datetime &gt; '2006-01-01'" />
+            <filter text="datetime &gt; '2005-01-01'" />
+            <filter text="close&gt;1.3" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_ind_indu_usd_cme">
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_cnh_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true">
-            <filter text="datetime&lt;=&quot;2005-04-13 20:14:00.000000&quot;" />
-            <filter text="datetime&lt;=&quot;2005-04-12 20:14:00.000000&quot;" />
-            <filter text="datetime&lt;=&quot;2006-10-09 20:14:00.000000&quot;" />
-            <filter text="datetime&lt;=&quot;2006-13-06 20:14:00.000000&quot;" />
-            <filter text="datetime&lt;=&quot;2006-10-06 20:14:00.000000&quot;" />
-            <filter text="datetime&lt;=&quot;2017-08-20 00:00:00&quot;" />
-            <filter text="datetime&lt;=&quot;2017-08-24 21:06:00&quot;" />
-            <filter text="datetime&lt;=&quot;2017-08-24 20:06:00&quot;" />
-            <filter text="datetime&lt;=&quot;2017-07-12 20:06:00&quot;" />
-            <filter text="datetime&lt;=&quot;2017-07-12 20:01:00&quot;" />
+            <filter text="high IS NULL" />
+            <filter text="datetime&lt;=&quot;2005-03-15 08:27:00.000000&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibfr40_eur_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_chf_idealpro">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="high IS NULL" />
+            <filter text="diffToNextRowInMinutes&gt;=15" />
+            <filter text="datetime&gt;=&quot;2005-11-05 03:28:00&quot;" />
+            <filter text="DATETIME&gt;&quot;2005-03-16 21:50&quot;" />
+            <filter text="DATETIME&lt;&quot;2005-03-16 22:50&quot;" />
+            <filter text="DATETIME&gt;&quot;2005-03-16 22:50&quot;" />
+            <filter text="DATETIME&gt;&quot;2005-03-16 22:58&quot;" />
+            <filter text="DATETIME&gt;&quot;2005-03-16 23:10&quot;" />
+            <filter text="DATETIME&gt;&quot;2005-03-16 23:30&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdatainfotable_1">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibde30_eur_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="high is null" />
+            <filter text="datetime&gt;=&quot;2018-04-20 19:59:00.000000&quot;" />
+            <filter text="datetime&gt;=&quot;2013-05-06 15:29:00.000000&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibhk50_hkd_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="high IS NULL">
+            <filter text="high IS NULL" />
+            <filter text="low IS NULL" />
+            <filter text="datetime &gt;= '2012-09-13 15:29:00.000000'" />
+            <filter text="datetime &gt; '2012-09-13 15:29:00.000000'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibus30_usd_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="datetime &gt;= '2012-10-12 19:59:00.000000'" />
+            <filter text="datetime &gt; '2012-10-12 19:59:00.000000'" />
+            <filter text="datetime &gt; '2018-05-18 12:15:00.000000'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibjp225_jpy_smart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="high IS NULL">
+            <filter text="high IS NULL" />
+            <filter text="datetime &gt; '2012-10-01 09:52:00'" />
+            <filter text="datetime &gt; '2012-10-01 00:52:00.000000'" />
+            <filter text="datetime &gt; '2012-10-01 09:52:00.000000'" />
+            <filter text="datetime &gt; '2012-10-01 09:53:00.000000'" />
+            <filter text="datetime &gt; '2012-10-01 09:54:00.000000'" />
+            <filter text="low IS NULL" />
           </filtering>
         </state>
       </provider>
@@ -556,27 +516,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_chf_idealpro">
+    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_jpy_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true">
-            <filter text="diffToNextRowInMinutes&gt;=15" />
-            <filter text="datetime&gt;=&quot;2005-11-05 03:28:00&quot;" />
-            <filter text="DATETIME&gt;&quot;2005-03-16 21:50&quot;" />
-            <filter text="DATETIME&lt;&quot;2005-03-16 22:50&quot;" />
-            <filter text="DATETIME&gt;&quot;2005-03-16 22:50&quot;" />
-            <filter text="DATETIME&gt;&quot;2005-03-16 22:58&quot;" />
-            <filter text="DATETIME&gt;&quot;2005-03-16 23:10&quot;" />
-            <filter text="DATETIME&gt;&quot;2005-03-16 23:30&quot;" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_cnh_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime&lt;=&quot;2005-03-15 08:27:00.000000&quot;" />
+          <filtering enabled="true" text="high IS NULL">
+            <filter text="high IS NULL" />
           </filtering>
         </state>
       </provider>
@@ -584,98 +528,9 @@
     <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_gbp_idealpro">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_jpy_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_rub_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cash_eur_usd_idealpro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime &gt; '2008-01-01'" />
-            <filter text="datetime &gt; '2009-01-01'" />
-            <filter text="datetime &gt; '2007-01-01'" />
-            <filter text="datetime &gt; '2006-01-01'" />
-            <filter text="datetime &gt; '2005-01-01'" />
-            <filter text="close&gt;1.3" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibch20_chf_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime&gt;=&quot;2018-05-18 06:59&quot;" />
-            <filter text="datetime&gt;=&quot;2018-05-20 06:59&quot;" />
-            <filter text="datetime&gt;=&quot;2018-05-21 06:59&quot;" />
-            <filter text="datetime&gt;=&quot;2018-05-22 06:59&quot;" />
-            <filter text="datetime&gt;=&quot;2018-05-22 07:00&quot;" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibde30_eur_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime&gt;=&quot;2018-04-20 19:59:00.000000&quot;" />
-            <filter text="datetime&gt;=&quot;2013-05-06 15:29:00.000000&quot;" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibhk50_hkd_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime &gt;= '2012-09-13 15:29:00.000000'" />
-            <filter text="datetime &gt; '2012-09-13 15:29:00.000000'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibjp225_jpy_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibus30_usd_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime &gt;= '2012-10-12 19:59:00.000000'" />
-            <filter text="datetime &gt; '2012-10-12 19:59:00.000000'" />
-            <filter text="datetime &gt; '2018-05-18 12:15:00.000000'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://705a4057-0268-424d-a36e-44987c45edaa/schema/main/table/marketdata_cfd_ibus500_usd_smart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="datetime &gt;= '2012-10-12 19:59:00.000000'" />
-            <filter text="datetime &gt; '2012-10-12 19:59:00.000000'" />
-            <filter text="datetime &gt;= '2014-09-30 19:59:00.000000'" />
-            <filter text="datetime &gt; '2014-09-30 19:59:00.000000'" />
-            <filter text="datetime &gt;= &quot;2014-09-30 19:59&quot;" />
+          <filtering enabled="true" text="high IS NULL">
+            <filter text="high IS NULL" />
+            <filter text="low IS NULL" />
           </filtering>
         </state>
       </provider>

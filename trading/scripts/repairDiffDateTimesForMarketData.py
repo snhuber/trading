@@ -42,17 +42,19 @@ def runProg(args):
     mydb.instantiateExistingTablesAndClasses()
     # set log level
     mydb._loggerSQLAlchemy.setLevel(logging.ERROR)
-    ssn = mydb.Session()
 
     tbls = mydb.MarketDataInfoTableDataFrame['tableORM']
 
-    if 1:
+    if 0:
         # loop over entire table and repair
         df = None
         for idx in mydb.MarketDataInfoTableDataFrame.index:
             tableORM = mydb.MarketDataInfoTableDataFrame.at[idx,'tableORM']
             tableName = tableORM.__tablename__
+
+            ssn = mydb.Session()
             print(tableName,ssn.query(tableORM).count())
+            ssn.close()
 
             # if tableName not in ['MarketData_IND_N225_JPY_OSE.JPN', 'MarketData_IND_INDU_USD_CME']:
             # if tableName not in ['MarketData_IND_N225_JPY_OSE.JPN']:
@@ -62,7 +64,7 @@ def runProg(args):
                                                    startDateTime=None,
                                                    endDateTime=None,
                                                    doCorrection = True)
-            # print(dfLoop)
+            print(dfLoop)
             if df is None:
                 df = dfLoop.copy()
             else:
@@ -74,11 +76,42 @@ def runProg(args):
         df.sort_index(inplace=True)
         print(df)
 
+    if 1:
+        # loop over entire table and check for specific values in any of the columns [close, low, high, open]
+        df = None
+        valuesToFind = [None, 0]
+        for idx in mydb.MarketDataInfoTableDataFrame.index:
+            tableORM = mydb.MarketDataInfoTableDataFrame.at[idx,'tableORM']
+            tableName = tableORM.__tablename__
+            if tableName not in ['MarketData_CFD_IBDE30_EUR_SMART']:
+                # continue
+                pass
+            ssn = mydb.Session()
+            print(f'tableName: {tableName}; nRows: {ssn.query(tableORM).count()}; ',end='',flush=True)
+            ssn.close()
+            dfLoop = mydb.findEntriesInMarketDataTable(tableName=tableName,
+                                                       valuesToFind=valuesToFind,
+                                                       startDateTime=None,
+                                                       endDateTime=None,
+                                                       doCorrection = False)
+            # print(dfLoop)
+            nRowsLoop = 0
+            if dfLoop is not None:
+                nRowsLoop = len(dfLoop)
+                pass
+            print(f'nRows with {valuesToFind}: {nRowsLoop}',end='\n',flush=True)
+            if df is None:
+                df = dfLoop.copy()
+            else:
+                if dfLoop is not None:
+                    df = df.append(dfLoop)
+                    pass
+                pass
+            pass
+        df.sort_index(inplace=True)
+        df = df.sort_values(by=['tableName', 'datetime'])
+        print(df)
 
-    ssn.commit()
-
-
-    ssn.close()
 
 
 

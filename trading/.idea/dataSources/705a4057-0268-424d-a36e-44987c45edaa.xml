@@ -13,471 +13,775 @@
     <collation id="5" parent="1" name="RTRIM"/>
     <table id="6" parent="2" name="MarketDataHistoricalRequestsPositionTable"/>
     <table id="7" parent="2" name="MarketDataInfoTable"/>
-    <table id="8" parent="2" name="MarketData_CASH_EUR_CHF_IDEALPRO"/>
-    <table id="9" parent="2" name="MarketData_CASH_EUR_CNH_IDEALPRO"/>
-    <table id="10" parent="2" name="MarketData_CASH_EUR_GBP_IDEALPRO"/>
-    <table id="11" parent="2" name="MarketData_CASH_EUR_JPY_IDEALPRO"/>
-    <table id="12" parent="2" name="MarketData_CASH_EUR_RUB_IDEALPRO"/>
-    <table id="13" parent="2" name="MarketData_CASH_EUR_USD_IDEALPRO"/>
-    <table id="14" parent="2" name="MarketData_CFD_IBCH20_CHF_SMART"/>
-    <table id="15" parent="2" name="MarketData_CFD_IBDE30_EUR_SMART"/>
-    <table id="16" parent="2" name="MarketData_CFD_IBHK50_HKD_SMART"/>
-    <table id="17" parent="2" name="MarketData_CFD_IBJP225_JPY_SMART"/>
-    <table id="18" parent="2" name="MarketData_CFD_IBUS30_USD_SMART"/>
-    <table id="19" parent="2" name="MarketData_CFD_IBUS500_USD_SMART"/>
-    <table id="20" parent="2" name="alembic_version"/>
-    <table id="21" parent="2" name="sqlite_master">
+    <table id="8" parent="2" name="MarketDataInfoTable_short"/>
+    <table id="9" parent="2" name="MarketData_CASH_EUR_CHF_IDEALPRO"/>
+    <table id="10" parent="2" name="MarketData_CASH_EUR_CNH_IDEALPRO"/>
+    <table id="11" parent="2" name="MarketData_CASH_EUR_GBP_IDEALPRO"/>
+    <table id="12" parent="2" name="MarketData_CASH_EUR_JPY_IDEALPRO"/>
+    <table id="13" parent="2" name="MarketData_CASH_EUR_RUB_IDEALPRO"/>
+    <table id="14" parent="2" name="MarketData_CASH_EUR_USD_IDEALPRO"/>
+    <table id="15" parent="2" name="MarketData_CFD_IBCH20_CHF_SMART"/>
+    <table id="16" parent="2" name="MarketData_CFD_IBDE30_EUR_SMART"/>
+    <table id="17" parent="2" name="MarketData_CFD_IBEU50_EUR_SMART"/>
+    <table id="18" parent="2" name="MarketData_CFD_IBFR40_EUR_SMART"/>
+    <table id="19" parent="2" name="MarketData_CFD_IBGB100_GBP_SMART"/>
+    <table id="20" parent="2" name="MarketData_CFD_IBHK50_HKD_SMART"/>
+    <table id="21" parent="2" name="MarketData_CFD_IBJP225_JPY_SMART"/>
+    <table id="22" parent="2" name="MarketData_CFD_IBUS30_USD_SMART"/>
+    <table id="23" parent="2" name="MarketData_CFD_IBUS500_USD_SMART"/>
+    <table id="24" parent="2" name="alembic_version"/>
+    <table id="25" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <column id="22" parent="6" name="tableName">
+    <column id="26" parent="6" name="tableName">
       <Position>1</Position>
       <DataType>VARCHAR(1000)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="6" name="endDateTime">
+    <column id="27" parent="6" name="endDateTime">
       <Position>2</Position>
       <DataType>DATETIME|0s</DataType>
     </column>
-    <column id="24" parent="6" name="numberOfTicksRetrieved">
+    <column id="28" parent="6" name="numberOfTicksRetrieved">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="25" parent="6" name="durationStringOnLastUpdate">
+    <column id="29" parent="6" name="durationStringOnLastUpdate">
       <Position>4</Position>
       <DataType>VARCHAR(1000)|0s</DataType>
     </column>
-    <column id="26" parent="6" name="lastUpdateDateTimeLocal">
+    <column id="30" parent="6" name="lastUpdateDateTimeLocal">
       <Position>5</Position>
       <DataType>DATETIME|0s</DataType>
     </column>
-    <index id="27" parent="6" name="sqlite_autoindex_MarketDataHistoricalRequestsPositionTable_1">
+    <index id="31" parent="6" name="sqlite_autoindex_MarketDataHistoricalRequestsPositionTable_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tableName</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="28" parent="6">
+    <key id="32" parent="6">
       <ColNames>tableName</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketDataHistoricalRequestsPositionTable_1</UnderlyingIndexName>
     </key>
-    <column id="29" parent="7" name="tableName">
+    <column id="33" parent="7" name="tableName">
       <Position>1</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="30" parent="7" name="description">
+    <column id="34" parent="7" name="description">
       <Position>2</Position>
-      <DataType>VARCHAR(10000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="31" parent="7" name="conId">
+    <column id="35" parent="7" name="conId">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="32" parent="7" name="symbol">
+    <column id="36" parent="7" name="symbol">
       <Position>4</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="33" parent="7" name="currency">
+    <column id="37" parent="7" name="currency">
       <Position>5</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="34" parent="7" name="exchange">
+    <column id="38" parent="7" name="exchange">
       <Position>6</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="35" parent="7" name="category">
+    <column id="39" parent="7" name="category">
       <Position>7</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="36" parent="7" name="secType">
+    <column id="40" parent="7" name="secType">
       <Position>8</Position>
-      <DataType>VARCHAR(1000)|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="37" parent="7" name="earliestDateTime">
+    <column id="41" parent="7" name="earliestDateTime">
       <Position>9</Position>
       <DataType>DATETIME|0s</DataType>
     </column>
-    <index id="38" parent="7" name="sqlite_autoindex_MarketDataInfoTable_1">
+    <column id="42" parent="8" name="tableName">
+      <Position>1</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="8" name="description">
+      <Position>2</Position>
+      <DataType>VARCHAR(10000)|0s</DataType>
+    </column>
+    <column id="44" parent="8" name="conId">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="45" parent="8" name="symbol">
+      <Position>4</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+    </column>
+    <column id="46" parent="8" name="currency">
+      <Position>5</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+    </column>
+    <column id="47" parent="8" name="exchange">
+      <Position>6</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+    </column>
+    <column id="48" parent="8" name="category">
+      <Position>7</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+    </column>
+    <column id="49" parent="8" name="secType">
+      <Position>8</Position>
+      <DataType>VARCHAR(1000)|0s</DataType>
+    </column>
+    <column id="50" parent="8" name="earliestDateTime">
+      <Position>9</Position>
+      <DataType>DATETIME|0s</DataType>
+    </column>
+    <index id="51" parent="8" name="sqlite_autoindex_MarketDataInfoTable_short_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tableName</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="39" parent="7">
+    <key id="52" parent="8">
       <ColNames>tableName</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>sqlite_autoindex_MarketDataInfoTable_1</UnderlyingIndexName>
+      <UnderlyingIndexName>sqlite_autoindex_MarketDataInfoTable_short_1</UnderlyingIndexName>
     </key>
-    <column id="40" parent="8" name="datetime">
+    <column id="53" parent="9" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="8" name="close">
+    <column id="54" parent="9" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="42" parent="8" name="diffToNextRowInMinutes">
+    <column id="55" parent="9" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="43" parent="8" name="sqlite_autoindex_MarketData_CASH_EUR_CHF_IDEALPRO_1">
+    <column id="56" parent="9" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="57" parent="9" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="58" parent="9" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="59" parent="9" name="sqlite_autoindex_MarketData_CASH_EUR_CHF_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="44" parent="8" name="ix_MarketData_CASH_EUR_CHF_IDEALPRO_datetime">
+    <index id="60" parent="9" name="ix_MarketData_CASH_EUR_CHF_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="45" parent="8">
+    <key id="61" parent="9">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_CHF_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="46" parent="9" name="datetime">
+    <column id="62" parent="10" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="9" name="close">
+    <column id="63" parent="10" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="48" parent="9" name="diffToNextRowInMinutes">
+    <column id="64" parent="10" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="49" parent="9" name="sqlite_autoindex_MarketData_CASH_EUR_CNH_IDEALPRO_1">
+    <column id="65" parent="10" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="66" parent="10" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="67" parent="10" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="68" parent="10" name="sqlite_autoindex_MarketData_CASH_EUR_CNH_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="50" parent="9" name="ix_MarketData_CASH_EUR_CNH_IDEALPRO_datetime">
+    <index id="69" parent="10" name="ix_MarketData_CASH_EUR_CNH_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="51" parent="9">
+    <key id="70" parent="10">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_CNH_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="52" parent="10" name="datetime">
+    <column id="71" parent="11" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="10" name="close">
+    <column id="72" parent="11" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="54" parent="10" name="diffToNextRowInMinutes">
+    <column id="73" parent="11" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="55" parent="10" name="sqlite_autoindex_MarketData_CASH_EUR_GBP_IDEALPRO_1">
+    <column id="74" parent="11" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="75" parent="11" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="76" parent="11" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="77" parent="11" name="sqlite_autoindex_MarketData_CASH_EUR_GBP_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="56" parent="10" name="ix_MarketData_CASH_EUR_GBP_IDEALPRO_datetime">
+    <index id="78" parent="11" name="ix_MarketData_CASH_EUR_GBP_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="57" parent="10">
+    <key id="79" parent="11">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_GBP_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="58" parent="11" name="datetime">
+    <column id="80" parent="12" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="11" name="close">
+    <column id="81" parent="12" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="60" parent="11" name="diffToNextRowInMinutes">
+    <column id="82" parent="12" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="61" parent="11" name="sqlite_autoindex_MarketData_CASH_EUR_JPY_IDEALPRO_1">
+    <column id="83" parent="12" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="84" parent="12" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="85" parent="12" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="86" parent="12" name="sqlite_autoindex_MarketData_CASH_EUR_JPY_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="62" parent="11" name="ix_MarketData_CASH_EUR_JPY_IDEALPRO_datetime">
+    <index id="87" parent="12" name="ix_MarketData_CASH_EUR_JPY_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="63" parent="11">
+    <key id="88" parent="12">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_JPY_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="64" parent="12" name="datetime">
+    <column id="89" parent="13" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="65" parent="12" name="close">
+    <column id="90" parent="13" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="66" parent="12" name="diffToNextRowInMinutes">
+    <column id="91" parent="13" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="67" parent="12" name="sqlite_autoindex_MarketData_CASH_EUR_RUB_IDEALPRO_1">
+    <column id="92" parent="13" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="93" parent="13" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="94" parent="13" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="95" parent="13" name="sqlite_autoindex_MarketData_CASH_EUR_RUB_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="68" parent="12" name="ix_MarketData_CASH_EUR_RUB_IDEALPRO_datetime">
+    <index id="96" parent="13" name="ix_MarketData_CASH_EUR_RUB_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="69" parent="12">
+    <key id="97" parent="13">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_RUB_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="70" parent="13" name="datetime">
+    <column id="98" parent="14" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="71" parent="13" name="close">
+    <column id="99" parent="14" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="72" parent="13" name="diffToNextRowInMinutes">
+    <column id="100" parent="14" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="73" parent="13" name="sqlite_autoindex_MarketData_CASH_EUR_USD_IDEALPRO_1">
+    <column id="101" parent="14" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="102" parent="14" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="103" parent="14" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="104" parent="14" name="sqlite_autoindex_MarketData_CASH_EUR_USD_IDEALPRO_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="74" parent="13" name="ix_MarketData_CASH_EUR_USD_IDEALPRO_datetime">
+    <index id="105" parent="14" name="ix_MarketData_CASH_EUR_USD_IDEALPRO_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="75" parent="13">
+    <key id="106" parent="14">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CASH_EUR_USD_IDEALPRO_1</UnderlyingIndexName>
     </key>
-    <column id="76" parent="14" name="datetime">
+    <column id="107" parent="15" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="14" name="diffToNextRowInMinutes">
+    <column id="108" parent="15" name="diffToNextRowInMinutes">
       <Position>2</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="78" parent="14" name="close">
+    <column id="109" parent="15" name="close">
       <Position>3</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <index id="79" parent="14" name="sqlite_autoindex_MarketData_CFD_IBCH20_CHF_SMART_1">
+    <column id="110" parent="15" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="111" parent="15" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="112" parent="15" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="113" parent="15" name="sqlite_autoindex_MarketData_CFD_IBCH20_CHF_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="80" parent="14" name="ix_MarketData_CFD_IBCH20_CHF_SMART_datetime">
+    <index id="114" parent="15" name="ix_MarketData_CFD_IBCH20_CHF_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="81" parent="14">
+    <key id="115" parent="15">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBCH20_CHF_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="82" parent="15" name="datetime">
+    <column id="116" parent="16" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="83" parent="15" name="close">
+    <column id="117" parent="16" name="close">
       <Position>2</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <column id="84" parent="15" name="diffToNextRowInMinutes">
+    <column id="118" parent="16" name="diffToNextRowInMinutes">
       <Position>3</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <index id="85" parent="15" name="sqlite_autoindex_MarketData_CFD_IBDE30_EUR_SMART_1">
+    <column id="119" parent="16" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="120" parent="16" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="121" parent="16" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="122" parent="16" name="sqlite_autoindex_MarketData_CFD_IBDE30_EUR_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="86" parent="15" name="ix_MarketData_CFD_IBDE30_EUR_SMART_datetime">
+    <index id="123" parent="16" name="ix_MarketData_CFD_IBDE30_EUR_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="87" parent="15">
+    <key id="124" parent="16">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBDE30_EUR_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="88" parent="16" name="datetime">
+    <column id="125" parent="17" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="89" parent="16" name="diffToNextRowInMinutes">
+    <column id="126" parent="17" name="diffToNextRowInMinutes">
       <Position>2</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="90" parent="16" name="close">
+    <column id="127" parent="17" name="close">
       <Position>3</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <index id="91" parent="16" name="sqlite_autoindex_MarketData_CFD_IBHK50_HKD_SMART_1">
+    <column id="128" parent="17" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="129" parent="17" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="130" parent="17" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="131" parent="17" name="sqlite_autoindex_MarketData_CFD_IBEU50_EUR_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="92" parent="16" name="ix_MarketData_CFD_IBHK50_HKD_SMART_datetime">
+    <index id="132" parent="17" name="ix_MarketData_CFD_IBEU50_EUR_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="93" parent="16">
+    <key id="133" parent="17">
+      <ColNames>datetime</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBEU50_EUR_SMART_1</UnderlyingIndexName>
+    </key>
+    <column id="134" parent="18" name="datetime">
+      <Position>1</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="18" name="diffToNextRowInMinutes">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="136" parent="18" name="close">
+      <Position>3</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="137" parent="18" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="138" parent="18" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="139" parent="18" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="140" parent="18" name="sqlite_autoindex_MarketData_CFD_IBFR40_EUR_SMART_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="141" parent="18" name="ix_MarketData_CFD_IBFR40_EUR_SMART_datetime">
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="142" parent="18">
+      <ColNames>datetime</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBFR40_EUR_SMART_1</UnderlyingIndexName>
+    </key>
+    <column id="143" parent="19" name="datetime">
+      <Position>1</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="144" parent="19" name="diffToNextRowInMinutes">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="145" parent="19" name="close">
+      <Position>3</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="146" parent="19" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="147" parent="19" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="148" parent="19" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="149" parent="19" name="sqlite_autoindex_MarketData_CFD_IBGB100_GBP_SMART_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="150" parent="19" name="ix_MarketData_CFD_IBGB100_GBP_SMART_datetime">
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="151" parent="19">
+      <ColNames>datetime</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBGB100_GBP_SMART_1</UnderlyingIndexName>
+    </key>
+    <column id="152" parent="20" name="datetime">
+      <Position>1</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="20" name="diffToNextRowInMinutes">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="154" parent="20" name="close">
+      <Position>3</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="155" parent="20" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="156" parent="20" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="157" parent="20" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="158" parent="20" name="sqlite_autoindex_MarketData_CFD_IBHK50_HKD_SMART_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <index id="159" parent="20" name="ix_MarketData_CFD_IBHK50_HKD_SMART_datetime">
+      <ColNames>datetime</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="160" parent="20">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBHK50_HKD_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="94" parent="17" name="datetime">
+    <column id="161" parent="21" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="95" parent="17" name="diffToNextRowInMinutes">
+    <column id="162" parent="21" name="diffToNextRowInMinutes">
       <Position>2</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="96" parent="17" name="close">
+    <column id="163" parent="21" name="close">
       <Position>3</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <index id="97" parent="17" name="sqlite_autoindex_MarketData_CFD_IBJP225_JPY_SMART_1">
+    <column id="164" parent="21" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="165" parent="21" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="166" parent="21" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="167" parent="21" name="sqlite_autoindex_MarketData_CFD_IBJP225_JPY_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="98" parent="17" name="ix_MarketData_CFD_IBJP225_JPY_SMART_datetime">
+    <index id="168" parent="21" name="ix_MarketData_CFD_IBJP225_JPY_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="99" parent="17">
+    <key id="169" parent="21">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBJP225_JPY_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="100" parent="18" name="datetime">
+    <column id="170" parent="22" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="101" parent="18" name="diffToNextRowInMinutes">
+    <column id="171" parent="22" name="diffToNextRowInMinutes">
       <Position>2</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="102" parent="18" name="close">
+    <column id="172" parent="22" name="close">
       <Position>3</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <index id="103" parent="18" name="sqlite_autoindex_MarketData_CFD_IBUS30_USD_SMART_1">
+    <column id="173" parent="22" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="174" parent="22" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="175" parent="22" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="176" parent="22" name="sqlite_autoindex_MarketData_CFD_IBUS30_USD_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="104" parent="18" name="ix_MarketData_CFD_IBUS30_USD_SMART_datetime">
+    <index id="177" parent="22" name="ix_MarketData_CFD_IBUS30_USD_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="105" parent="18">
+    <key id="178" parent="22">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBUS30_USD_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="106" parent="19" name="datetime">
+    <column id="179" parent="23" name="datetime">
       <Position>1</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="107" parent="19" name="diffToNextRowInMinutes">
+    <column id="180" parent="23" name="diffToNextRowInMinutes">
       <Position>2</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="108" parent="19" name="close">
+    <column id="181" parent="23" name="close">
       <Position>3</Position>
       <DataType>FLOAT|0s</DataType>
     </column>
-    <index id="109" parent="19" name="sqlite_autoindex_MarketData_CFD_IBUS500_USD_SMART_1">
+    <column id="182" parent="23" name="high">
+      <Position>4</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="183" parent="23" name="low">
+      <Position>5</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <column id="184" parent="23" name="open">
+      <Position>6</Position>
+      <DataType>FLOAT|0s</DataType>
+    </column>
+    <index id="185" parent="23" name="sqlite_autoindex_MarketData_CFD_IBUS500_USD_SMART_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="110" parent="19" name="ix_MarketData_CFD_IBUS500_USD_SMART_datetime">
+    <index id="186" parent="23" name="ix_MarketData_CFD_IBUS500_USD_SMART_datetime">
       <ColNames>datetime</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>
-    <key id="111" parent="19">
+    <key id="187" parent="23">
       <ColNames>datetime</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_MarketData_CFD_IBUS500_USD_SMART_1</UnderlyingIndexName>
     </key>
-    <column id="112" parent="20" name="version_num">
+    <column id="188" parent="24" name="version_num">
       <Position>1</Position>
       <DataType>VARCHAR(32)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="113" parent="20" name="sqlite_autoindex_alembic_version_1">
+    <index id="189" parent="24" name="sqlite_autoindex_alembic_version_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version_num</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="114" parent="20" name="alembic_version_pkc">
+    <key id="190" parent="24" name="alembic_version_pkc">
       <ColNames>version_num</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_alembic_version_1</UnderlyingIndexName>
     </key>
-    <column id="115" parent="21" name="type">
+    <column id="191" parent="25" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="116" parent="21" name="name">
+    <column id="192" parent="25" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="117" parent="21" name="tbl_name">
+    <column id="193" parent="25" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="118" parent="21" name="rootpage">
+    <column id="194" parent="25" name="rootpage">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="119" parent="21" name="sql">
+    <column id="195" parent="25" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>

@@ -106,6 +106,18 @@ def findConIds(**kwargs):
         },
         {
             'secType': 'CFD',
+            'symbol': 'IBEU50',
+            'exchange': 'SMART',
+            'currency': 'EUR'
+        },
+        {
+            'secType': 'CFD',
+            'symbol': 'IBFR40',
+            'exchange': 'SMART',
+            'currency': 'EUR'
+        },
+        {
+            'secType': 'CFD',
             'symbol': 'IBGB100',
             'exchange': 'SMART',
             'currency': 'GBP'

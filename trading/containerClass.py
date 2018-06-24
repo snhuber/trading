@@ -276,7 +276,15 @@ class ContainerClass(object):
                         pass
                     pass
 
-                a = (f'bar update callback before persist: {qc.localSymbol}; {bars3[0].date}; {bars3[-1].date} {len(bars3)}; {lastDiskDateTimeUTCNaiveFloor}; {nowUTCNaiveFloor}; {forceUpdate}')
+                if len(bars3) > 0:
+                    firstBarDateTime = bars3[0].date
+                    lastBarDateTime = bars[-1].date
+                else:
+                    firstBarDateTime = None
+                    lastBarDateTime = None
+                    pass
+
+                a = (f'bar update callback before persist: {qc.localSymbol}; {firstBarDateTime}; {lastBarDateTime} {len(bars3)}; {lastDiskDateTimeUTCNaiveFloor}; {nowUTCNaiveFloor}; {forceUpdate}')
                 # def blabla(dt):
                 #     return datetime.datetime.strftime(dt,'%H:%M:%S')
                 # a = (f'bar update callback before persist: {qc.localSymbol}; firstBar: {blabla(bars3[0].date)}; lastBar: {blabla(bars3[-1].date)} {len(bars3)}; lastDisk: {blabla(lastDiskDateTimeUTCNaiveFloor)}; now: {blabla(nowUTCNaiveFloor)}; {forceUpdate}')
@@ -321,6 +329,9 @@ class ContainerClass(object):
         self.__log.info(a)
         # print(f'{funcName}: {a}')
 
+
+
+
         if errorCode in [10182, 1100, 504]:
             # indicates broken network, but working gateway
             self._errorThatTriggersWatchdogRestart = True
@@ -349,9 +360,10 @@ class ContainerClass(object):
                 a = (f'setting errorThatTriggersWatchdogRestart to {self._errorThatTriggersWatchdogRestart}')
                 self.__log.info(a)
                 # self.watchdogApp.flush() # if we use this, we run into error 504 that triggers continuously watchdog restarts
-                a = (f'disconnecting ib and thereby triggering a watchdog.flush()')
+                a = (f'disconnecting ib and thereby triggering a watchdog.flush() - now flushing directly')
                 self.__log.info(a)
-                self.watchdogApp.ib.disconnect()  # this also triggers watchdog restarts, but seems to be more gracefully than watchdog.flush. In particular, error 504 does not appear and watchdog will not be starte continuously after this.
+                # self.watchdogApp.ib.disconnect()  # this also triggers watchdog restarts, but seems to be more gracefully than watchdog.flush. In particular, error 504 does not appear and watchdog will not be starte continuously after this.
+                self.watchdogApp.flush()
                 pass
             pass
         pass
@@ -646,6 +658,21 @@ class ContainerClass(object):
 
 
 
+
+    async def schedulerJobScheduleRestart(self, **kwargs):
+        """this function performs a restart of watchdog"""
+
+
+        # restart watchdog
+        a = (f'performing scheduled restart of wathchdog')
+        self.__log.info(a)
+        # print(a)
+        a = (f'disconnecting ib and thereby triggering a watchdog.flush() - now flushing directly')
+        self.__log.info(a)
+        self.watchdogApp.ib.disconnect()
+        # self.watchdogApp.flush()
+
+        pass
 
     async def schedulerJobSwitchRequestForRecentHistoricalDataFromOneSettingToOther(self, **kwargs):
         """this function cancels the current requests for recent historical data,

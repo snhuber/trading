@@ -344,7 +344,11 @@ class tradingDB(object):
             diffToNextRowInMinutes = Column(Integer) # for each row, indicates the time in minutes before the ncxt closing value is availabe in the table
                                                     # in a table ordered by datetime ASC, this means diffToNextRowInMinutes[i] = datetime[i+1] - datetime [i]
                                                     # the last entry in the table has diffToNextRowInMinutes = 0
+            open = Column(Float)
             close = Column(Float)
+            high = Column(Float)
+            low = Column(Float)
+
             pass
         self.__classRegistry[MarketDataTableBase.__tablename__] = MarketDataTableBase
         return MarketDataTableBase
@@ -396,7 +400,7 @@ class tradingDB(object):
                                                tableName: str,
                                                startDateTime: pd.datetime = None,
                                                endDateTime: pd.datetime = None,
-                                               doCorrection=True):
+                                               doCorrection=True) -> pd.DataFrame:
         """ correct diffDateTime for a marketDataTable on Disk.
         The function corrects the diffDateTimes with
           startDateTime <= dateTime <= endDateTime
@@ -493,7 +497,89 @@ class tradingDB(object):
         ssn.close()
 
         df = pd.DataFrame(mismatchList)
-        return (df)
+        return df
+
+    def findEntriesInMarketDataTable(self,
+                                     tableName: str,
+                                     valuesToFind: list=[],
+                                     startDateTime: pd.datetime = None,
+                                     endDateTime: pd.datetime = None,
+                                     doCorrection=False) -> pd.DataFrame:
+        """ finds zeros in one of the [close, low, high, open] columns for a marketDataTable on Disk.
+        The function corrects these zeros with ... TODO
+        """
+
+        # the following will always return a table
+        # the table might be empty and not exist on disk if
+        # the string "tableName" is not within the strings that represent a table that
+        # has been instantiated
+        tableORM = self.getTableORMByTablename(tableName)
+
+        ssn = self.Session()
+        nRows = ssn.query(tableORM).count()
+        if nRows == 0:
+            ssn.close()
+            return None
+
+        if pd.isnull(startDateTime):
+            startDateTime = ssn.query(func.min(tableORM.datetime)).scalar()
+            pass
+
+        if pd.isnull(endDateTime):
+            endDateTime = ssn.query(func.max(tableORM.datetime)).scalar()
+
+        if pd.isnull(startDateTime) or pd.isnull(endDateTime):
+            ssn.close()
+            return None
+
+        assert (endDateTime >= startDateTime)
+
+        # If the endDateTime is larger than the last dateTime on Disk,
+        # then the diffMismatch calculated below for the last row
+        # will be wrong (it will be the difference between the last dateTime on Disk and the endDateTime).
+        # we therefore set endDateTime to the largest value on disk if it is larger than that value
+        lastDateTimeOnDisk = ssn.query(func.max(tableORM.datetime)).scalar()
+        if (not pd.isnull(lastDateTimeOnDisk)) and (endDateTime > lastDateTimeOnDisk):
+            endDateTime = lastDateTimeOnDisk
+            pass
+
+
+        queryWithSelectedRows = ssn.query(tableORM).filter(tableORM.datetime >= startDateTime).filter(
+            tableORM.datetime <= endDateTime)
+        nRows = queryWithSelectedRows.count()
+
+        # return if no rows are found
+        if nRows == 0:
+            ssn.close()
+            return None
+
+        # find any row where any of close, low, high, open has any of the values passed
+        df = None
+        for valueToFind in valuesToFind:
+            # the in_ operator of sqlalchemy does not seem to work with None, so we loop
+            _query = queryWithSelectedRows.filter(sqlalchemy.or_(tableORM.close == valueToFind,
+                                                             tableORM.low == valueToFind,
+                                                             tableORM.high == valueToFind,
+                                                             tableORM.open == valueToFind))
+
+            dfLoop = pd.read_sql(_query.statement, _query.session.bind)
+            if df is None:
+                df = dfLoop.copy()
+            else:
+                if dfLoop is not None:
+                    df = df.append(dfLoop)
+                    pass
+                pass
+            pass
+
+        if doCorrection:
+            pass
+
+        ssn.close()
+
+        df['tableName'] = tableName
+
+        return df
 
 
     @property

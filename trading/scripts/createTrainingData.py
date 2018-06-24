@@ -137,6 +137,12 @@ def processRawDataFrameAsResultFromGetDataFromRangeToTrainginData(
 
     if dataExists:
         df.loc[:, 'diffToNextRowInMinutes'] = df.diffToNextRowInMinutes.astype(int)
+        pass
+
+    # repair missing data in open, high, low
+    df.loc[df['open'].isnull(), 'open'] = df['close']
+    df.loc[df['low'].isnull(), 'low'] = df['close']
+    df.loc[df['high'].isnull(), 'high'] = df['close']
 
     dfNew = df.copy()
     return dfNew
@@ -157,17 +163,22 @@ def getDataFromDateRange(
 
     for _DT in dateRange:
         __DT = _DT.to_pydatetime()
-        close = None
+        _close = None
+        _low = None
+        _high = None
+        _open = None
+
+
         tm = None
-        qsf = (ssn.query(tableSchema.c.close, tableSchema.c.datetime).order_by(tableSchema.c.datetime.desc()).filter(
+        qsf = (ssn.query(tableSchema.c.close, tableSchema.c.low, tableSchema.c.high, tableSchema.c.high, tableSchema.c.datetime).order_by(tableSchema.c.datetime.desc()).filter(
             tableSchema.c.datetime <= __DT)).first()
         if qsf is not None:
-            close, tm = qsf
+            _close, _low, _high, _open, tm = qsf
         else:
             qsf = (
-                ssn.query(tableSchema.c.close, tableSchema.c.datetime).order_by(tableSchema.c.datetime).filter(tableSchema.c.datetime > __DT)).first()
+                ssn.query(tableSchema.c.close, tableSchema.c.low, tableSchema.c.high, tableSchema.c.high, tableSchema.c.datetime).order_by(tableSchema.c.datetime).filter(tableSchema.c.datetime > __DT)).first()
             if qsf is not None:
-                close, tm = qsf
+                _close, _low, _high, _open, tm = qsf
                 pass
             pass
         tDiff = None
@@ -180,7 +191,10 @@ def getDataFromDateRange(
                 ('target', __DT),
                 ('achieved', tm),
                 ('mismatchInMinutes', tDiff / pd.Timedelta(1, 'm')),
-                ('close', close),
+                ('close', _close),
+                ('low', _low),
+                ('high', _high),
+                ('open', _open)
             )
         )
         results.append(ordrdDct)
@@ -301,7 +315,7 @@ def runProg(args):
 
         df = resultsDict['MarketData_CASH_EUR_JPY_IDEALPRO']
         # df = resultsDict['MarketData_CFD_IBUS500_USD_SMART']
-        # print(df)
+        print(df)
 
         tt2 = time.time()
         ttdiff = tt2 - tt1
@@ -351,6 +365,7 @@ def runProg(args):
                                                  simpleFunc=simpleFunc)
 
         print(resultsDict)
+
 
         tt2 = time.time()
         ttdiff = tt2 - tt1

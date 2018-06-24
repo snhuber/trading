@@ -224,7 +224,7 @@ def runProg(args):
         'barSizePandasTimeDelta': barSizePandasTimeDelta,
         'earliestDateTime': earliestDateTimeUTCNaive,
         'timeOutTime': timeOutTime,
-        'jitterSpanFraction': 0.02,
+        'jitterSpanFraction': 0.1,
     }
 
     jobSettings = {
@@ -292,6 +292,37 @@ def runProg(args):
         cc.addJobToScheduler(jobSettings=jobSettings)
 
     ##############################################################
+
+
+    # ##############################################################
+    # # add a regular restart
+    # ##############################################################
+    # # add a scheduled job that launches watchdogApp.scheduleRestart
+    #
+    # watchdogAppScheduleRestartSettings={
+    # }
+    #
+    #
+    # jobSettings = {
+    #     'job': cc.schedulerJobScheduleRestart,
+    #     'args': [],
+    #     'kwargs': watchdogAppScheduleRestartSettings,
+    #     'jobRootName': 'watchdogAppScheduleRestart',
+    #     'hour': '*',
+    #     'minute': '05',
+    #     # 'minute': '*',
+    #     'second': '37',
+    #     'coalesce': True,
+    #     'misfire_grace_time': 30,
+    #     'trigger': 'cron',
+    #     'max_instances': 1,
+    # }
+    #
+    # if useScheduler:
+    #     cc.addJobToScheduler(jobSettings=jobSettings)
+    #
+    # ##############################################################
+
 
     if 1:
         if useScheduler:
