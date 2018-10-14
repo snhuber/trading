@@ -351,7 +351,7 @@ class ContainerClass(object):
             # Therefore, I decided to add 1101 and 1102 to the if-clause
 
 
-            a = (f'errorcode is {errorCode}; errorThatTriggersWathcdogRestart is {self._errorThatTriggersWatchdogRestart}')
+            a = (f'errorcode is {errorCode}; errorThatTriggersWatchdogRestart is {self._errorThatTriggersWatchdogRestart}')
             self.__log.info(a)
 
             if self._errorThatTriggersWatchdogRestart:

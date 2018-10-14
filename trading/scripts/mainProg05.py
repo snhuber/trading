@@ -52,15 +52,16 @@ def runProg(args):
     clientId = config.getint('InteractiveBrokers', 'clientId')
     DBType = config.get('DataBase', 'DBType')
     DBFileName = config.get('DataBase', 'DBFileName')
-
+    TWS_MAJOR_VRSN = config.get('InteractiveBrokers', 'TWS_MAJOR_VRSN')
+    ibcPath = config.get('InteractiveBrokers', 'ibcPath')
+    ibcIni = config.get('InteractiveBrokers', 'ibcIni')
+    tradingMode = config.get('InteractiveBrokers', 'tradingMode')
 
     # for production mode: watchdog
     if useWatchdog:
         # start watchdog
         # ibc = IBC(963, gateway=True, tradingMode='paper',ibcIni='/home/bn/IBController/configPaper.ini')
-        ibcIni = config.get('InteractiveBrokers', 'ibcIni')
-        tradingMode = config.get('InteractiveBrokers', 'tradingMode')
-        ibc = IBC(970, gateway=True, tradingMode=tradingMode, ibcIni=ibcIni)
+        ibc = IBC(TWS_MAJOR_VRSN, gateway=True, tradingMode=tradingMode, ibcIni=ibcIni, ibcPath=ibcPath)
         ib = IB()
         watchdogApp = Watchdog(ibc, ib=ib, appStartupTime=15, host=host, port=port, clientId=clientId)
         watchdogApp.start()

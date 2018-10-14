@@ -636,7 +636,7 @@ class HistoricalDataGetter(Object):
                 return
 
             if timeOutOccured is not None and timeOutOccured:
-                a = (f'Timeout while requesting historical bars for contract {qc}; timeOutTime: {self.timeOutTime}')
+                a = (f'Timeout while requesting historical bars for contract {self.currentState.qc}; timeOutTime: {self.timeOutTime}')
                 _logger.warn(a)
                 # print(a)
                 pass
